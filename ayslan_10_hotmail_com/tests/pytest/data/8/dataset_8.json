@@ -1,0 +1,48 @@
+{
+ "parameters": [
+  {
+   "name": "_format",
+   "uuid": "d287bf89-18c4-4d69-b8de-4bac57bc98d3"
+  },
+  {
+   "name": "currency",
+   "uuid": "d32e243f-2ba0-4211-ba43-14c7e45b53c2"
+  },
+  {
+   "name": "device_memory",
+   "uuid": "f75a7e3e-dc51-4b15-92b6-6499518e05a1"
+  },
+  {
+   "name": "ect",
+   "uuid": "b6f2bb65-2b3e-49bc-b409-45981bd082eb"
+  },
+  {
+   "name": "key",
+   "uuid": "c7586592-aa54-4354-80b4-d4df43950639"
+  },
+  {
+   "name": "listing_id",
+   "uuid": "4c8af754-c897-46df-95a4-7983f7488503"
+  },
+  {
+   "name": "viewport_width",
+   "uuid": "bf5d062a-f5fc-47b9-8f31-cb0c708116fa"
+  },
+  {
+   "name": "x_csrf_token",
+   "uuid": "a6c2e05e-3ade-422d-b46e-87326f7518be"
+  }
+ ],
+ "rows": [
+  {
+   "_format": "for_p3",
+   "currency": "BRL",
+   "device_memory": "8",
+   "ect": "4g",
+   "key": "d306zoyjsyarp7ifhu67rjxn52tv0t20",
+   "listing_id": "51152588",
+   "viewport_width": "1200",
+   "x_csrf_token": "V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo="
+  }
+ ]
+}

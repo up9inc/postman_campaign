@@ -1,0 +1,38 @@
+{
+ "parameters": [
+  {
+   "name": "currency",
+   "uuid": "5286ae7b-093d-4046-b2d4-60ba8afd6edb"
+  },
+  {
+   "name": "device_memory",
+   "uuid": "e47b104b-e214-4c06-873a-ff8b3b898eb0"
+  },
+  {
+   "name": "ect",
+   "uuid": "cc9f06ab-085e-4ad9-9f2f-052e396568a1"
+  },
+  {
+   "name": "key",
+   "uuid": "b72f7c7e-c87a-4e35-b886-13c1c10a1e09"
+  },
+  {
+   "name": "viewport_width",
+   "uuid": "c0cf77d8-b329-4a85-a8d0-c2d411bdd87e"
+  },
+  {
+   "name": "x_csrf_token",
+   "uuid": "acee3500-58f0-4cca-bf59-1b74a8f9aa6a"
+  }
+ ],
+ "rows": [
+  {
+   "currency": "BRL",
+   "device_memory": "8",
+   "ect": "4g",
+   "key": "d306zoyjsyarp7ifhu67rjxn52tv0t20",
+   "viewport_width": "1200",
+   "x_csrf_token": "V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo="
+  }
+ ]
+}

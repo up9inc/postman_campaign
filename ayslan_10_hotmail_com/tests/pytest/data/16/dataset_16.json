@@ -1,0 +1,53 @@
+{
+ "parameters": [
+  {
+   "name": "_cb",
+   "uuid": "e84afe53-e730-48f5-98fe-982423b1f15f"
+  },
+  {
+   "name": "currency",
+   "uuid": "29dea6b4-2b77-4de1-8ba8-38eb99a3713e"
+  },
+  {
+   "name": "device_memory",
+   "uuid": "d5b0a0fe-93ea-454e-843d-13bddd11b620"
+  },
+  {
+   "name": "ect",
+   "uuid": "0b9c5394-4a20-4c99-81dc-8833777cb219"
+  },
+  {
+   "name": "extensions",
+   "uuid": "31492b84-e232-4359-9a7e-7cf9661058a8"
+  },
+  {
+   "name": "variables",
+   "uuid": "55bf043e-6326-4c97-ab40-af2eb89fa9a3"
+  },
+  {
+   "name": "viewport_width",
+   "uuid": "9eac4671-627a-4a46-b19b-8db2c2ed4cd1"
+  },
+  {
+   "name": "x_airbnb_api_key",
+   "uuid": "aa47dd37-9dc0-426c-aa41-b9d05f98b79b"
+  },
+  {
+   "name": "x_csrf_token",
+   "uuid": "3800033b-fe64-4f1b-ba28-8fd1e6a17c66"
+  }
+ ],
+ "rows": [
+  {
+   "_cb": "1idxal10ro8rgx1569ka90z5w1p1",
+   "currency": "BRL",
+   "device_memory": "8",
+   "ect": "4g",
+   "extensions": "{\"persistedQuery\":{\"version\":1,\"sha256Hash\":\"f73a2abcdb3df4886fcc458f029579a3660f0054f098a4c611d0e5312ab0508b\"}}",
+   "variables": "{\"id\":\"U3RheUxpc3Rpbmc6NTExNTI1ODg=\",\"pdpSectionsRequest\":{\"adults\":\"1\",\"bypassTargetings\":false,\"categoryTag\":null,\"causeId\":null,\"children\":null,\"disasterId\":null,\"discountedGuestFeeVersion\":null,\"displayExtensions\":null,\"federatedSearchId\":null,\"forceBoostPriorityMessageType\":null,\"infants\":null,\"interactionType\":null,\"layouts\":[\"SIDEBAR\",\"SINGLE_COLUMN\"],\"pets\":0,\"pdpTypeOverride\":null,\"preview\":false,\"previousStateCheckIn\":null,\"previousStateCheckOut\":null,\"priceDropSource\":null,\"privateBooking\":false,\"promotionUuid\":null,\"relaxedAmenityIds\":null,\"searchId\":null,\"selectedCancellationPolicyId\":null,\"selectedRatePlanId\":null,\"staysBookingMigrationEnabled\":false,\"translateUgc\":null,\"useNewSectionWrapperApi\":false,\"sectionIds\":[\"BOOK_IT_FLOATING_FOOTER\",\"EDUCATION_FOOTER_BANNER_MODAL\",\"BOOK_IT_CALENDAR_SHEET\",\"CANCELLATION_POLICY_PICKER_MODAL\",\"POLICIES_DEFAULT\",\"BOOK_IT_NAV\",\"BOOK_IT_SIDEBAR\",\"URGENCY_COMMITMENT_SIDEBAR\",\"URGENCY_COMMITMENT\",\"EDUCATION_FOOTER_BANNER\"],\"checkIn\":null,\"checkOut\":null,\"p3ImpressionId\":\"p3_1636402243_2WscjGdmugLV6Ick\"}}",
+   "viewport_width": "1200",
+   "x_airbnb_api_key": "d306zoyjsyarp7ifhu67rjxn52tv0t20",
+   "x_csrf_token": "V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo="
+  }
+ ]
+}

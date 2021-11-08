@@ -1,0 +1,5 @@
+{
+ "TARGET_NOTIFY_BUGSNAG_COM": "https://notify.bugsnag.com",
+ "TARGET_WWW_AIRBNB_COM_BR": "https://www.airbnb.com.br",
+ "TARGET_WWW_POUSADAPORTELA_COM_BR": "https://www.pousadaportela.com.br"
+}

@@ -1,0 +1,38 @@
+{
+ "parameters": [
+  {
+   "name": "currency",
+   "uuid": "a8029c84-b314-418a-b4f6-0f9e9ee62704"
+  },
+  {
+   "name": "device_memory",
+   "uuid": "0b1e6bf3-b6aa-4cc3-9e06-2df653acfb68"
+  },
+  {
+   "name": "ect",
+   "uuid": "03afd240-39e0-4c7d-b1e2-8828b138c530"
+  },
+  {
+   "name": "key",
+   "uuid": "72387d53-bcc3-4484-b33f-ecf1b05f741a"
+  },
+  {
+   "name": "options",
+   "uuid": "805e1b2c-ef56-456a-857d-83615d422823"
+  },
+  {
+   "name": "viewport_width",
+   "uuid": "8dacefc1-7c21-40a3-bb82-23f33b59720e"
+  }
+ ],
+ "rows": [
+  {
+   "currency": "BRL",
+   "device_memory": "8",
+   "ect": "4g",
+   "key": "d306zoyjsyarp7ifhu67rjxn52tv0t20",
+   "options": "simple_search|flex_destinations_june_2021_launch_web_treatment",
+   "viewport_width": "1200"
+  }
+ ]
+}

@@ -1,0 +1,5 @@
+{
+ "https://notify.bugsnag.com": "http://localhost:8001",
+ "https://www.airbnb.com.br": "http://localhost:8002",
+ "https://www.pousadaportela.com.br": "http://localhost:8003"
+}

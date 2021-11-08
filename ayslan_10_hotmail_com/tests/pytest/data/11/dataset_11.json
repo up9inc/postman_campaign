@@ -1,0 +1,53 @@
+{
+ "parameters": [
+  {
+   "name": "_cb",
+   "uuid": "4b5ce430-981c-44cc-afe4-63d434511747"
+  },
+  {
+   "name": "currency",
+   "uuid": "3a8972c2-7a88-4569-97ef-3bfa751eacb7"
+  },
+  {
+   "name": "device_memory",
+   "uuid": "6513cd87-620b-4f8f-b359-ea8aa206e06a"
+  },
+  {
+   "name": "ect",
+   "uuid": "38121486-77ef-4219-8ffd-d32cfc56cacc"
+  },
+  {
+   "name": "extensions",
+   "uuid": "8a1c5158-7bfd-4830-a392-a701cb07136f"
+  },
+  {
+   "name": "variables",
+   "uuid": "0ebe0fb4-825d-4d31-b200-a93ad5e732be"
+  },
+  {
+   "name": "viewport_width",
+   "uuid": "a0d8a57f-3978-4a44-8d8a-67fe8331e60a"
+  },
+  {
+   "name": "x_airbnb_api_key",
+   "uuid": "0159cc35-7b1b-4f3b-b9f8-d79bc477d5e6"
+  },
+  {
+   "name": "x_csrf_token",
+   "uuid": "1381b7ee-0cf9-495d-b6fc-12d5d4d1a1ad"
+  }
+ ],
+ "rows": [
+  {
+   "_cb": "0rjulnu0gtvsm106pfpbw0mkgc5k",
+   "currency": "BRL",
+   "device_memory": "8",
+   "ect": "4g",
+   "extensions": "{\"persistedQuery\":{\"version\":1,\"sha256Hash\":\"b77500d382ece93907d870e42773e95234c3b410994006834ae7580ed4966da6\"}}",
+   "variables": "{\"cdnCacheSafe\":false,\"hasLoggedIn\":false,\"isInitialLoad\":true,\"source\":\"EXPLORE\"}",
+   "viewport_width": "1200",
+   "x_airbnb_api_key": "d306zoyjsyarp7ifhu67rjxn52tv0t20",
+   "x_csrf_token": "V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo="
+  }
+ ]
+}

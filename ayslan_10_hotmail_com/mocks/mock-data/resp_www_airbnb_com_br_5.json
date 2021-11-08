@@ -1,0 +1,64 @@
+{
+ "autosuggestions": [
+  {
+   "type": "FLEXIBLE_DESTINATIONS",
+   "title": "Qualquer lugar, qualquer data",
+   "items": [
+    {
+     "id": "flexible_destination",
+     "explore_search_params": {
+      "params": [
+       {
+        "key": "search_mode",
+        "value_type": "string",
+        "value": "flex_destinations_search"
+       },
+       {
+        "key": "date_picker_type",
+        "value_type": "string",
+        "value": "flexible_dates"
+       }
+      ],
+      "refinement_paths": [
+       "/homes"
+      ],
+      "reset_keys": [
+       "flexible_trip_dates",
+       "property_type_id",
+       "kg_and_tags",
+       "tier_ids",
+       "flexible_trip_lengths"
+      ]
+     },
+     "suggestion_type": "AUTOSUGGEST",
+     "display_name": "Busca flex\u00edvel",
+     "image_url": "https://a0.muscache.com/pictures/04c0a34f-9880-48b7-a69c-49011f602a35.jpg",
+     "lottie_resource_url": "https://a0.muscache.com/pictures/a4226c6d-4531-4086-9d8c-0cb0c72abeb9.json",
+     "video_url": "https://a0.muscache.com/videos/vopt/13/e1/13e14ffc-822c-5e84-aa58-d6a6527dc218/13e14ffc822c5e84aa58d6a6527dc218.mp4"
+    }
+   ],
+   "display_type": "ROW",
+   "id": "674de63cecc9a8fa2a6db40ea85e3ba7281f16272e1c733b68138366c4816643"
+  }
+ ],
+ "show_nearby": false,
+ "metadata": {
+  "request_id": "7561005bbaf74ba2bc2a000ec1f9f916"
+ },
+ "experiment_data": {
+  "name": "tp_autosuggest_web_nearby_location_suggestions_v8",
+  "force_in_trebuchet_name": "tp_autosuggest_location_recommendations_force_v1",
+  "control_metadata": {
+   "name": "control"
+  },
+  "treatment_metadata": [
+   {
+    "name": "treatment1"
+   },
+   {
+    "name": "treatment2"
+   }
+  ],
+  "treatment_name": "treatment_unknown"
+ }
+}

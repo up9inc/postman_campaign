@@ -1,0 +1,159 @@
+# This is a Mockintosh configuration file.
+# Mockintosh provides a microservices friendly, small footprint HTTP mock service.
+# A standard laptop can run dozens of Mockintosh instances, or you can run all instances in a single Docker container.
+#
+# Install Mockintosh:                 pip3 install mockintosh
+# Run locally:                        mockintosh <this-file>
+# Run with Docker:                    docker run -it -p 8000-8005:8000-8005 -v `pwd`:/tmp testrio/mockintosh /tmp/<this-file>
+# More information can be found here: https://github.com/up9inc/mockintosh
+
+---
+management:
+  port: 8000
+services:
+- name: https://notify.bugsnag.com
+  port: 8001
+  managementRoot: __admin
+  oas: '@mock-data/up9-https___notify.bugsnag.com-spec.json'
+  endpoints:
+  - path: /
+    response:
+      headers:
+        Content-Type: text/plain
+      body: OK
+      useTemplating: false
+    method: post
+- name: https://www.airbnb.com.br
+  port: 8002
+  managementRoot: __admin
+  oas: '@mock-data/up9-https___www.airbnb.com.br-spec.json'
+  endpoints:
+  - path: /{{param1}}/{{param2}}/9GA/{{param3}}/ATJQAQ/WBp/{{param4}}
+    response:
+      status: 201
+      headers:
+        Content-Type: application/json
+      body: |-
+        {
+         "success": true
+        }
+      useTemplating: false
+    method: post
+  - path: /api/v2/autosuggestions
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_www_airbnb_com_br_5.json'
+      useTemplating: false
+  - path: /api/v2/client_configs
+    response:
+      headers:
+        Content-Type: application/json
+      body: |-
+        {
+         "time_stamp": {{date.timestamp}}
+        }
+    method: post
+  - path: /api/v2/host_referral_eligibilities
+    response:
+      headers:
+        Content-Type: application/json
+      body: |-
+        {
+         "host_referral_eligibility": {
+          "is_eligible": false
+         }
+        }
+      useTemplating: false
+  - path: /api/v2/paid_growth_tracking_datas
+    response:
+      headers:
+        Content-Type: application/json
+      body: |-
+        {
+         "paid_growth_tracking_data": {
+          "audience_type": "visitor",
+          "city": "Baependi",
+          "country": "BR",
+          "state": "Minas Gerais",
+          "suggested_hotels": "[]",
+          "user_bucket": 15,
+          "user_group": 35
+         },
+         "metadata": {}
+        }
+      useTemplating: false
+    method: post
+  - path: /api/v2/paid_growth_tracking_datas
+    response:
+      headers:
+        Content-Type: application/json
+      body: |-
+        {
+         "paid_growth_tracking_data": [
+          {
+           "audience_type": "visitor"
+          }
+         ],
+         "metadata": {}
+        }
+      useTemplating: false
+  - path: /api/v2/user_markets
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_www_airbnb_com_br_10.json'
+      useTemplating: false
+  - path: /api/v3/Header
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_www_airbnb_com_br_11.json'
+      useTemplating: false
+  - path: /api/v3/PdpAvailabilityCalendar
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_www_airbnb_com_br_12.json'
+  - path: /api/v3/PdpPhotoTour
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_www_airbnb_com_br_13.json'
+  - path: /api/v3/PdpReviews
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_www_airbnb_com_br_14.json'
+      useTemplating: false
+  - path: /api/v3/SearchBlocksQuery
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_www_airbnb_com_br_15.json'
+      useTemplating: false
+  - path: /api/v3/StaysPdpSections
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_www_airbnb_com_br_16.json'
+      useTemplating: false
+  - path: /tracking/airdog
+    response:
+      status: 204
+    method: post
+  - path: /tracking/jitney/logging/messages
+    response:
+      status: 204
+    method: post
+- name: https://www.pousadaportela.com.br
+  port: 8003
+  managementRoot: __admin
+  oas: '@mock-data/up9-https___www.pousadaportela.com.br-spec.json'
+  endpoints:
+  - path: /
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_www_pousadaportela_com_br_1.html'
+      useTemplating: false

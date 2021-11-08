@@ -1,0 +1,2423 @@
+{
+    "info": {
+        "id": "eba88a5d-aeca-4a86-9f85-ea4896dc970d",
+        "name": "up9650 - ayslan_10_hotmail_com/all rev 15 (by UP9.com)",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "id": "4970f46e-7bbe-4db3-a65f-d229660741eb",
+            "name": "Tests_notify_bugsnag_com",
+            "item": [
+                {
+                    "id": "f7ea5c16-e954-4d43-b550-a297fd0f4f47",
+                    "name": "test_20_post_",
+                    "item": [
+                        {
+                            "id": "cbc68b20-eb32-4a90-ac73-bc2e298cde6f",
+                            "name": "notify_bugsnag_com",
+                            "request": {
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Bugsnag-Api-Key",
+                                        "value": "{{bugsnag_api_key}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Bugsnag-Payload-Version",
+                                        "value": "{{bugsnag_payload_version}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Bugsnag-Sent-At",
+                                        "value": "{{bugsnag_sent_at}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{notify_bugsnag_com}}",
+                                    "protocol": "",
+                                    "host": "{{notify_bugsnag_com}}",
+                                    "path": []
+                                },
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"apiKey\": \"{{apiKey}}\",\n    \"events\": [\n        {\n            \"app\": {\n                \"duration\": {{duration}},\n                \"releaseStage\": \"production\",\n                \"version\": \"{{version}}\"\n            },\n            \"breadcrumbs\": [\n                {\n                    \"metaData\": {},\n                    \"name\": \"{{name}}\",\n                    \"timestamp\": \"{{timestamp}}\",\n                    \"type\": \"navigation\"\n                }\n            ],\n            \"context\": \"PdpHomeMarketplace\",\n            \"device\": {\n                \"id\": \"{{id}}\",\n                \"locale\": \"en-US\",\n                \"orientation\": \"landscape-primary\",\n                \"time\": \"{{time}}\",\n                \"userAgent\": \"{{userAgent}}\"\n            },\n            \"exceptions\": [\n                {\n                    \"errorClass\": \"Error\",\n                    \"errorMessage\": \"{{errorMessage}}\",\n                    \"message\": \"{{message}}\",\n                    \"type\": \"browserjs\"\n                }\n            ],\n            \"metaData\": {\n                \"app_name\": \"pdp-platform\",\n                \"connection_type\": \"{{connection_type}}\",\n                \"delivered experiments\": {\n                    \"experiments\": [\n                        \"{{experiments}}\"\n                    ],\n                    \"treatments\": [\n                        \"{{treatments}}\"\n                    ]\n                },\n                \"is_installed_pwa\": false,\n                \"is_metro\": true,\n                \"is_service_worker\": false,\n                \"locale\": \"pt\",\n                \"loop_name\": \"core-guest-loop\",\n                \"tags\": {\n                    \"team\": \"search-input\"\n                },\n                \"trebuchets\": {\n                    \"trebuchets\": [\n                        \"{{trebuchets}}\"\n                    ],\n                    \"values\": [\n                        \"{{values}}\"\n                    ]\n                },\n                \"user\": {\n                    \"bev\": \"{{bev}}\",\n                    \"is_logged_in\": false\n                }\n            },\n            \"payloadVersion\": \"{{payloadVersion}}\",\n            \"request\": {\n                \"clientIp\": \"{{clientIp}}\",\n                \"url\": \"{{url}}\"\n            },\n            \"session\": {\n                \"events\": {\n                    \"handled\": 1,\n                    \"unhandled\": 0\n                },\n                \"id\": \"{{id1}}\",\n                \"startedAt\": \"{{startedAt}}\"\n            },\n            \"severity\": \"error\",\n            \"severityReason\": {\n                \"type\": \"userCallbackSetSeverity\"\n            },\n            \"unhandled\": false,\n            \"user\": {\n                \"id\": \"{{id2}}\"\n            }\n        }\n    ],\n    \"notifier\": {\n        \"name\": \"Bugsnag JavaScript\",\n        \"url\": \"{{url1}}\",\n        \"version\": \"{{version1}}\"\n    }\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "2b442345-a247-4c22-b1be-af47c08df2de",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.test(\"POST https://notify.bugsnag.com/ (endp 20)\", function() {",
+                                            "    pm.response.to.have.status(200);",
+                                            "});"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                },
+                                {
+                                    "listen": "prerequest",
+                                    "script": {
+                                        "id": "6438d469-7ae6-44e0-8892-906ee726d665",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.variables.set(\"apiKey\", \"e393bc25e52fe915ffb56c14ddf2ff1b\");",
+                                            "pm.variables.set(\"bev\", \"1636402242_ODNlYWRjMjYxNjNh\");",
+                                            "pm.variables.set(\"bugsnag_api_key\", \"e393bc25e52fe915ffb56c14ddf2ff1b\");",
+                                            "pm.variables.set(\"bugsnag_payload_version\", \"4\");",
+                                            "pm.variables.set(\"bugsnag_sent_at\", \"2021-11-08T20:10:44.058Z\");",
+                                            "pm.variables.set(\"clientIp\", \"[REDACTED]\");",
+                                            "pm.variables.set(\"connection_type\", \"4g\");",
+                                            "pm.variables.set(\"duration\", 8);",
+                                            "pm.variables.set(\"errorMessage\", \"ViaductContent missing data\");",
+                                            "pm.variables.set(\"experiments\", \"web_bot_detection_use_recaptcha_net_globally\");",
+                                            "pm.variables.set(\"id\", \"ckvr3n8i400003f75oio0oqd7\");",
+                                            "pm.variables.set(\"id1\", \"ckvr3n8i500003f75hqgqd41s\");",
+                                            "pm.variables.set(\"id2\", \"1636402242_ODNlYWRjMjYxNjNh\");",
+                                            "pm.variables.set(\"message\", \"ViaductContent missing data\");",
+                                            "pm.variables.set(\"name\", \"Bugsnag loaded\");",
+                                            "pm.variables.set(\"payloadVersion\", \"4\");",
+                                            "pm.variables.set(\"startedAt\", \"2021-11-08T20:10:44.045Z\");",
+                                            "pm.variables.set(\"time\", \"2021-11-08T20:10:44.049Z\");",
+                                            "pm.variables.set(\"timestamp\", \"2021-11-08T20:10:44.045Z\");",
+                                            "pm.variables.set(\"treatments\", \"web_bot_detection_use_recaptcha_net_globally:treatment\");",
+                                            "pm.variables.set(\"trebuchets\", \"enable_bugsnag_web\");",
+                                            "pm.variables.set(\"url\", \"https://www.airbnb.com.br/rooms/51152588?guests=1&adults=1&s=67&unique_share_id=2a56042d-e3a0-4be4-a9f0-fbc2331227fc&source_impression_id=p3_1636402243_2WscjGdmugLV6Ick\");",
+                                            "pm.variables.set(\"url1\", \"https://github.com/bugsnag/bugsnag-js\");",
+                                            "pm.variables.set(\"userAgent\", \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.0 Safari/537.36\");",
+                                            "pm.variables.set(\"values\", \"enable_bugsnag_web:true\");",
+                                            "pm.variables.set(\"version\", \"[core-guest-loop] d28a190a92086648de2f9d0947de8cd67efc4687\");",
+                                            "pm.variables.set(\"version1\", \"7.7.0\");"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "id": "25634197-8cc7-478e-a13c-6b54ba2c207a",
+                                "exec": [],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "protocolProfileBehavior": {}
+                }
+            ],
+            "event": [
+                {
+                    "listen": "prerequest",
+                    "script": {
+                        "id": "e288763f-7208-476c-a34f-af6f2914c436",
+                        "exec": [],
+                        "type": "text/javascript"
+                    }
+                }
+            ],
+            "protocolProfileBehavior": {}
+        },
+        {
+            "id": "2fad8ba7-3087-4770-9ed6-346f258b7d70",
+            "name": "Tests_www_airbnb_com_br",
+            "item": [
+                {
+                    "id": "a8255626-708f-4834-8ff9-4533a9e24914",
+                    "name": "test_04_post_param1_param2_9GA_param3_ATJQAQ_WBp_param4",
+                    "item": [
+                        {
+                            "id": "066ab05d-5bc5-41c8-a65a-4f676bfb7187",
+                            "name": "www_airbnb_com_br/{{param}}/{{param1}}/9GA/{{param2}}/ATJQAQ/WBp/{{param3}}",
+                            "request": {
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Device-Memory",
+                                        "value": "{{device_memory}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Dpr",
+                                        "value": "2",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Ect",
+                                        "value": "{{ect}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Viewport-Width",
+                                        "value": "{{viewport_width}}",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{www_airbnb_com_br}}/{{param}}/{{param1}}/9GA/{{param2}}/ATJQAQ/WBp/{{param3}}",
+                                    "protocol": "",
+                                    "host": "{{www_airbnb_com_br}}",
+                                    "path": [
+                                        "{{param}}",
+                                        "{{param1}}",
+                                        "9GA",
+                                        "{{param2}}",
+                                        "ATJQAQ",
+                                        "WBp",
+                                        "{{param3}}"
+                                    ]
+                                },
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"sensor_data\": \"{{sensor_data}}\"\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "91762067-b0cc-4da5-b770-414beb107bdb",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.test(\"POST https://www.airbnb.com.br/{param1}/{param2}/9GA/{param3}/ATJQAQ/WBp/{param4} (endp 4)\", function() {",
+                                            "    pm.response.to.have.status(201);",
+                                            "});"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                },
+                                {
+                                    "listen": "prerequest",
+                                    "script": {
+                                        "id": "d736dcda-f201-428a-b62e-eb5c2083e3dd",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.variables.set(\"device_memory\", \"8\");",
+                                            "pm.variables.set(\"ect\", \"4g\");",
+                                            "pm.variables.set(\"param\", \"Fp2y0g0ok\");",
+                                            "pm.variables.set(\"param1\", \"rpjzF2\");",
+                                            "pm.variables.set(\"param2\", \"Suf9XwkG1r\");",
+                                            "pm.variables.set(\"param3\", \"dIQs4OkwB\");",
+                                            "pm.variables.set(\"sensor_data\", \"7a74G7m23Vrp0o5c9297611.7-1,2,-94,-100,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.0 Safari/537.36,uaend,12147,20030107,en-US,Gecko,3,0,0,0,402632,2243366,1393,875,1440,900,1200,708,1200,,cpen:0,i1:0,dm:0,cwen:0,non:1,opc:0,fc:0,sc:0,wrc:1,isc:0,vib:1,bat:1,x11:0,x12:1,8876,0.716267625358,818201121683,0,loc:-1,2,-94,-101,do_en,dm_en,t_en-1,2,-94,-105,-1,2,-94,-102,-1,2,-94,-108,-1,2,-94,-110,-1,2,-94,-117,-1,2,-94,-111,-1,2,-94,-109,-1,2,-94,-114,-1,2,-94,-103,-1,2,-94,-112,https://www.airbnb.com.br/rooms/51152588?guests=1&adults=1&s=67&unique_share_id=2a56042d-e3a0-4be4-a9f0-fbc2331227fc&source_impression_id=p3_1636402243_2WscjGdmugLV6Ick-1,2,-94,-115,1,32,32,0,0,0,0,1,0,1636402243366,-999999,17505,0,0,2917,0,0,5,0,0,B6BA0308E1096C351D1E3E7F7EC602B7~-1~YAAQnZhmUqfvGut8AQAA16csAQYjrxy+ByfvmR6Zbqe1CAAaWGfBgIj4i/P34bkJJMWk+MKtG3+xRty8kGi5VVupTH2aq97dGAVlzjbObkLqp0ZsFC5KvV8fpTak9clrjGhW+Bj7+sTL6SlE+uer3Ksu3PSpof2iSWltWt1RufIGrTJZ6tE32j3LDfASGI8ahMLhXP1XdOHAyZyvMJFrzmRvNwI5rl6xrZDyq3V5xNlegyQIldoKHK1/BZMR+qc2WVipihTYbmvES5BpEMGV23gIuVVkpNqDtlqy39IzgicVP1ZC5/XC46kwgDE84l6+C9gOTvb7Nj0zao9FrEycfkmJn6deReVO4gkSsPfjb76iT35P9f5uHThe/jwdY8g+53LvE4OOypeurt2ANw==~-1~-1~-1,37557,-1,-1,30261693,PiZtE,54115,74,0,true-1,2,-94,-106,0,0-1,2,-94,-119,-1-1,2,-94,-122,0,0,1,0,1,0,0-1,2,-94,-123,-1,2,-94,-124,-1,2,-94,-126,-1,2,-94,-127,8-1,2,-94,-70,-1-1,2,-94,-80,94-1,2,-94,-116,33650160-1,2,-94,-118,95769-1,2,-94,-129,-1,2,-94,-121,;8;-1;0\");",
+                                            "pm.variables.set(\"viewport_width\", \"1200\");"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "id": "835806dc-c119-46e0-bb5e-b0ae890aa0fd",
+                                "exec": [],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "protocolProfileBehavior": {}
+                },
+                {
+                    "id": "189ff93c-d75a-48bb-9fe0-7ddad64ae1e1",
+                    "name": "test_05_get_api_v2_autosuggestions",
+                    "item": [
+                        {
+                            "id": "9dedecf9-f756-4cad-9be2-e1b260be4e9b",
+                            "name": "www_airbnb_com_br/api/v2/autosuggestions",
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Device-Memory",
+                                        "value": "{{device_memory}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Dpr",
+                                        "value": "2",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Ect",
+                                        "value": "{{ect}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Viewport-Width",
+                                        "value": "{{viewport_width}}",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{www_airbnb_com_br}}/api/v2/autosuggestions",
+                                    "protocol": "",
+                                    "host": "{{www_airbnb_com_br}}",
+                                    "path": [
+                                        "api",
+                                        "v2",
+                                        "autosuggestions"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "currency",
+                                            "value": "{{currency}}"
+                                        },
+                                        {
+                                            "key": "key",
+                                            "value": "{{key}}"
+                                        },
+                                        {
+                                            "key": "locale",
+                                            "value": "pt"
+                                        },
+                                        {
+                                            "key": "options",
+                                            "value": "{{options}}"
+                                        },
+                                        {
+                                            "key": "refinement_paths[]",
+                                            "value": "/homes"
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "b40c8b6f-f77f-4995-883b-035625182695",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.test(\"GET https://www.airbnb.com.br/api/v2/autosuggestions (endp 5)\", function() {",
+                                            "    eval(globals.up9lib);",
+                                            "    const jsonBody = pm.response.json();",
+                                            "    pm.response.to.have.status(200);",
+                                            "    pm.expect(JSONPath.JSONPath({",
+                                            "        path: \"$.experiment_data.control_metadata.name\",",
+                                            "        json: jsonBody",
+                                            "    })).to.include(\"control\");",
+                                            "});"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                },
+                                {
+                                    "listen": "prerequest",
+                                    "script": {
+                                        "id": "d927658c-0476-469e-92f9-70952d785cc7",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.variables.set(\"currency\", \"BRL\");",
+                                            "pm.variables.set(\"device_memory\", \"8\");",
+                                            "pm.variables.set(\"ect\", \"4g\");",
+                                            "pm.variables.set(\"key\", \"d306zoyjsyarp7ifhu67rjxn52tv0t20\");",
+                                            "pm.variables.set(\"options\", \"simple_search|flex_destinations_june_2021_launch_web_treatment\");",
+                                            "pm.variables.set(\"viewport_width\", \"1200\");"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "id": "8c572054-213e-42cc-b15e-1729df62a577",
+                                "exec": [],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "protocolProfileBehavior": {}
+                },
+                {
+                    "id": "7c2bbb0e-8706-4d9d-a162-c8e03070450a",
+                    "name": "test_06_post_api_v2_client_configs",
+                    "item": [
+                        {
+                            "id": "b74f46f8-668d-4cdc-930a-bc047d83591b",
+                            "name": "www_airbnb_com_br/api/v2/client_configs",
+                            "request": {
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Device-Memory",
+                                        "value": "{{device_memory}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Dpr",
+                                        "value": "2",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Ect",
+                                        "value": "{{ect}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Viewport-Width",
+                                        "value": "{{viewport_width}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Token",
+                                        "value": "{{x_csrf_token}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Without-Token",
+                                        "value": "1",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Requested-With",
+                                        "value": "XMLHttpRequest",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{www_airbnb_com_br}}/api/v2/client_configs",
+                                    "protocol": "",
+                                    "host": "{{www_airbnb_com_br}}",
+                                    "path": [
+                                        "api",
+                                        "v2",
+                                        "client_configs"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "currency",
+                                            "value": "{{currency}}"
+                                        },
+                                        {
+                                            "key": "key",
+                                            "value": "{{key}}"
+                                        },
+                                        {
+                                            "key": "locale",
+                                            "value": "pt"
+                                        }
+                                    ]
+                                },
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"configs\": [\n        \"user\"\n    ],\n    \"trebuchetKeys\": [],\n    \"userAttributes\": [\n        \"{{userAttributes}}\"\n    ]\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "fd97641b-d640-442f-9718-50976a6eb6be",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.test(\"POST https://www.airbnb.com.br/api/v2/client_configs (endp 6)\", function() {",
+                                            "    pm.response.to.have.status(200);",
+                                            "});"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                },
+                                {
+                                    "listen": "prerequest",
+                                    "script": {
+                                        "id": "3ce6cecb-a1c2-4b6d-bb82-df00ff1414dc",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.variables.set(\"currency\", \"BRL\");",
+                                            "pm.variables.set(\"device_memory\", \"8\");",
+                                            "pm.variables.set(\"ect\", \"4g\");",
+                                            "pm.variables.set(\"key\", \"d306zoyjsyarp7ifhu67rjxn52tv0t20\");",
+                                            "pm.variables.set(\"userAttributes\", \"native_currency\");",
+                                            "pm.variables.set(\"viewport_width\", \"1200\");",
+                                            "pm.variables.set(\"x_csrf_token\", \"V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo=\");"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "id": "73d2c259-06e8-46f9-b30b-2de0732bddeb",
+                                "exec": [],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "protocolProfileBehavior": {}
+                },
+                {
+                    "id": "c43f55c9-c3f6-4128-807f-a076eed14eba",
+                    "name": "test_07_get_api_v2_host_referral_eligibilities",
+                    "item": [
+                        {
+                            "id": "9d3489bb-71be-49fa-9ebd-bbe58d35b4f7",
+                            "name": "www_airbnb_com_br/api/v2/host_referral_eligibilities",
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Device-Memory",
+                                        "value": "{{device_memory}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Dpr",
+                                        "value": "2",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Ect",
+                                        "value": "{{ect}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Viewport-Width",
+                                        "value": "{{viewport_width}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Token",
+                                        "value": "{{x_csrf_token}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Without-Token",
+                                        "value": "1",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Requested-With",
+                                        "value": "XMLHttpRequest",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{www_airbnb_com_br}}/api/v2/host_referral_eligibilities",
+                                    "protocol": "",
+                                    "host": "{{www_airbnb_com_br}}",
+                                    "path": [
+                                        "api",
+                                        "v2",
+                                        "host_referral_eligibilities"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "currency",
+                                            "value": "{{currency}}"
+                                        },
+                                        {
+                                            "key": "key",
+                                            "value": "{{key}}"
+                                        },
+                                        {
+                                            "key": "locale",
+                                            "value": "pt"
+                                        },
+                                        {
+                                            "key": "touch_point",
+                                            "value": "{{touch_point}}"
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "77d0bb92-0c23-497b-9c84-165f27df1d4a",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.test(\"GET https://www.airbnb.com.br/api/v2/host_referral_eligibilities (endp 7)\", function() {",
+                                            "    pm.response.to.have.status(200);",
+                                            "});"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                },
+                                {
+                                    "listen": "prerequest",
+                                    "script": {
+                                        "id": "466c648c-6497-45b4-80e3-f677121c90d7",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.variables.set(\"currency\", \"BRL\");",
+                                            "pm.variables.set(\"device_memory\", \"8\");",
+                                            "pm.variables.set(\"ect\", \"4g\");",
+                                            "pm.variables.set(\"key\", \"d306zoyjsyarp7ifhu67rjxn52tv0t20\");",
+                                            "pm.variables.set(\"touch_point\", \"FOOTER_LINK\");",
+                                            "pm.variables.set(\"viewport_width\", \"1200\");",
+                                            "pm.variables.set(\"x_csrf_token\", \"V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo=\");"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "id": "213c8f20-ad45-4bc0-848d-f1910e2fb112",
+                                "exec": [],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "protocolProfileBehavior": {}
+                },
+                {
+                    "id": "40758c3f-2cc6-4142-ad4e-2ebd628cfe6a",
+                    "name": "test_08_post_api_v2_paid_growth_tracking_datas",
+                    "item": [
+                        {
+                            "id": "eca0a435-7d60-46d4-b9a3-8fc739be0b81",
+                            "name": "www_airbnb_com_br/api/v2/paid_growth_tracking_datas",
+                            "request": {
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Device-Memory",
+                                        "value": "{{device_memory}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Dpr",
+                                        "value": "2",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Ect",
+                                        "value": "{{ect}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Viewport-Width",
+                                        "value": "{{viewport_width}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Token",
+                                        "value": "{{x_csrf_token}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Without-Token",
+                                        "value": "1",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Requested-With",
+                                        "value": "XMLHttpRequest",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{www_airbnb_com_br}}/api/v2/paid_growth_tracking_datas",
+                                    "protocol": "",
+                                    "host": "{{www_airbnb_com_br}}",
+                                    "path": [
+                                        "api",
+                                        "v2",
+                                        "paid_growth_tracking_datas"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "_format",
+                                            "value": "{{_format}}"
+                                        },
+                                        {
+                                            "key": "currency",
+                                            "value": "{{currency}}"
+                                        },
+                                        {
+                                            "key": "key",
+                                            "value": "{{key}}"
+                                        },
+                                        {
+                                            "key": "locale",
+                                            "value": "pt"
+                                        }
+                                    ]
+                                },
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"listing_id\": \"{{listing_id}}\",\n    \"num_adults\": 1,\n    \"num_children\": 0,\n    \"num_infants\": 0\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "f5f605d3-79e2-4a30-8363-fe1a48e8b214",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.test(\"POST https://www.airbnb.com.br/api/v2/paid_growth_tracking_datas (endp 8)\", function() {",
+                                            "    eval(globals.up9lib);",
+                                            "    const jsonBody = pm.response.json();",
+                                            "    pm.response.to.have.status(200);",
+                                            "    pm.expect(JSONPath.JSONPath({",
+                                            "        path: \"$.paid_growth_tracking_data.city\",",
+                                            "        json: jsonBody",
+                                            "    })).to.include(\"Baependi\");",
+                                            "});"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                },
+                                {
+                                    "listen": "prerequest",
+                                    "script": {
+                                        "id": "428bbfd1-05a9-4fed-86b8-22701a652e65",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.variables.set(\"_format\", \"for_p3\");",
+                                            "pm.variables.set(\"currency\", \"BRL\");",
+                                            "pm.variables.set(\"device_memory\", \"8\");",
+                                            "pm.variables.set(\"ect\", \"4g\");",
+                                            "pm.variables.set(\"key\", \"d306zoyjsyarp7ifhu67rjxn52tv0t20\");",
+                                            "pm.variables.set(\"listing_id\", \"51152588\");",
+                                            "pm.variables.set(\"viewport_width\", \"1200\");",
+                                            "pm.variables.set(\"x_csrf_token\", \"V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo=\");"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "id": "ab4044b3-b27d-4bdd-a713-cb8617370c03",
+                                "exec": [],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "protocolProfileBehavior": {}
+                },
+                {
+                    "id": "3f8ec861-18db-4e8d-89b4-cc56409dbdbb",
+                    "name": "test_09_get_api_v2_paid_growth_tracking_datas",
+                    "item": [
+                        {
+                            "id": "7b8ad1a5-d0f3-4d9c-a935-40275e6c2993",
+                            "name": "www_airbnb_com_br/api/v2/paid_growth_tracking_datas",
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Device-Memory",
+                                        "value": "{{device_memory}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Dpr",
+                                        "value": "2",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Ect",
+                                        "value": "{{ect}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Viewport-Width",
+                                        "value": "{{viewport_width}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Token",
+                                        "value": "{{x_csrf_token}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Without-Token",
+                                        "value": "1",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Requested-With",
+                                        "value": "XMLHttpRequest",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{www_airbnb_com_br}}/api/v2/paid_growth_tracking_datas",
+                                    "protocol": "",
+                                    "host": "{{www_airbnb_com_br}}",
+                                    "path": [
+                                        "api",
+                                        "v2",
+                                        "paid_growth_tracking_datas"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "currency",
+                                            "value": "{{currency}}"
+                                        },
+                                        {
+                                            "key": "key",
+                                            "value": "{{key}}"
+                                        },
+                                        {
+                                            "key": "locale",
+                                            "value": "pt"
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "633d2587-4980-4f7a-8c5b-cc05d7f05c0e",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.test(\"GET https://www.airbnb.com.br/api/v2/paid_growth_tracking_datas (endp 9)\", function() {",
+                                            "    eval(globals.up9lib);",
+                                            "    const jsonBody = pm.response.json();",
+                                            "    pm.response.to.have.status(200);",
+                                            "    pm.expect(JSONPath.JSONPath({",
+                                            "        path: \"$.paid_growth_tracking_data[*].audience_type\",",
+                                            "        json: jsonBody",
+                                            "    })).to.include(\"visitor\");",
+                                            "});"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                },
+                                {
+                                    "listen": "prerequest",
+                                    "script": {
+                                        "id": "dc173b1b-a875-4b46-971c-42b77b920b3e",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.variables.set(\"currency\", \"BRL\");",
+                                            "pm.variables.set(\"device_memory\", \"8\");",
+                                            "pm.variables.set(\"ect\", \"4g\");",
+                                            "pm.variables.set(\"key\", \"d306zoyjsyarp7ifhu67rjxn52tv0t20\");",
+                                            "pm.variables.set(\"viewport_width\", \"1200\");",
+                                            "pm.variables.set(\"x_csrf_token\", \"V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo=\");"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "id": "b6bc9828-40e7-4fa5-999e-33e3a7b3c3e9",
+                                "exec": [],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "protocolProfileBehavior": {}
+                },
+                {
+                    "id": "add4fdda-51bd-4624-a509-588fa199a4e5",
+                    "name": "test_10_get_api_v2_user_markets",
+                    "item": [
+                        {
+                            "id": "81b31e7f-21b6-46e5-80d3-df6cdd65ed07",
+                            "name": "www_airbnb_com_br/api/v2/user_markets",
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Device-Memory",
+                                        "value": "{{device_memory}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Dpr",
+                                        "value": "2",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Ect",
+                                        "value": "{{ect}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Viewport-Width",
+                                        "value": "{{viewport_width}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Token",
+                                        "value": "{{x_csrf_token}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Without-Token",
+                                        "value": "1",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Requested-With",
+                                        "value": "XMLHttpRequest",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{www_airbnb_com_br}}/api/v2/user_markets",
+                                    "protocol": "",
+                                    "host": "{{www_airbnb_com_br}}",
+                                    "path": [
+                                        "api",
+                                        "v2",
+                                        "user_markets"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "currency",
+                                            "value": "{{currency}}"
+                                        },
+                                        {
+                                            "key": "key",
+                                            "value": "{{key}}"
+                                        },
+                                        {
+                                            "key": "language",
+                                            "value": "pt"
+                                        },
+                                        {
+                                            "key": "locale",
+                                            "value": "pt"
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "0e6b4dda-8c09-4d6c-8770-b5a49554c247",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.test(\"GET https://www.airbnb.com.br/api/v2/user_markets (endp 10)\", function() {",
+                                            "    eval(globals.up9lib);",
+                                            "    const jsonBody = pm.response.json();",
+                                            "    pm.response.to.have.status(200);",
+                                            "    pm.expect(JSONPath.JSONPath({",
+                                            "        path: \"$.user_markets[*].locale\",",
+                                            "        json: jsonBody",
+                                            "    })).to.include(\"pt\");",
+                                            "});"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                },
+                                {
+                                    "listen": "prerequest",
+                                    "script": {
+                                        "id": "c86dbb11-c6e8-41e7-aa9a-592dbe83d769",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.variables.set(\"currency\", \"BRL\");",
+                                            "pm.variables.set(\"device_memory\", \"8\");",
+                                            "pm.variables.set(\"ect\", \"4g\");",
+                                            "pm.variables.set(\"key\", \"d306zoyjsyarp7ifhu67rjxn52tv0t20\");",
+                                            "pm.variables.set(\"viewport_width\", \"1200\");",
+                                            "pm.variables.set(\"x_csrf_token\", \"V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo=\");"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "id": "12a1707f-11d0-4081-a904-e25e3ed2a9bc",
+                                "exec": [],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "protocolProfileBehavior": {}
+                },
+                {
+                    "id": "30213295-c9e5-4dfd-b679-a4ce3169556e",
+                    "name": "test_11_get_api_v3_Header",
+                    "item": [
+                        {
+                            "id": "b9e0a40b-c259-402f-83c8-1bd3b95ea572",
+                            "name": "www_airbnb_com_br/api/v3/Header",
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Device-Memory",
+                                        "value": "{{device_memory}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Dpr",
+                                        "value": "2",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Ect",
+                                        "value": "{{ect}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Viewport-Width",
+                                        "value": "{{viewport_width}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Api-Key",
+                                        "value": "{{x_airbnb_api_key}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Graphql-Platform",
+                                        "value": "web",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Graphql-Platform-Client",
+                                        "value": "minimalist-niobe",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Supports-Airlock-V2",
+                                        "value": "true",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Token",
+                                        "value": "{{x_csrf_token}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Without-Token",
+                                        "value": "1",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Niobe-Short-Circuited",
+                                        "value": "true",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{www_airbnb_com_br}}/api/v3/Header",
+                                    "protocol": "",
+                                    "host": "{{www_airbnb_com_br}}",
+                                    "path": [
+                                        "api",
+                                        "v3",
+                                        "Header"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "_cb",
+                                            "value": "{{_cb}}"
+                                        },
+                                        {
+                                            "key": "currency",
+                                            "value": "{{currency}}"
+                                        },
+                                        {
+                                            "key": "extensions",
+                                            "value": "{{extensions}}"
+                                        },
+                                        {
+                                            "key": "locale",
+                                            "value": "pt"
+                                        },
+                                        {
+                                            "key": "operationName",
+                                            "value": "Header"
+                                        },
+                                        {
+                                            "key": "variables",
+                                            "value": "{{variables}}"
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "70eb5a55-5870-4b13-8389-6730d6863751",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.test(\"GET https://www.airbnb.com.br/api/v3/Header (endp 11)\", function() {",
+                                            "    eval(globals.up9lib);",
+                                            "    const jsonBody = pm.response.json();",
+                                            "    pm.response.to.have.status(200);",
+                                            "    pm.expect(JSONPath.JSONPath({",
+                                            "        path: \"$.data.presentation.header.menuItemGroups[*].__typename\",",
+                                            "        json: jsonBody",
+                                            "    })).to.include(\"HeaderItemGroup\");",
+                                            "});"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                },
+                                {
+                                    "listen": "prerequest",
+                                    "script": {
+                                        "id": "fda7d19e-b236-4a01-96af-3eadd7a0dbdd",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.variables.set(\"_cb\", \"0rjulnu0gtvsm106pfpbw0mkgc5k\");",
+                                            "pm.variables.set(\"currency\", \"BRL\");",
+                                            "pm.variables.set(\"device_memory\", \"8\");",
+                                            "pm.variables.set(\"ect\", \"4g\");",
+                                            "pm.variables.set(\"extensions\", \"{\\\"persistedQuery\\\":{\\\"version\\\":1,\\\"sha256Hash\\\":\\\"b77500d382ece93907d870e42773e95234c3b410994006834ae7580ed4966da6\\\"}}\");",
+                                            "pm.variables.set(\"variables\", \"{\\\"cdnCacheSafe\\\":false,\\\"hasLoggedIn\\\":false,\\\"isInitialLoad\\\":true,\\\"source\\\":\\\"EXPLORE\\\"}\");",
+                                            "pm.variables.set(\"viewport_width\", \"1200\");",
+                                            "pm.variables.set(\"x_airbnb_api_key\", \"d306zoyjsyarp7ifhu67rjxn52tv0t20\");",
+                                            "pm.variables.set(\"x_csrf_token\", \"V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo=\");"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "id": "db2ce56c-d925-4c32-b172-0e8091854a1b",
+                                "exec": [],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "protocolProfileBehavior": {}
+                },
+                {
+                    "id": "6424c564-355b-4110-bfbb-de2746551d43",
+                    "name": "test_12_get_api_v3_PdpAvailabilityCalendar",
+                    "item": [
+                        {
+                            "id": "8a0e7da8-3a98-4302-8e65-740b6c816698",
+                            "name": "www_airbnb_com_br/api/v3/PdpAvailabilityCalendar",
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Device-Memory",
+                                        "value": "{{device_memory}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Dpr",
+                                        "value": "2",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Ect",
+                                        "value": "{{ect}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Viewport-Width",
+                                        "value": "{{viewport_width}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Api-Key",
+                                        "value": "{{x_airbnb_api_key}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Graphql-Platform",
+                                        "value": "web",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Graphql-Platform-Client",
+                                        "value": "minimalist-niobe",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Supports-Airlock-V2",
+                                        "value": "true",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Token",
+                                        "value": "{{x_csrf_token}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Without-Token",
+                                        "value": "1",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Niobe-Short-Circuited",
+                                        "value": "true",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{www_airbnb_com_br}}/api/v3/PdpAvailabilityCalendar",
+                                    "protocol": "",
+                                    "host": "{{www_airbnb_com_br}}",
+                                    "path": [
+                                        "api",
+                                        "v3",
+                                        "PdpAvailabilityCalendar"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "_cb",
+                                            "value": "{{_cb}}"
+                                        },
+                                        {
+                                            "key": "currency",
+                                            "value": "{{currency}}"
+                                        },
+                                        {
+                                            "key": "extensions",
+                                            "value": "{{extensions}}"
+                                        },
+                                        {
+                                            "key": "locale",
+                                            "value": "pt"
+                                        },
+                                        {
+                                            "key": "operationName",
+                                            "value": "PdpAvailabilityCalendar"
+                                        },
+                                        {
+                                            "key": "variables",
+                                            "value": "{{variables}}"
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "345f6922-0e22-4dd9-9e66-b61aed266b13",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.test(\"GET https://www.airbnb.com.br/api/v3/PdpAvailabilityCalendar (endp 12)\", function() {",
+                                            "    eval(globals.up9lib);",
+                                            "    const jsonBody = pm.response.json();",
+                                            "    pm.response.to.have.status(200);",
+                                            "    pm.expect(JSONPath.JSONPath({",
+                                            "        path: \"$.data.merlin.pdpAvailabilityCalendar.calendarMonths[*].__typename\",",
+                                            "        json: jsonBody",
+                                            "    })).to.include(\"MerlinCalendarMonth\");",
+                                            "});"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                },
+                                {
+                                    "listen": "prerequest",
+                                    "script": {
+                                        "id": "a01166ef-4cf6-456e-9e78-4529504fb78e",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.variables.set(\"_cb\", \"0yn81ce1snp0pq04z33uj1g81sek\");",
+                                            "pm.variables.set(\"currency\", \"BRL\");",
+                                            "pm.variables.set(\"device_memory\", \"8\");",
+                                            "pm.variables.set(\"ect\", \"4g\");",
+                                            "pm.variables.set(\"extensions\", \"{\\\"persistedQuery\\\":{\\\"version\\\":1,\\\"sha256Hash\\\":\\\"8f08e03c7bd16fcad3c92a3592c19a8b559a0d0855a84028d1163d4733ed9ade\\\"}}\");",
+                                            "pm.variables.set(\"variables\", \"{\\\"request\\\":{\\\"count\\\":12,\\\"listingId\\\":\\\"51152588\\\",\\\"month\\\":11,\\\"year\\\":2021}}\");",
+                                            "pm.variables.set(\"viewport_width\", \"1200\");",
+                                            "pm.variables.set(\"x_airbnb_api_key\", \"d306zoyjsyarp7ifhu67rjxn52tv0t20\");",
+                                            "pm.variables.set(\"x_csrf_token\", \"V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo=\");"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "id": "666d12c8-4e68-43f3-a168-90112a0396ca",
+                                "exec": [],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "protocolProfileBehavior": {}
+                },
+                {
+                    "id": "d8ecf1a2-3a7d-4e20-a0d6-96e15da1c3cf",
+                    "name": "test_13_get_api_v3_PdpPhotoTour",
+                    "item": [
+                        {
+                            "id": "089a3c2e-e2bd-4444-a99b-bf6d879d2f0f",
+                            "name": "www_airbnb_com_br/api/v3/PdpPhotoTour",
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Device-Memory",
+                                        "value": "{{device_memory}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Dpr",
+                                        "value": "2",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Ect",
+                                        "value": "{{ect}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Viewport-Width",
+                                        "value": "{{viewport_width}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Api-Key",
+                                        "value": "{{x_airbnb_api_key}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Graphql-Platform",
+                                        "value": "web",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Graphql-Platform-Client",
+                                        "value": "minimalist-niobe",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Supports-Airlock-V2",
+                                        "value": "true",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Token",
+                                        "value": "{{x_csrf_token}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Without-Token",
+                                        "value": "1",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Niobe-Short-Circuited",
+                                        "value": "true",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{www_airbnb_com_br}}/api/v3/PdpPhotoTour",
+                                    "protocol": "",
+                                    "host": "{{www_airbnb_com_br}}",
+                                    "path": [
+                                        "api",
+                                        "v3",
+                                        "PdpPhotoTour"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "_cb",
+                                            "value": "{{_cb}}"
+                                        },
+                                        {
+                                            "key": "currency",
+                                            "value": "{{currency}}"
+                                        },
+                                        {
+                                            "key": "extensions",
+                                            "value": "{{extensions}}"
+                                        },
+                                        {
+                                            "key": "locale",
+                                            "value": "pt"
+                                        },
+                                        {
+                                            "key": "operationName",
+                                            "value": "PdpPhotoTour"
+                                        },
+                                        {
+                                            "key": "variables",
+                                            "value": "{{variables}}"
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "536fb23a-4cb0-4e0b-b6c7-7d38deb2a003",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.test(\"GET https://www.airbnb.com.br/api/v3/PdpPhotoTour (endp 13)\", function() {",
+                                            "    eval(globals.up9lib);",
+                                            "    const jsonBody = pm.response.json();",
+                                            "    pm.response.to.have.status(200);",
+                                            "    pm.expect(JSONPath.JSONPath({",
+                                            "        path: \"$.data.merlin.pdpPhotoTour.saveButton.loggingEventData.section\",",
+                                            "        json: jsonBody",
+                                            "    })).to.include(\"photoTour\");",
+                                            "});"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                },
+                                {
+                                    "listen": "prerequest",
+                                    "script": {
+                                        "id": "63498852-592d-4112-8151-c9d4a02daf71",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.variables.set(\"_cb\", \"18b66r11fzwj3s1989pug0vfwafg\");",
+                                            "pm.variables.set(\"currency\", \"BRL\");",
+                                            "pm.variables.set(\"device_memory\", \"8\");",
+                                            "pm.variables.set(\"ect\", \"4g\");",
+                                            "pm.variables.set(\"extensions\", \"{\\\"persistedQuery\\\":{\\\"version\\\":1,\\\"sha256Hash\\\":\\\"94d027919ccf37294583ec8316e83c01989f8e2f1e779271b51de3159244d3f2\\\"}}\");",
+                                            "pm.variables.set(\"variables\", \"{\\\"request\\\":{\\\"id\\\":\\\"51152588\\\",\\\"translateUgc\\\":null}}\");",
+                                            "pm.variables.set(\"viewport_width\", \"1200\");",
+                                            "pm.variables.set(\"x_airbnb_api_key\", \"d306zoyjsyarp7ifhu67rjxn52tv0t20\");",
+                                            "pm.variables.set(\"x_csrf_token\", \"V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo=\");"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "id": "a69522d6-6ba2-4c9c-90ba-e7730c54e899",
+                                "exec": [],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "protocolProfileBehavior": {}
+                },
+                {
+                    "id": "b725f8eb-0959-4639-b5aa-d639108b3a4e",
+                    "name": "test_14_get_api_v3_PdpReviews",
+                    "item": [
+                        {
+                            "id": "40b99522-7e5c-4e89-b457-4c1280be0fd5",
+                            "name": "www_airbnb_com_br/api/v3/PdpReviews",
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Device-Memory",
+                                        "value": "{{device_memory}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Dpr",
+                                        "value": "2",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Ect",
+                                        "value": "{{ect}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Viewport-Width",
+                                        "value": "{{viewport_width}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Api-Key",
+                                        "value": "{{x_airbnb_api_key}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Graphql-Platform",
+                                        "value": "web",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Graphql-Platform-Client",
+                                        "value": "minimalist-niobe",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Supports-Airlock-V2",
+                                        "value": "true",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Token",
+                                        "value": "{{x_csrf_token}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Without-Token",
+                                        "value": "1",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Niobe-Short-Circuited",
+                                        "value": "true",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{www_airbnb_com_br}}/api/v3/PdpReviews",
+                                    "protocol": "",
+                                    "host": "{{www_airbnb_com_br}}",
+                                    "path": [
+                                        "api",
+                                        "v3",
+                                        "PdpReviews"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "_cb",
+                                            "value": "{{_cb}}"
+                                        },
+                                        {
+                                            "key": "currency",
+                                            "value": "{{currency}}"
+                                        },
+                                        {
+                                            "key": "extensions",
+                                            "value": "{{extensions}}"
+                                        },
+                                        {
+                                            "key": "locale",
+                                            "value": "pt"
+                                        },
+                                        {
+                                            "key": "operationName",
+                                            "value": "{{operationName}}"
+                                        },
+                                        {
+                                            "key": "variables",
+                                            "value": "{{variables}}"
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "2c867816-c7f7-40f6-a6df-ad9bf431e2d5",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.test(\"GET https://www.airbnb.com.br/api/v3/PdpReviews (endp 14)\", function() {",
+                                            "    eval(globals.up9lib);",
+                                            "    const jsonBody = pm.response.json();",
+                                            "    pm.response.to.have.status(200);",
+                                            "    pm.expect(JSONPath.JSONPath({",
+                                            "        path: \"$.data.merlin.__typename\",",
+                                            "        json: jsonBody",
+                                            "    })).to.include(\"MerlinQuery\");",
+                                            "});"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                },
+                                {
+                                    "listen": "prerequest",
+                                    "script": {
+                                        "id": "e3de9821-e6c9-4cec-ade2-7d0aeceded68",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.variables.set(\"_cb\", \"0ali3731oqvtbx1o0ub471esimb0\");",
+                                            "pm.variables.set(\"currency\", \"BRL\");",
+                                            "pm.variables.set(\"device_memory\", \"8\");",
+                                            "pm.variables.set(\"ect\", \"4g\");",
+                                            "pm.variables.set(\"extensions\", \"{\\\"persistedQuery\\\":{\\\"version\\\":1,\\\"sha256Hash\\\":\\\"ecf7222b1ad7e13da1bf39cf3cf05daa6bbc88709f06ea9cf669deca7e2e2de2\\\"}}\");",
+                                            "pm.variables.set(\"operationName\", \"PdpReviews\");",
+                                            "pm.variables.set(\"variables\", \"{\\\"request\\\":{\\\"fieldSelector\\\":\\\"for_p3\\\",\\\"limit\\\":7,\\\"listingId\\\":\\\"51152588\\\",\\\"numberOfAdults\\\":\\\"1\\\",\\\"numberOfChildren\\\":\\\"0\\\",\\\"numberOfInfants\\\":\\\"0\\\"}}\");",
+                                            "pm.variables.set(\"viewport_width\", \"1200\");",
+                                            "pm.variables.set(\"x_airbnb_api_key\", \"d306zoyjsyarp7ifhu67rjxn52tv0t20\");",
+                                            "pm.variables.set(\"x_csrf_token\", \"V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo=\");"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "id": "400cc4cb-efc5-46d7-8366-77dce0b04b5b",
+                                "exec": [],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "protocolProfileBehavior": {}
+                },
+                {
+                    "id": "474bf404-cdb7-41a6-ab76-0d7cf1dd8e49",
+                    "name": "test_15_get_api_v3_SearchBlocksQuery",
+                    "item": [
+                        {
+                            "id": "5d31e9db-0fd2-47cb-bb57-d7dc53c89373",
+                            "name": "www_airbnb_com_br/api/v3/SearchBlocksQuery",
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Device-Memory",
+                                        "value": "{{device_memory}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Dpr",
+                                        "value": "2",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Ect",
+                                        "value": "{{ect}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Viewport-Width",
+                                        "value": "{{viewport_width}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Api-Key",
+                                        "value": "{{x_airbnb_api_key}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Graphql-Platform",
+                                        "value": "web",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Graphql-Platform-Client",
+                                        "value": "minimalist-niobe",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Supports-Airlock-V2",
+                                        "value": "true",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Token",
+                                        "value": "{{x_csrf_token}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Without-Token",
+                                        "value": "1",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Niobe-Short-Circuited",
+                                        "value": "true",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{www_airbnb_com_br}}/api/v3/SearchBlocksQuery",
+                                    "protocol": "",
+                                    "host": "{{www_airbnb_com_br}}",
+                                    "path": [
+                                        "api",
+                                        "v3",
+                                        "SearchBlocksQuery"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "_cb",
+                                            "value": "{{_cb}}"
+                                        },
+                                        {
+                                            "key": "currency",
+                                            "value": "{{currency}}"
+                                        },
+                                        {
+                                            "key": "extensions",
+                                            "value": "{{extensions}}"
+                                        },
+                                        {
+                                            "key": "locale",
+                                            "value": "pt"
+                                        },
+                                        {
+                                            "key": "operationName",
+                                            "value": "SearchBlocksQuery"
+                                        },
+                                        {
+                                            "key": "variables",
+                                            "value": "{{variables}}"
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "e43d2ad7-913c-4163-8ada-6415f712ecc9",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.test(\"GET https://www.airbnb.com.br/api/v3/SearchBlocksQuery (endp 15)\", function() {",
+                                            "    eval(globals.up9lib);",
+                                            "    const jsonBody = pm.response.json();",
+                                            "    pm.response.to.have.status(200);",
+                                            "    pm.expect(JSONPath.JSONPath({",
+                                            "        path: \"$.data.dora.__typename\",",
+                                            "        json: jsonBody",
+                                            "    })).to.include(\"DoraQuery\");",
+                                            "});"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                },
+                                {
+                                    "listen": "prerequest",
+                                    "script": {
+                                        "id": "2b5b8dac-ecd2-4d1f-b54d-0fab457969b5",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.variables.set(\"_cb\", \"18w2tps02qzxfv0kcnnhf02ns54e\");",
+                                            "pm.variables.set(\"currency\", \"BRL\");",
+                                            "pm.variables.set(\"device_memory\", \"8\");",
+                                            "pm.variables.set(\"ect\", \"4g\");",
+                                            "pm.variables.set(\"extensions\", \"{\\\"persistedQuery\\\":{\\\"version\\\":1,\\\"sha256Hash\\\":\\\"9275d8e26a421ffd2fb34d773c565a9bfd1239586e1491a628aace89f3f5d3f7\\\"}}\");",
+                                            "pm.variables.set(\"variables\", \"{\\\"request\\\":{\\\"refinementPaths\\\":[\\\"/homes\\\"],\\\"screenSize\\\":\\\"large\\\",\\\"treatmentFlags\\\":[\\\"flex_destinations_june_2021_launch_web_treatment\\\",\\\"merch_header_breakpoint_expansion_web\\\",\\\"storefronts_november_2021_homepage_desktop_web_treatment\\\",\\\"storefronts_november_2021_homepage_moweb_treatment\\\",\\\"flexible_dates_options_extend_one_three_seven_days\\\",\\\"super_date_flexibility\\\",\\\"search_input_placeholder_phrases\\\"],\\\"version\\\":\\\"1.8.3\\\",\\\"channel\\\":\\\"SEARCH_HEADER_PDP\\\"}}\");",
+                                            "pm.variables.set(\"viewport_width\", \"1200\");",
+                                            "pm.variables.set(\"x_airbnb_api_key\", \"d306zoyjsyarp7ifhu67rjxn52tv0t20\");",
+                                            "pm.variables.set(\"x_csrf_token\", \"V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo=\");"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "id": "bb8cc528-587a-4074-8d97-9b116b0db53d",
+                                "exec": [],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "protocolProfileBehavior": {}
+                },
+                {
+                    "id": "d3182ada-71bd-4a43-9a74-863cb6fea6eb",
+                    "name": "test_16_get_api_v3_StaysPdpSections",
+                    "item": [
+                        {
+                            "id": "c9c7205c-b0f1-4154-8145-fdb747c32fe9",
+                            "name": "www_airbnb_com_br/api/v3/StaysPdpSections",
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Device-Memory",
+                                        "value": "{{device_memory}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Dpr",
+                                        "value": "2",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Ect",
+                                        "value": "{{ect}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Viewport-Width",
+                                        "value": "{{viewport_width}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Api-Key",
+                                        "value": "{{x_airbnb_api_key}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Graphql-Platform",
+                                        "value": "web",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Graphql-Platform-Client",
+                                        "value": "minimalist-niobe",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Airbnb-Supports-Airlock-V2",
+                                        "value": "true",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Token",
+                                        "value": "{{x_csrf_token}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Csrf-Without-Token",
+                                        "value": "1",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "X-Niobe-Short-Circuited",
+                                        "value": "true",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{www_airbnb_com_br}}/api/v3/StaysPdpSections",
+                                    "protocol": "",
+                                    "host": "{{www_airbnb_com_br}}",
+                                    "path": [
+                                        "api",
+                                        "v3",
+                                        "StaysPdpSections"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "_cb",
+                                            "value": "{{_cb}}"
+                                        },
+                                        {
+                                            "key": "currency",
+                                            "value": "{{currency}}"
+                                        },
+                                        {
+                                            "key": "extensions",
+                                            "value": "{{extensions}}"
+                                        },
+                                        {
+                                            "key": "locale",
+                                            "value": "pt"
+                                        },
+                                        {
+                                            "key": "operationName",
+                                            "value": "StaysPdpSections"
+                                        },
+                                        {
+                                            "key": "variables",
+                                            "value": "{{variables}}"
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "e726b0b9-99bd-4e6f-8d26-c6baedbcd262",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.test(\"GET https://www.airbnb.com.br/api/v3/StaysPdpSections (endp 16)\", function() {",
+                                            "    eval(globals.up9lib);",
+                                            "    const jsonBody = pm.response.json();",
+                                            "    pm.response.to.have.status(200);",
+                                            "    pm.expect(JSONPath.JSONPath({",
+                                            "        path: \"$.data.presentation.stayProductDetailPage.sections.metadata.pdpType\",",
+                                            "        json: jsonBody",
+                                            "    })).to.include(\"MARKETPLACE\");",
+                                            "});"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                },
+                                {
+                                    "listen": "prerequest",
+                                    "script": {
+                                        "id": "068b078c-424e-4a3f-b166-18be3fca0a3b",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.variables.set(\"_cb\", \"1idxal10ro8rgx1569ka90z5w1p1\");",
+                                            "pm.variables.set(\"currency\", \"BRL\");",
+                                            "pm.variables.set(\"device_memory\", \"8\");",
+                                            "pm.variables.set(\"ect\", \"4g\");",
+                                            "pm.variables.set(\"extensions\", \"{\\\"persistedQuery\\\":{\\\"version\\\":1,\\\"sha256Hash\\\":\\\"f73a2abcdb3df4886fcc458f029579a3660f0054f098a4c611d0e5312ab0508b\\\"}}\");",
+                                            "pm.variables.set(\"variables\", \"{\\\"id\\\":\\\"U3RheUxpc3Rpbmc6NTExNTI1ODg=\\\",\\\"pdpSectionsRequest\\\":{\\\"adults\\\":\\\"1\\\",\\\"bypassTargetings\\\":false,\\\"categoryTag\\\":null,\\\"causeId\\\":null,\\\"children\\\":null,\\\"disasterId\\\":null,\\\"discountedGuestFeeVersion\\\":null,\\\"displayExtensions\\\":null,\\\"federatedSearchId\\\":null,\\\"forceBoostPriorityMessageType\\\":null,\\\"infants\\\":null,\\\"interactionType\\\":null,\\\"layouts\\\":[\\\"SIDEBAR\\\",\\\"SINGLE_COLUMN\\\"],\\\"pets\\\":0,\\\"pdpTypeOverride\\\":null,\\\"preview\\\":false,\\\"previousStateCheckIn\\\":null,\\\"previousStateCheckOut\\\":null,\\\"priceDropSource\\\":null,\\\"privateBooking\\\":false,\\\"promotionUuid\\\":null,\\\"relaxedAmenityIds\\\":null,\\\"searchId\\\":null,\\\"selectedCancellationPolicyId\\\":null,\\\"selectedRatePlanId\\\":null,\\\"staysBookingMigrationEnabled\\\":false,\\\"translateUgc\\\":null,\\\"useNewSectionWrapperApi\\\":false,\\\"sectionIds\\\":[\\\"BOOK_IT_FLOATING_FOOTER\\\",\\\"EDUCATION_FOOTER_BANNER_MODAL\\\",\\\"BOOK_IT_CALENDAR_SHEET\\\",\\\"CANCELLATION_POLICY_PICKER_MODAL\\\",\\\"POLICIES_DEFAULT\\\",\\\"BOOK_IT_NAV\\\",\\\"BOOK_IT_SIDEBAR\\\",\\\"URGENCY_COMMITMENT_SIDEBAR\\\",\\\"URGENCY_COMMITMENT\\\",\\\"EDUCATION_FOOTER_BANNER\\\"],\\\"checkIn\\\":null,\\\"checkOut\\\":null,\\\"p3ImpressionId\\\":\\\"p3_1636402243_2WscjGdmugLV6Ick\\\"}}\");",
+                                            "pm.variables.set(\"viewport_width\", \"1200\");",
+                                            "pm.variables.set(\"x_airbnb_api_key\", \"d306zoyjsyarp7ifhu67rjxn52tv0t20\");",
+                                            "pm.variables.set(\"x_csrf_token\", \"V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo=\");"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "id": "e23ad3b1-a787-4b60-a39a-92041628a124",
+                                "exec": [],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "protocolProfileBehavior": {}
+                },
+                {
+                    "id": "783d2893-dd53-4d5f-9bb5-c66dbef68351",
+                    "name": "test_17_post_tracking_airdog",
+                    "item": [
+                        {
+                            "id": "297d7b99-5f61-4cd5-8664-c803a964d5e8",
+                            "name": "www_airbnb_com_br/tracking/airdog",
+                            "request": {
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Device-Memory",
+                                        "value": "{{device_memory}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Dpr",
+                                        "value": "2",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Ect",
+                                        "value": "{{ect}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Viewport-Width",
+                                        "value": "{{viewport_width}}",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{www_airbnb_com_br}}/tracking/airdog",
+                                    "protocol": "",
+                                    "host": "{{www_airbnb_com_br}}",
+                                    "path": [
+                                        "tracking",
+                                        "airdog"
+                                    ]
+                                },
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "[\n    {\n        \"dropTestingPrefix\": true,\n        \"metric\": \"{{metric}}\",\n        \"tags\": [\n            \"{{tags}}\"\n        ],\n        \"type\": \"count\",\n        \"value\": 1\n    }\n]",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "f5a206d8-6fca-489a-9708-a7331046c358",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.test(\"POST https://www.airbnb.com.br/tracking/airdog (endp 17)\", function() {",
+                                            "    pm.response.to.have.status(204);",
+                                            "});"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                },
+                                {
+                                    "listen": "prerequest",
+                                    "script": {
+                                        "id": "c92a17af-271e-4bf8-a2d4-a6b36ff22210",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.variables.set(\"device_memory\", \"8\");",
+                                            "pm.variables.set(\"ect\", \"4g\");",
+                                            "pm.variables.set(\"metric\", \"form_factor_switch.impression\");",
+                                            "pm.variables.set(\"tags\", \"loop:core-guest-loop\");",
+                                            "pm.variables.set(\"viewport_width\", \"1200\");"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "id": "60b903db-0e0d-4021-8b77-d433909302c0",
+                                "exec": [],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "protocolProfileBehavior": {}
+                },
+                {
+                    "id": "049e2d01-4dc6-4bf6-8cc1-bbb8c369283e",
+                    "name": "test_18_post_tracking_jitney_logging_messages",
+                    "item": [
+                        {
+                            "id": "026b7b0c-cbb1-471a-8c1b-fb3e6fd426bf",
+                            "name": "www_airbnb_com_br/tracking/jitney/logging/messages",
+                            "request": {
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Device-Memory",
+                                        "value": "{{device_memory}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Dpr",
+                                        "value": "2",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Ect",
+                                        "value": "{{ect}}",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "key": "Viewport-Width",
+                                        "value": "{{viewport_width}}",
+                                        "type": "text"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{www_airbnb_com_br}}/tracking/jitney/logging/messages",
+                                    "protocol": "",
+                                    "host": "{{www_airbnb_com_br}}",
+                                    "path": [
+                                        "tracking",
+                                        "jitney",
+                                        "logging",
+                                        "messages"
+                                    ]
+                                },
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "[\n    {\n        \"event_data\": {\n            \"__typename\": \"PdpEventData\",\n            \"accuracy_rating\": {{accuracy_rating}},\n            \"action\": 2,\n            \"amenities\": [\n                1\n            ],\n            \"ancestor_logging_ids\": [],\n            \"ancestor_uuids\": [],\n            \"app_logging_context\": {\n                \"active_sessions\": [\n                    {\n                        \"event_data\": \"{{event_data1}}\",\n                        \"event_data_schema\": \"{{event_data_schema}}\",\n                        \"uuid\": \"{{uuid}}\"\n                    }\n                ],\n                \"web_ancestor_tabs\": [],\n                \"web_tab_uuid\": \"{{web_tab_uuid}}\"\n            },\n            \"assets\": {\n                \"css\": {\n                    \"cache_hit_ratio\": 0,\n                    \"count\": {{count}},\n                    \"decodedbody_size\": {{decodedbody_size}},\n                    \"encodedbody_size\": {{encodedbody_size}},\n                    \"transfer_size\": {{transfer_size}}\n                },\n                \"font\": {\n                    \"cache_hit_ratio\": 0,\n                    \"count\": {{count1}},\n                    \"decodedbody_size\": {{decodedbody_size1}},\n                    \"encodedbody_size\": {{encodedbody_size1}},\n                    \"transfer_size\": {{transfer_size1}}\n                },\n                \"img\": {\n                    \"cache_hit_ratio\": 0,\n                    \"count\": {{count2}},\n                    \"decodedbody_size\": {{decodedbody_size2}},\n                    \"encodedbody_size\": {{encodedbody_size2}},\n                    \"transfer_size\": {{transfer_size2}}\n                },\n                \"js\": {\n                    \"airbnb\": {\n                        \"cache_hit_ratio\": {{cache_hit_ratio}},\n                        \"count\": {{count3}},\n                        \"decodedbody_size\": {{decodedbody_size3}},\n                        \"encodedbody_size\": {{encodedbody_size3}},\n                        \"transfer_size\": {{transfer_size3}}\n                    },\n                    \"third_party\": {\n                        \"cache_hit_ratio\": 1,\n                        \"count\": 0,\n                        \"decodedbody_size\": 0,\n                        \"encodedbody_size\": 0,\n                        \"transfer_size\": 0\n                    }\n                }\n            },\n            \"audience_type\": \"visitor\",\n            \"bed_type\": null,\n            \"cache_response_byte_size\": 1465,\n            \"cache_type\": 2,\n            \"cached_data_is_exact_match\": true,\n            \"checkin_date\": null,\n            \"checkin_rating\": {{checkin_rating}},\n            \"checkout_date\": null,\n            \"cleanliness_rating\": {{cleanliness_rating}},\n            \"client\": \"javascript_browser\",\n            \"client_version\": \"{{client_version}}\",\n            \"communication_rating\": {{communication_rating}},\n            \"component\": {{component}},\n            \"consent_metadata\": {},\n            \"context\": {\n                \"bev\": \"{{bev}}\",\n                \"client_session_id\": \"{{client_session_id}}\",\n                \"device\": {\n                    \"device_year_class\": \"{{device_year_class}}\"\n                },\n                \"environment\": \"production\",\n                \"impression_uuid\": \"{{impression_uuid}}\",\n                \"language\": \"pt\",\n                \"locale\": \"pt\",\n                \"page_name\": {{page_name}},\n                \"platform\": \"wide-web\",\n                \"screen_height\": {{screen_height}},\n                \"screen_width\": {{screen_width}},\n                \"source\": \"hyperloop\",\n                \"timestamp\": 1636402243563,\n                \"user_agent\": \"{{user_agent}}\",\n                \"user_id\": null,\n                \"version\": \"{{version}}\",\n                \"visitor_id\": \"{{visitor_id}}\",\n                \"web\": {\n                    \"action\": \"{{action}}\",\n                    \"app\": \"pdp-platform\",\n                    \"canonical_host\": \"{{canonical_host}}\",\n                    \"canonical_url\": \"{{canonical_url}}\",\n                    \"controller\": \"core-guest-loop\",\n                    \"page_referrer\": \"{{page_referrer}}\",\n                    \"page_uri\": \"{{page_uri}}\",\n                    \"queued\": true,\n                    \"rendered_on\": \"hyperloop_metro\",\n                    \"req_uuid\": \"{{req_uuid}}\",\n                    \"shardset\": \"a0\",\n                    \"viewport\": \"lg\"\n                }\n            },\n            \"cumulative_layout_shift\": 0,\n            \"custom_data\": \"{{custom_data}}\",\n            \"description_language\": \"pt\",\n            \"device_id\": \"{{device_id}}\",\n            \"document_age\": {{document_age}},\n            \"domain_and_path\": \"{{domain_and_path}}\",\n            \"event_data\": {{event_data2}},\n            \"event_data_schema\": \"{{event_data_schema1}}\",\n            \"event_id\": \"{{event_id}}\",\n            \"event_name\": \"{{event_name}}\",\n            \"experiment\": \"{{experiment}}\",\n            \"external_stylesheet_rules\": {{external_stylesheet_rules}},\n            \"extra_data\": {},\n            \"fbc\": null,\n            \"fbp\": null,\n            \"first_response_latency_ms\": 0,\n            \"guest_satisfaction_overall\": {{guest_satisfaction_overall}},\n            \"guests\": 1,\n            \"had_cached_data\": {{had_cached_data}},\n            \"has_error\": false,\n            \"home_tier\": 1,\n            \"hosting_id\": \"{{hosting_id}}\",\n            \"http_method\": {{http_method}},\n            \"http_status_code\": {{http_status_code}},\n            \"impression_uuid\": \"{{impression_uuid1}}\",\n            \"inline_stylesheet_rules\": {{inline_stylesheet_rules}},\n            \"interactivity_span_aggregations\": {},\n            \"interactivity_spans\": [],\n            \"is_superhost\": false,\n            \"lcp\": {{lcp}},\n            \"listing_id\": \"{{listing_id}}\",\n            \"listing_lat\": {{listing_lat}},\n            \"listing_lng\": {{listing_lng}},\n            \"location_rating\": {{location_rating}},\n            \"logging_id\": \"{{logging_id}}\",\n            \"long_input_delay_counts\": [],\n            \"long_input_delays\": [],\n            \"longest_blocking_task_index\": 0,\n            \"longest_blocking_time\": {{longest_blocking_time}},\n            \"navigation_type\": 2,\n            \"network_deserialization_latency_ms\": {{network_deserialization_latency_ms}},\n            \"network_information\": {\n                \"downlink\": {{downlink}},\n                \"effective_type\": \"{{effective_type}}\",\n                \"rtt\": {{rtt}}\n            },\n            \"network_load_latency_ms\": 288,\n            \"network_request_latency_ms\": 288,\n            \"network_response_byte_size\": 1465,\n            \"niobe_client_overhead_ms\": 0,\n            \"number_of_blocking_tasks\": 2,\n            \"number_of_long_input_delays\": 0,\n            \"number_of_server_errors\": 0,\n            \"operation\": {{operation}},\n            \"operation_id\": \"{{operation_id}}\",\n            \"operation_name\": \"{{operation_name}}\",\n            \"operation_type\": 1,\n            \"p3_impression_id\": \"{{event_data}}\",\n            \"page\": \"{{page}}\",\n            \"page_name\": {{page_name1}},\n            \"page_navigation_action\": {\n                \"action_type\": {{action_type}},\n                \"duration_checkpoint_data\": {\n                    \"page_view_duration\": {{page_view_duration}},\n                    \"total_view_duration\": {{total_view_duration}}\n                }\n            },\n            \"page_request_method\": 1,\n            \"pdp_page_type\": 1,\n            \"person_capacity\": 2,\n            \"photo_ids\": [],\n            \"picture_count\": {{picture_count}},\n            \"recorder_duration\": {{recorder_duration}},\n            \"referrer\": \"{{referrer}}\",\n            \"remarketing_id\": \"{{remarketing_id}}\",\n            \"request_event_ids\": [],\n            \"request_strategy\": \"{{request_strategy}}\",\n            \"room_type\": 2,\n            \"schema\": \"{{schema}}\",\n            \"subject_id\": \"{{subject_id}}\",\n            \"subject_type\": \"{{subject_type}}\",\n            \"tbt\": {{tbt}},\n            \"timed_interactions\": [],\n            \"total_duration_of_long_input_delays\": 0,\n            \"total_latency_ms\": 0,\n            \"total_response_latency_ms\": 0,\n            \"treatment\": \"{{treatment}}\",\n            \"ttfcp\": {{ttfcp}},\n            \"ttfmp\": {{ttfmp}},\n            \"url\": \"{{url}}\",\n            \"user_bucket\": {{user_bucket}},\n            \"utc_offset\": {{utc_offset}},\n            \"uuid\": \"0ac53514-1927-468e-84e0-736507160150\",\n            \"value_rating\": {{value_rating}},\n            \"visible_review_count\": 1,\n            \"visitor_id\": \"{{visitor_id1}}\",\n            \"web_ancestor_tabs\": [],\n            \"web_performance_timing\": {\n                \"navigation_start_timestamp_in_ms\": 1636402241891,\n                \"time_to_connect_end_in_ms\": 0,\n                \"www_cdn_provider\": \"Akamai\"\n            }\n        },\n        \"event_name\": \"{{event_name1}}\",\n        \"schema\": \"{{schema1}}\",\n        \"trackingjs_logging_version\": \"{{trackingjs_logging_version}}\",\n        \"uuid\": \"018794de-1425-4819-a0f8-e78bf2f7ada1\"\n    }\n]",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "8dbfd9d4-d56a-4bc3-a300-fd47b9fda25c",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.test(\"POST https://www.airbnb.com.br/tracking/jitney/logging/messages (endp 18)\", function() {",
+                                            "    pm.response.to.have.status(204);",
+                                            "});"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                },
+                                {
+                                    "listen": "prerequest",
+                                    "script": {
+                                        "id": "8db38fde-88dd-4964-9eee-988b01fe1747",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "eval(globals.up9lib);",
+                                            "pm.variables.set(\"accuracy_rating\", 5);",
+                                            "pm.variables.set(\"action\", \"/rooms/51152588\");",
+                                            "pm.variables.set(\"action_type\", 5);",
+                                            "pm.variables.set(\"bev\", \"1636402242_ODNlYWRjMjYxNjNh\");",
+                                            "pm.variables.set(\"cache_hit_ratio\", 0.035714285714285705);",
+                                            "pm.variables.set(\"canonical_host\", \"www.airbnb.com.br\");",
+                                            "pm.variables.set(\"canonical_url\", \"/rooms/51152588?guests=1&adults=1&s=67&unique_share_id=2a56042d-e3a0-4be4-a9f0-fbc2331227fc\");",
+                                            "pm.variables.set(\"checkin_rating\", 5);",
+                                            "pm.variables.set(\"cleanliness_rating\", 5);",
+                                            "pm.variables.set(\"client_session_id\", \"cc4d9419-6733-49ae-9c73-8d50c0270242\");",
+                                            "pm.variables.set(\"client_version\", \"18.0.0\");",
+                                            "pm.variables.set(\"communication_rating\", 5);",
+                                            "pm.variables.set(\"component\", 5);",
+                                            "pm.variables.set(\"count\", 4);",
+                                            "pm.variables.set(\"count1\", 3);",
+                                            "pm.variables.set(\"count2\", 5);",
+                                            "pm.variables.set(\"count3\", 56);",
+                                            "pm.variables.set(\"custom_data\", \"{\\\"event\\\":\\\"P3Impression\\\",\\\"dynx_params\\\":{\\\"hrental_pagetype\\\":\\\"offerdetail\\\",\\\"hrental_id\\\":\\\"51152588\\\",\\\"hrental_startdate\\\":\\\"\\\",\\\"hrental_enddate\\\":\\\"\\\",\\\"has_account\\\":false},\\\"p3_listing_id\\\":\\\"51152588\\\",\\\"num_adults\\\":1,\\\"num_children\\\":0,\\\"num_infants\\\":0,\\\"num_of_nights\\\":0,\\\"audience_type\\\":\\\"visitor\\\",\\\"city\\\":\\\"Baependi\\\",\\\"country\\\":\\\"BR\\\",\\\"state\\\":\\\"Minas Gerais\\\",\\\"suggested_hotels\\\":\\\"[]\\\",\\\"user_bucket\\\":15,\\\"user_group\\\":35,\\\"event_id\\\":\\\"e86a73ac-eaa0-489f-ab10-e46bbf87dd29\\\"}\");",
+                                            "pm.variables.set(\"decodedbody_size\", 10315);",
+                                            "pm.variables.set(\"decodedbody_size1\", 72256);",
+                                            "pm.variables.set(\"decodedbody_size2\", 231540);",
+                                            "pm.variables.set(\"decodedbody_size3\", 4983008);",
+                                            "pm.variables.set(\"device_id\", \"1636402242_ODNlYWRjMjYxNjNh\");",
+                                            "pm.variables.set(\"device_memory\", \"8\");",
+                                            "pm.variables.set(\"device_year_class\", \"2017\");",
+                                            "pm.variables.set(\"document_age\", 205);",
+                                            "pm.variables.set(\"domain_and_path\", \"www.airbnb.com.br/rooms/51152588\");",
+                                            "pm.variables.set(\"downlink\", 10);",
+                                            "pm.variables.set(\"ect\", \"4g\");",
+                                            "pm.variables.set(\"effective_type\", \"4g\");",
+                                            "pm.variables.set(\"encodedbody_size\", 2016);",
+                                            "pm.variables.set(\"encodedbody_size1\", 72256);",
+                                            "pm.variables.set(\"encodedbody_size2\", 231540);",
+                                            "pm.variables.set(\"encodedbody_size3\", 1008576);",
+                                            "pm.variables.set(\"event_data\", \"p3_1636402243_2WscjGdmugLV6Ick\");",
+                                            "pm.variables.set(\"event_data1\", \"{\\\"product_id\\\":\\\"51152588\\\"}\");",
+                                            "pm.variables.set(\"event_data2\", \"{\\\"pdp_type\\\":\\\"MARKETPLACE\\\"}\");",
+                                            "pm.variables.set(\"event_data_schema\", \"Pdp.v1.PdpNavigationSession\");",
+                                            "pm.variables.set(\"event_data_schema1\", \"Pdp.v1.PdpSectionsInfoInternalStateSession\");",
+                                            "pm.variables.set(\"event_id\", \"0v99fu314qel6d1v201qx17t2v46\");",
+                                            "pm.variables.set(\"event_name\", \"experimentation_experiment_assignment\");",
+                                            "pm.variables.set(\"event_name1\", \"jitney_experimentation_experiment_assignment\");",
+                                            "pm.variables.set(\"experiment\", \"web_niobe_bot_detection_platformization\");",
+                                            "pm.variables.set(\"external_stylesheet_rules\", 34);",
+                                            "pm.variables.set(\"guest_satisfaction_overall\", 5);",
+                                            "pm.variables.set(\"had_cached_data\", true);",
+                                            "pm.variables.set(\"hosting_id\", \"51152588\");",
+                                            "pm.variables.set(\"http_method\", 2);",
+                                            "pm.variables.set(\"http_status_code\", 200);",
+                                            "pm.variables.set(\"impression_uuid\", \"d604519e-f4f3-4b42-841e-c30c04c7f7c6\");",
+                                            "pm.variables.set(\"impression_uuid1\", \"d604519e-f4f3-4b42-841e-c30c04c7f7c6\");",
+                                            "pm.variables.set(\"inline_stylesheet_rules\", 173);",
+                                            "pm.variables.set(\"lcp\", 800.099);",
+                                            "pm.variables.set(\"listing_id\", \"51152588\");",
+                                            "pm.variables.set(\"listing_lat\", -21.9605);",
+                                            "pm.variables.set(\"listing_lng\", -44.88068);",
+                                            "pm.variables.set(\"location_rating\", 5);",
+                                            "pm.variables.set(\"logging_id\", \"UniversalShare.button\");",
+                                            "pm.variables.set(\"longest_blocking_time\", 84);",
+                                            "pm.variables.set(\"network_deserialization_latency_ms\", 0);",
+                                            "pm.variables.set(\"operation\", 20);",
+                                            "pm.variables.set(\"operation_id\", \"b77500d382ece93907d870e42773e95234c3b410994006834ae7580ed4966da6\");",
+                                            "pm.variables.set(\"operation_name\", \"StaysPdpSections\");",
+                                            "pm.variables.set(\"page\", \"p3\");",
+                                            "pm.variables.set(\"page_name\", 3000);",
+                                            "pm.variables.set(\"page_name1\", 3000);",
+                                            "pm.variables.set(\"page_referrer\", \"https://www.pousadaportela.com.br/\");",
+                                            "pm.variables.set(\"page_uri\", \"/rooms/51152588\");",
+                                            "pm.variables.set(\"page_view_duration\", 5);",
+                                            "pm.variables.set(\"picture_count\", 8);",
+                                            "pm.variables.set(\"recorder_duration\", 1057.199999988079);",
+                                            "pm.variables.set(\"referrer\", \"https://www.pousadaportela.com.br/\");",
+                                            "pm.variables.set(\"remarketing_id\", \"51152588\");",
+                                            "pm.variables.set(\"req_uuid\", \"c6d65609-36da-4467-80f6-e5b03ef70f66\");",
+                                            "pm.variables.set(\"request_strategy\", \"cache-first\");",
+                                            "pm.variables.set(\"rtt\", 150);",
+                                            "pm.variables.set(\"schema\", \"com.airbnb.jitney.event.logging.Experimentation:ExperimentationExperimentAssignmentEvent:1.0.0\");",
+                                            "pm.variables.set(\"schema1\", \"com.airbnb.jitney.event.logging.Experimentation:ExperimentationExperimentAssignmentEvent:1.0.0\");",
+                                            "pm.variables.set(\"screen_height\", 708);",
+                                            "pm.variables.set(\"screen_width\", 1200);",
+                                            "pm.variables.set(\"subject_id\", \"1636402242_ODNlYWRjMjYxNjNh\");",
+                                            "pm.variables.set(\"subject_type\", \"visitor\");",
+                                            "pm.variables.set(\"tbt\", 84);",
+                                            "pm.variables.set(\"total_view_duration\", 5);",
+                                            "pm.variables.set(\"trackingjs_logging_version\", \"0.2\");",
+                                            "pm.variables.set(\"transfer_size\", 3216);",
+                                            "pm.variables.set(\"transfer_size1\", 73156);",
+                                            "pm.variables.set(\"transfer_size2\", 233040);",
+                                            "pm.variables.set(\"transfer_size3\", 1004833);",
+                                            "pm.variables.set(\"treatment\", \"treatment\");",
+                                            "pm.variables.set(\"ttfcp\", 826.1999999880791);",
+                                            "pm.variables.set(\"ttfmp\", 827.8999999761581);",
+                                            "pm.variables.set(\"url\", \"https://www.airbnb.com.br/rooms/51152588?guests=1&adults=1&s=67&unique_share_id=2a56042d-e3a0-4be4-a9f0-fbc2331227fc\");",
+                                            "pm.variables.set(\"user_agent\", \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.0 Safari/537.36\");",
+                                            "pm.variables.set(\"user_bucket\", 15);",
+                                            "pm.variables.set(\"utc_offset\", -10800);",
+                                            "pm.variables.set(\"uuid\", \"0ac53514-1927-468e-84e0-736507160150\");",
+                                            "pm.variables.set(\"value_rating\", 5);",
+                                            "pm.variables.set(\"version\", \"sha=d28a190a920\");",
+                                            "pm.variables.set(\"viewport_width\", \"1200\");",
+                                            "pm.variables.set(\"visitor_id\", \"1636402242_ODNlYWRjMjYxNjNh\");",
+                                            "pm.variables.set(\"visitor_id1\", \"1636402242_ODNlYWRjMjYxNjNh\");",
+                                            "pm.variables.set(\"web_tab_uuid\", \"631b2c9d-bc9d-441b-b6cc-ea94e289f8dc\");"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "id": "5fe22594-b72d-4e9f-a5cf-9680e3595bca",
+                                "exec": [
+                                    "// Some of the environment variables might be set in the parent folders.",
+                                    "eval(globals.up9lib);"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "protocolProfileBehavior": {}
+                }
+            ],
+            "event": [
+                {
+                    "listen": "prerequest",
+                    "script": {
+                        "id": "c346cf22-b108-41ce-b727-aff7a2371e96",
+                        "exec": [],
+                        "type": "text/javascript"
+                    }
+                }
+            ],
+            "protocolProfileBehavior": {}
+        },
+        {
+            "id": "971e19c1-6c47-41a8-bb0f-bc6340099392",
+            "name": "Tests_www_pousadaportela_com_br",
+            "item": [
+                {
+                    "id": "a228be20-d653-450c-ab65-f5d1cade3542",
+                    "name": "test_01_get_",
+                    "item": [
+                        {
+                            "id": "451bbbe1-1205-47ed-9d8b-45b945f0639e",
+                            "name": "www_pousadaportela_com_br",
+                            "request": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{www_pousadaportela_com_br}}",
+                                    "protocol": "",
+                                    "host": "{{www_pousadaportela_com_br}}",
+                                    "path": []
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "91c04d1c-bf53-4d68-acb5-97581d6bd0b3",
+                                        "exec": [
+                                            "// Some of the environment variables might be set in the parent folders.",
+                                            "pm.test(\"GET https://www.pousadaportela.com.br/ (endp 1)\", function() {",
+                                            "    eval(globals.up9lib);",
+                                            "    const responseText = pm.response.text();",
+                                            "    pm.response.to.have.status(200);",
+                                            "    pm.expect(CSSselect(\"section.mbr-fullscreen div.align-center.container div.row.justify-content-center div h1.mbr-section-title.mbr-fonts-style.mbr-white strong\", responseText)).to.have.string(\"Venha nos visitar UAI !!!\");",
+                                            "    pm.expect(CSSselect(\"html head title\", responseText)).to.have.string(\"Pousada Portela\");",
+                                            "});"
+                                        ],
+                                        "type": "text/javascript"
+                                    }
+                                },
+                                {
+                                    "listen": "prerequest",
+                                    "script": {
+                                        "id": "a5b57236-b660-4fa4-b99c-c2f0a294611b",
+                                        "exec": [],
+                                        "type": "text/javascript"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "id": "b8eb3c5f-956e-40a6-a7fe-7e812a787332",
+                                "exec": [],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "protocolProfileBehavior": {}
+                }
+            ],
+            "event": [
+                {
+                    "listen": "prerequest",
+                    "script": {
+                        "id": "b9aead05-e421-455d-9d8e-3b394d86a515",
+                        "exec": [],
+                        "type": "text/javascript"
+                    }
+                }
+            ],
+            "protocolProfileBehavior": {}
+        }
+    ],
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "id": "6afb8f0b-150a-4c3d-9059-e2e8d02e1e4c",
+                "exec": [
+                    "const up9lib = \"const url = require('url');\\nconst cheerio = require('cheerio');\\n\\nfunction uuidv4() {\\n    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {\\n        var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);\\n        return v.toString(16);\\n    });\\n}\\n\\nfunction randomInteger(min, max) {\\n    return Math.floor(Math.random() * (max - min + 1)) + min;\\n}\\n\\nfunction randomFloat(min, max) {\\n    return Math.random() * (max - min) + min;\\n}\\n\\nfunction randomEmail(domain=null) {\\n    const names = ['John', 'Peter', 'Bob', 'David', 'Harry']\\n    const surnames = ['Black', 'Clark', 'Duncan', 'Gibson', 'James']\\n    const emailDomains = ['gmail.com', 'yahoo.com', 'hotmail.com']\\n\\n    username = `${names[randomInteger(0, names.length - 1)]}.${surnames[randomInteger(0, surnames.length - 1)]}`\\n        .toLowerCase()\\n\\n    if (domain == null) {\\n        domain = emailDomains[randomInteger(0, emailDomains.length - 1)]\\n    }\\n\\n    const email = `${username}@${domain}`\\n    return email;\\n}\\n\\nfunction urlPart(ospec, paramURL) {\\n    const flag = ospec[0];\\n    const spec = ospec.slice(1, ospec.length);\\n\\n    const urlParsed = url.parse(paramURL, true);\\n    if (flag == '/') {\\n        const ind = parseInt(spec);\\n        const pathParts = urlParsed.pathname.split('/')\\n        return pathParts[ind]\\n    } else {\\n        return urlParsed.searchParams.get(spec)\\n    }\\n}\\n\\nfunction CSSselect(query, html) {\\n    const $ = cheerio.load(html);\\n    const result = $(query).map(function(i, el) {\\n        return $(this).text().trim();\\n    }).get().join('');\\n    return result;\\n}\\n// https://cdn.jsdelivr.net/npm/jsonpath-plus@4.0.0/dist/index-umd.min.js\\n!function(t,r){\\\"object\\\"==typeof exports&&\\\"undefined\\\"!=typeof module?r(exports):\\\"function\\\"==typeof define&&define.amd?define([\\\"exports\\\"],r):r((t=t||self).JSONPath={})}(this,(function(t){\\\"use strict\\\";function r(t){return(r=\\\"function\\\"==typeof Symbol&&\\\"symbol\\\"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&\\\"function\\\"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?\\\"symbol\\\":typeof t})(t)}function e(t){return(e=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}function n(t,r){return(n=Object.setPrototypeOf||function(t,r){return t.__proto__=r,t})(t,r)}function a(){if(\\\"undefined\\\"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if(\\\"function\\\"==typeof Proxy)return!0;try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(t){return!1}}function u(t,r,e){return(u=a()?Reflect.construct:function(t,r,e){var a=[null];a.push.apply(a,r);var u=new(Function.bind.apply(t,a));return e&&n(u,e.prototype),u}).apply(null,arguments)}function o(t){var r=\\\"function\\\"==typeof Map?new Map:void 0;return(o=function(t){if(null===t||(a=t,-1===Function.toString.call(a).indexOf(\\\"[native code]\\\")))return t;var a;if(\\\"function\\\"!=typeof t)throw new TypeError(\\\"Super expression must either be null or a function\\\");if(void 0!==r){if(r.has(t))return r.get(t);r.set(t,o)}function o(){return u(t,arguments,e(this).constructor)}return o.prototype=Object.create(t.prototype,{constructor:{value:o,enumerable:!1,writable:!0,configurable:!0}}),n(o,t)})(t)}function i(t,r){return!r||\\\"object\\\"!=typeof r&&\\\"function\\\"!=typeof r?function(t){if(void 0===t)throw new ReferenceError(\\\"this hasn't been initialised - super() hasn't been called\\\");return t}(t):r}function c(t){return function(t){if(Array.isArray(t))return s(t)}(t)||function(t){if(\\\"undefined\\\"!=typeof Symbol&&Symbol.iterator in Object(t))return Array.from(t)}(t)||l(t)||function(){throw new TypeError(\\\"Invalid attempt to spread non-iterable instance.\\\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\\\")}()}function l(t,r){if(t){if(\\\"string\\\"==typeof t)return s(t,r);var e=Object.prototype.toString.call(t).slice(8,-1);return\\\"Object\\\"===e&&t.constructor&&(e=t.constructor.name),\\\"Map\\\"===e||\\\"Set\\\"===e?Array.from(e):\\\"Arguments\\\"===e||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(e)?s(t,r):void 0}}function s(t,r){(null==r||r>t.length)&&(r=t.length);for(var e=0,n=new Array(r);e<r;e++)n[e]=t[e];return n}var p=Object.prototype.hasOwnProperty;b.nodeVMSupported=function(){try{return\\\"[object process]\\\"===Object.prototype.toString.call(global.process)}catch(t){return!1}}();var h=b.nodeVMSupported?require(\\\"vm\\\"):{runInNewContext:function(t,r){var e=Object.keys(r),n=[];!function(t,r,e){for(var n=t.length,a=0;a<n;a++){e(t[a])&&r.push(t.splice(a--,1)[0])}}(e,n,(function(t){return\\\"function\\\"==typeof r[t]}));var a=e.map((function(t,e){return r[t]}));(t=n.reduce((function(t,e){var n=r[e].toString();return/function/.test(n)||(n=\\\"function \\\"+n),\\\"var \\\"+e+\\\"=\\\"+n+\\\";\\\"+t}),\\\"\\\")+t).match(/([\\\"'])use strict\\\\1/)||e.includes(\\\"arguments\\\")||(t=\\\"var arguments = undefined;\\\"+t);var o=(t=t.replace(/;[\\\\t-\\\\r \\\\xA0\\\\u1680\\\\u2000-\\\\u200A\\\\u2028\\\\u2029\\\\u202F\\\\u205F\\\\u3000\\\\uFEFF]*$/,\\\"\\\")).lastIndexOf(\\\";\\\"),i=o>-1?t.slice(0,o+1)+\\\" return \\\"+t.slice(o+1):\\\" return \\\"+t;return u(Function,c(e).concat([i])).apply(void 0,c(a))}};function f(t,r){return(t=t.slice()).push(r),t}function y(t,r){return(r=r.slice()).unshift(t),r}var F=function(t){!function(t,r){if(\\\"function\\\"!=typeof r&&null!==r)throw new TypeError(\\\"Super expression must either be null or a function\\\");t.prototype=Object.create(r&&r.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),r&&n(t,r)}(o,t);var r,u=(r=o,function(){var t,n=e(r);if(a()){var u=e(this).constructor;t=Reflect.construct(n,arguments,u)}else t=n.apply(this,arguments);return i(this,t)});function o(t){var r;return function(t,r){if(!(t instanceof r))throw new TypeError(\\\"Cannot call a class as a function\\\")}(this,o),(r=u.call(this,'JSONPath should not be called with \\\"new\\\" (it prevents return of (unwrapped) scalar values)')).avoidNew=!0,r.value=t,r.name=\\\"NewError\\\",r}return o}(o(Error));function b(t,e,n,a,u){if(!(this instanceof b))try{return new b(t,e,n,a,u)}catch(t){if(!t.avoidNew)throw t;return t.value}\\\"string\\\"==typeof t&&(u=a,a=n,n=e,e=t,t=null);var o=t&&\\\"object\\\"===r(t);if(t=t||{},this.json=t.json||n,this.path=t.path||e,this.resultType=t.resultType||\\\"value\\\",this.flatten=t.flatten||!1,this.wrap=!p.call(t,\\\"wrap\\\")||t.wrap,this.sandbox=t.sandbox||{},this.preventEval=t.preventEval||!1,this.parent=t.parent||null,this.parentProperty=t.parentProperty||null,this.callback=t.callback||a||null,this.otherTypeCallback=t.otherTypeCallback||u||function(){throw new TypeError(\\\"You must supply an otherTypeCallback callback option with the @other() operator.\\\")},!1!==t.autostart){var i={path:o?t.path:e};o?\\\"json\\\"in t&&(i.json=t.json):i.json=n;var c=this.evaluate(i);if(!c||\\\"object\\\"!==r(c))throw new F(c);return c}}b.prototype.evaluate=function(t,e,n,a){var u=this,o=this.parent,i=this.parentProperty,c=this.flatten,l=this.wrap;if(this.currResultType=this.resultType,this.currPreventEval=this.preventEval,this.currSandbox=this.sandbox,n=n||this.callback,this.currOtherTypeCallback=a||this.otherTypeCallback,e=e||this.json,(t=t||this.path)&&\\\"object\\\"===r(t)&&!Array.isArray(t)){if(!t.path&&\\\"\\\"!==t.path)throw new TypeError('You must supply a \\\"path\\\" property when providing an object argument to JSONPath.evaluate().');if(!p.call(t,\\\"json\\\"))throw new TypeError('You must supply a \\\"json\\\" property when providing an object argument to JSONPath.evaluate().');e=t.json,c=p.call(t,\\\"flatten\\\")?t.flatten:c,this.currResultType=p.call(t,\\\"resultType\\\")?t.resultType:this.currResultType,this.currSandbox=p.call(t,\\\"sandbox\\\")?t.sandbox:this.currSandbox,l=p.call(t,\\\"wrap\\\")?t.wrap:l,this.currPreventEval=p.call(t,\\\"preventEval\\\")?t.preventEval:this.currPreventEval,n=p.call(t,\\\"callback\\\")?t.callback:n,this.currOtherTypeCallback=p.call(t,\\\"otherTypeCallback\\\")?t.otherTypeCallback:this.currOtherTypeCallback,o=p.call(t,\\\"parent\\\")?t.parent:o,i=p.call(t,\\\"parentProperty\\\")?t.parentProperty:i,t=t.path}if(o=o||null,i=i||null,Array.isArray(t)&&(t=b.toPathString(t)),(t||\\\"\\\"===t)&&e){this._obj=e;var s=b.toPathArray(t);\\\"$\\\"===s[0]&&s.length>1&&s.shift(),this._hasParentSelector=null;var h=this._trace(s,e,[\\\"$\\\"],o,i,n).filter((function(t){return t&&!t.isParentSelector}));return h.length?l||1!==h.length||h[0].hasArrExpr?h.reduce((function(t,r){var e=u._getPreferredOutput(r);return c&&Array.isArray(e)?t=t.concat(e):t.push(e),t}),[]):this._getPreferredOutput(h[0]):l?[]:void 0}},b.prototype._getPreferredOutput=function(t){var r=this.currResultType;switch(r){default:throw new TypeError(\\\"Unknown result type\\\");case\\\"all\\\":var e=Array.isArray(t.path)?t.path:b.toPathArray(t.path);return t.pointer=b.toPointer(e),t.path=\\\"string\\\"==typeof t.path?t.path:b.toPathString(t.path),t;case\\\"value\\\":case\\\"parent\\\":case\\\"parentProperty\\\":return t[r];case\\\"path\\\":return b.toPathString(t[r]);case\\\"pointer\\\":return b.toPointer(t.path)}},b.prototype._handleCallback=function(t,r,e){if(r){var n=this._getPreferredOutput(t);t.path=\\\"string\\\"==typeof t.path?t.path:b.toPathString(t.path),r(n,e,t)}},b.prototype._trace=function(t,e,n,a,u,o,i,c){var s,h=this;if(!t.length)return s={path:n,value:e,parent:a,parentProperty:u,hasArrExpr:i},this._handleCallback(s,o,\\\"value\\\"),s;var F=t[0],b=t.slice(1),v=[];function d(t){Array.isArray(t)?t.forEach((function(t){v.push(t)})):v.push(t)}if((\\\"string\\\"!=typeof F||c)&&e&&p.call(e,F))d(this._trace(b,e[F],f(n,F),e,F,o,i));else if(\\\"*\\\"===F)this._walk(F,b,e,n,a,u,o,(function(t,r,e,n,a,u,o,i){d(h._trace(y(t,e),n,a,u,o,i,!0,!0))}));else if(\\\"..\\\"===F)d(this._trace(b,e,n,a,u,o,i)),this._walk(F,b,e,n,a,u,o,(function(t,e,n,a,u,o,i,c){\\\"object\\\"===r(a[t])&&d(h._trace(y(e,n),a[t],f(u,t),a,t,c,!0))}));else{if(\\\"^\\\"===F)return this._hasParentSelector=!0,{path:n.slice(0,-1),expr:b,isParentSelector:!0};if(\\\"~\\\"===F)return s={path:f(n,F),value:u,parent:a,parentProperty:null},this._handleCallback(s,o,\\\"property\\\"),s;if(\\\"$\\\"===F)d(this._trace(b,e,n,null,null,o,i));else if(/^(\\\\x2D?[0-9]*):(\\\\x2D?[0-9]*):?([0-9]*)$/.test(F))d(this._slice(F,b,e,n,a,u,o));else if(0===F.indexOf(\\\"?(\\\")){if(this.currPreventEval)throw new Error(\\\"Eval [?(expr)] prevented in JSONPath expression.\\\");this._walk(F,b,e,n,a,u,o,(function(t,r,e,n,a,u,o,i){h._eval(r.replace(/^\\\\?\\\\(((?:[\\\\0-\\\\t\\\\x0B\\\\f\\\\x0E-\\\\u2027\\\\u202A-\\\\uD7FF\\\\uE000-\\\\uFFFF]|[\\\\uD800-\\\\uDBFF][\\\\uDC00-\\\\uDFFF]|[\\\\uD800-\\\\uDBFF](?![\\\\uDC00-\\\\uDFFF])|(?:[^\\\\uD800-\\\\uDBFF]|^)[\\\\uDC00-\\\\uDFFF])*?)\\\\)$/,\\\"$1\\\"),n[t],t,a,u,o)&&d(h._trace(y(t,e),n,a,u,o,i,!0))}))}else if(\\\"(\\\"===F[0]){if(this.currPreventEval)throw new Error(\\\"Eval [(expr)] prevented in JSONPath expression.\\\");d(this._trace(y(this._eval(F,e,n[n.length-1],n.slice(0,-1),a,u),b),e,n,a,u,o,i))}else if(\\\"@\\\"===F[0]){var D=!1,g=F.slice(1,-2);switch(g){default:throw new TypeError(\\\"Unknown value type \\\"+g);case\\\"scalar\\\":e&&[\\\"object\\\",\\\"function\\\"].includes(r(e))||(D=!0);break;case\\\"boolean\\\":case\\\"string\\\":case\\\"undefined\\\":case\\\"function\\\":r(e)===g&&(D=!0);break;case\\\"integer\\\":!Number.isFinite(e)||e%1||(D=!0);break;case\\\"number\\\":Number.isFinite(e)&&(D=!0);break;case\\\"nonFinite\\\":\\\"number\\\"!=typeof e||Number.isFinite(e)||(D=!0);break;case\\\"object\\\":e&&r(e)===g&&(D=!0);break;case\\\"array\\\":Array.isArray(e)&&(D=!0);break;case\\\"other\\\":D=this.currOtherTypeCallback(e,n,a,u);break;case\\\"null\\\":null===e&&(D=!0)}if(D)return s={path:n,value:e,parent:a,parentProperty:u},this._handleCallback(s,o,\\\"value\\\"),s}else if(\\\"`\\\"===F[0]&&e&&p.call(e,F.slice(1))){var _=F.slice(1);d(this._trace(b,e[_],f(n,_),e,_,o,i,!0))}else if(F.includes(\\\",\\\")){var w,m=function(t){if(\\\"undefined\\\"==typeof Symbol||null==t[Symbol.iterator]){if(Array.isArray(t)||(t=l(t))){var r=0,e=function(){};return{s:e,n:function(){return r>=t.length?{done:!0}:{done:!1,value:t[r++]}},e:function(t){throw t},f:e}}throw new TypeError(\\\"Invalid attempt to iterate non-iterable instance.\\\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\\\")}var n,a,u=!0,o=!1;return{s:function(){n=t[Symbol.iterator]()},n:function(){var t=n.next();return u=t.done,t},e:function(t){o=!0,a=t},f:function(){try{u||null==n.return||n.return()}finally{if(o)throw a}}}}(F.split(\\\",\\\"));try{for(m.s();!(w=m.n()).done;){var P=w.value;d(this._trace(y(P,b),e,n,a,u,o,!0))}}catch(t){m.e(t)}finally{m.f()}}else!c&&e&&p.call(e,F)&&d(this._trace(b,e[F],f(n,F),e,F,o,i,!0))}if(this._hasParentSelector)for(var S=0;S<v.length;S++){var x=v[S];if(x&&x.isParentSelector){var E=h._trace(x.expr,e,x.path,a,u,o,i);if(Array.isArray(E)){v[S]=E[0];for(var j=E.length,A=1;A<j;A++)S++,v.splice(S,0,E[A])}else v[S]=E}}return v},b.prototype._walk=function(t,e,n,a,u,o,i,c){if(Array.isArray(n))for(var l=n.length,s=0;s<l;s++)c(s,t,e,n,a,u,o,i);else n&&\\\"object\\\"===r(n)&&Object.keys(n).forEach((function(r){c(r,t,e,n,a,u,o,i)}))},b.prototype._slice=function(t,r,e,n,a,u,o){if(Array.isArray(e)){var i=e.length,c=t.split(\\\":\\\"),l=c[2]&&Number.parseInt(c[2])||1,s=c[0]&&Number.parseInt(c[0])||0,p=c[1]&&Number.parseInt(c[1])||i;s=s<0?Math.max(0,s+i):Math.min(i,s),p=p<0?Math.max(0,p+i):Math.min(i,p);for(var h=[],f=s;f<p;f+=l){this._trace(y(f,r),e,n,a,u,o,!0).forEach((function(t){h.push(t)}))}return h}},b.prototype._eval=function(t,r,e,n,a,u){if(!this._obj||!r)return!1;t.includes(\\\"@parentProperty\\\")&&(this.currSandbox._$_parentProperty=u,t=t.replace(/@parentProperty/g,\\\"_$_parentProperty\\\")),t.includes(\\\"@parent\\\")&&(this.currSandbox._$_parent=a,t=t.replace(/@parent/g,\\\"_$_parent\\\")),t.includes(\\\"@property\\\")&&(this.currSandbox._$_property=e,t=t.replace(/@property/g,\\\"_$_property\\\")),t.includes(\\\"@path\\\")&&(this.currSandbox._$_path=b.toPathString(n.concat([e])),t=t.replace(/@path/g,\\\"_$_path\\\")),t.includes(\\\"@root\\\")&&(this.currSandbox._$_root=this.json,t=t.replace(/@root/g,\\\"_$_root\\\")),t.match(/@([\\\\t-\\\\r \\\\)\\\\.\\\\[\\\\xA0\\\\u1680\\\\u2000-\\\\u200A\\\\u2028\\\\u2029\\\\u202F\\\\u205F\\\\u3000\\\\uFEFF])/)&&(this.currSandbox._$_v=r,t=t.replace(/@([\\\\t-\\\\r \\\\)\\\\.\\\\[\\\\xA0\\\\u1680\\\\u2000-\\\\u200A\\\\u2028\\\\u2029\\\\u202F\\\\u205F\\\\u3000\\\\uFEFF])/g,\\\"_$_v$1\\\"));try{return h.runInNewContext(t,this.currSandbox)}catch(r){throw console.log(r),new Error(\\\"jsonPath: \\\"+r.message+\\\": \\\"+t)}},b.cache={},b.toPathString=function(t){for(var r=t,e=r.length,n=\\\"$\\\",a=1;a<e;a++)/^(~|\\\\^|@(?:[\\\\0-\\\\t\\\\x0B\\\\f\\\\x0E-\\\\u2027\\\\u202A-\\\\uD7FF\\\\uE000-\\\\uFFFF]|[\\\\uD800-\\\\uDBFF][\\\\uDC00-\\\\uDFFF]|[\\\\uD800-\\\\uDBFF](?![\\\\uDC00-\\\\uDFFF])|(?:[^\\\\uD800-\\\\uDBFF]|^)[\\\\uDC00-\\\\uDFFF])*?\\\\(\\\\))$/.test(r[a])||(n+=/^[\\\\*0-9]+$/.test(r[a])?\\\"[\\\"+r[a]+\\\"]\\\":\\\"['\\\"+r[a]+\\\"']\\\");return n},b.toPointer=function(t){for(var r=t,e=r.length,n=\\\"\\\",a=1;a<e;a++)/^(~|\\\\^|@(?:[\\\\0-\\\\t\\\\x0B\\\\f\\\\x0E-\\\\u2027\\\\u202A-\\\\uD7FF\\\\uE000-\\\\uFFFF]|[\\\\uD800-\\\\uDBFF][\\\\uDC00-\\\\uDFFF]|[\\\\uD800-\\\\uDBFF](?![\\\\uDC00-\\\\uDFFF])|(?:[^\\\\uD800-\\\\uDBFF]|^)[\\\\uDC00-\\\\uDFFF])*?\\\\(\\\\))$/.test(r[a])||(n+=\\\"/\\\"+r[a].toString().replace(/~/g,\\\"~0\\\").replace(/\\\\//g,\\\"~1\\\"));return n},b.toPathArray=function(t){var r=b.cache;if(r[t])return r[t].concat();var e=[],n=t.replace(/@(?:null|boolean|number|string|integer|undefined|nonFinite|scalar|array|object|function|other)\\\\(\\\\)/g,\\\";$&;\\\").replace(/['\\\\[](\\\\??\\\\((?:[\\\\0-\\\\t\\\\x0B\\\\f\\\\x0E-\\\\u2027\\\\u202A-\\\\uD7FF\\\\uE000-\\\\uFFFF]|[\\\\uD800-\\\\uDBFF][\\\\uDC00-\\\\uDFFF]|[\\\\uD800-\\\\uDBFF](?![\\\\uDC00-\\\\uDFFF])|(?:[^\\\\uD800-\\\\uDBFF]|^)[\\\\uDC00-\\\\uDFFF])*?\\\\))['\\\\]]/g,(function(t,r){return\\\"[#\\\"+(e.push(r)-1)+\\\"]\\\"})).replace(/\\\\['((?:[\\\\0-&\\\\(-\\\\\\\\\\\\^-\\\\uD7FF\\\\uE000-\\\\uFFFF]|[\\\\uD800-\\\\uDBFF][\\\\uDC00-\\\\uDFFF]|[\\\\uD800-\\\\uDBFF](?![\\\\uDC00-\\\\uDFFF])|(?:[^\\\\uD800-\\\\uDBFF]|^)[\\\\uDC00-\\\\uDFFF])*)'\\\\]/g,(function(t,r){return\\\"['\\\"+r.replace(/\\\\./g,\\\"%@%\\\").replace(/~/g,\\\"%%@@%%\\\")+\\\"']\\\"})).replace(/~/g,\\\";~;\\\").replace(/'?\\\\.'?(?!(?:[\\\\0-Z\\\\\\\\-\\\\uD7FF\\\\uE000-\\\\uFFFF]|[\\\\uD800-\\\\uDBFF][\\\\uDC00-\\\\uDFFF]|[\\\\uD800-\\\\uDBFF](?![\\\\uDC00-\\\\uDFFF])|(?:[^\\\\uD800-\\\\uDBFF]|^)[\\\\uDC00-\\\\uDFFF])*\\\\])|\\\\['?/g,\\\";\\\").replace(/%@%/g,\\\".\\\").replace(/%%@@%%/g,\\\"~\\\").replace(/(?:;)?(\\\\^+)(?:;)?/g,(function(t,r){return\\\";\\\"+r.split(\\\"\\\").join(\\\";\\\")+\\\";\\\"})).replace(/;;;|;;/g,\\\";..;\\\").replace(/;$|'?\\\\]|'$/g,\\\"\\\").split(\\\";\\\").map((function(t){var r=t.match(/#([0-9]+)/);return r&&r[1]?e[r[1]]:t}));return r[t]=n,r[t]},t.JSONPath=b,Object.defineProperty(t,\\\"__esModule\\\",{value:!0})}));\\n//# sourceMappingURL=index-umd.min.js.map\\n\"",
+                    "",
+                    "pm.globals.set(\"up9lib\", up9lib);"
+                ],
+                "type": "text/javascript",
+                "ast": null,
+                "endpoint": null,
+                "listen": "prerequest",
+                "_type": "collection"
+            }
+        }
+    ],
+    "variable": [
+        {
+            "id": "451927e9-53e0-47e4-80fa-d106d0d270ed",
+            "key": "notify_bugsnag_com",
+            "value": "https://notify.bugsnag.com"
+        },
+        {
+            "id": "de9d3f5a-ffeb-4f6f-ac79-b0a22b1f85bb",
+            "key": "www_airbnb_com_br",
+            "value": "https://www.airbnb.com.br"
+        },
+        {
+            "id": "ab6f544a-fef1-4ee4-bb92-d88268357b89",
+            "key": "www_pousadaportela_com_br",
+            "value": "https://www.pousadaportela.com.br"
+        }
+    ],
+    "protocolProfileBehavior": {}
+}

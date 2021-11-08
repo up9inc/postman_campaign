@@ -1,0 +1,13 @@
+[
+ {
+  "_cb": "18w2tps02qzxfv0kcnnhf02ns54e",
+  "currency": "BRL",
+  "device_memory": "8",
+  "ect": "4g",
+  "extensions": "{\"persistedQuery\":{\"version\":1,\"sha256Hash\":\"9275d8e26a421ffd2fb34d773c565a9bfd1239586e1491a628aace89f3f5d3f7\"}}",
+  "variables": "{\"request\":{\"refinementPaths\":[\"/homes\"],\"screenSize\":\"large\",\"treatmentFlags\":[\"flex_destinations_june_2021_launch_web_treatment\",\"merch_header_breakpoint_expansion_web\",\"storefronts_november_2021_homepage_desktop_web_treatment\",\"storefronts_november_2021_homepage_moweb_treatment\",\"flexible_dates_options_extend_one_three_seven_days\",\"super_date_flexibility\",\"search_input_placeholder_phrases\"],\"version\":\"1.8.3\",\"channel\":\"SEARCH_HEADER_PDP\"}}",
+  "viewport_width": "1200",
+  "x_airbnb_api_key": "d306zoyjsyarp7ifhu67rjxn52tv0t20",
+  "x_csrf_token": "V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo="
+ }
+]

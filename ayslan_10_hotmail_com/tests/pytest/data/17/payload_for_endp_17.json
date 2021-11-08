@@ -1,0 +1,11 @@
+[
+ {
+  "dropTestingPrefix": true,
+  "metric": "{{metric}}",
+  "tags": [
+   "{{tags}}"
+  ],
+  "type": "count",
+  "value": 1
+ }
+]

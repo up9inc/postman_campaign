@@ -1,0 +1,523 @@
+{
+ "parameters": [
+  {
+   "name": "accuracy_rating",
+   "uuid": "44c9f0bb-58d1-44a8-b22c-880d1f3a88b1"
+  },
+  {
+   "name": "action",
+   "uuid": "ef4bc344-2cb5-458f-a718-be2b902d2406"
+  },
+  {
+   "name": "action_type",
+   "uuid": "e4c3a719-fed5-487c-ab13-2330c42ea259"
+  },
+  {
+   "name": "bev",
+   "uuid": "dca39753-eeca-48f2-a1b3-312ea42d42fe"
+  },
+  {
+   "name": "cache_hit_ratio",
+   "uuid": "d34d2aeb-739e-4820-a007-26b804aaf8e9"
+  },
+  {
+   "name": "canonical_host",
+   "uuid": "f3560383-d028-4fba-91c7-18d387666242"
+  },
+  {
+   "name": "canonical_url",
+   "uuid": "4cb2d6a4-c9e9-475f-a1af-1ef8f1b13663"
+  },
+  {
+   "name": "checkin_rating",
+   "uuid": "64673740-d553-4c05-a9e9-c767bf7eec80"
+  },
+  {
+   "name": "cleanliness_rating",
+   "uuid": "38dd453b-f74b-4ed4-86bc-3626a0bff8ea"
+  },
+  {
+   "name": "client_session_id",
+   "uuid": "7da3ef03-e81a-418e-868a-b35437cb1038"
+  },
+  {
+   "name": "client_version",
+   "uuid": "1957b9c0-aa74-4e56-97af-6cc6a2a97cd9"
+  },
+  {
+   "name": "communication_rating",
+   "uuid": "f9cb295d-5ff5-44b1-ab6d-30916a50826c"
+  },
+  {
+   "name": "component",
+   "uuid": "a1847dd9-7f8b-47cb-9eef-4bbd6ea5fb53"
+  },
+  {
+   "name": "count",
+   "uuid": "5fe6f3cd-7942-45a2-a522-2909ef51cf2c"
+  },
+  {
+   "name": "count1",
+   "uuid": "44ea1adf-54cc-4509-a442-c5ec8c6abc3c"
+  },
+  {
+   "name": "count2",
+   "uuid": "8ae6e099-6564-4b73-b521-33c921298fbc"
+  },
+  {
+   "name": "count3",
+   "uuid": "e784354c-85bc-4731-a87b-37aec6c35fd6"
+  },
+  {
+   "name": "custom_data",
+   "uuid": "9e2f3909-6944-4db5-b95e-e53042b129c8"
+  },
+  {
+   "name": "decodedbody_size",
+   "uuid": "5124f734-76bb-48e5-87ce-43da5774858e"
+  },
+  {
+   "name": "decodedbody_size1",
+   "uuid": "47ee4f57-d21d-43c0-9cbe-3f7d75e070a4"
+  },
+  {
+   "name": "decodedbody_size2",
+   "uuid": "ed8c1fcd-2984-46e2-93bf-5d3fde4a7824"
+  },
+  {
+   "name": "decodedbody_size3",
+   "uuid": "bac11849-6a11-4860-a4c3-6ae7da9aa6e1"
+  },
+  {
+   "name": "device_id",
+   "uuid": "2d74b2f3-7473-4ebb-9f71-9d4f28a09638"
+  },
+  {
+   "name": "device_memory",
+   "uuid": "4f3cc7e5-5697-4d2f-ae2a-8c82b77aaa34"
+  },
+  {
+   "name": "device_year_class",
+   "uuid": "145790e4-e49a-46df-a063-f98bd661ba5a"
+  },
+  {
+   "name": "document_age",
+   "uuid": "6c5e1c3d-775b-44dd-aea2-8535804afa81"
+  },
+  {
+   "name": "domain_and_path",
+   "uuid": "c8ba30c4-ae91-4013-a1fb-76b010b015d6"
+  },
+  {
+   "name": "downlink",
+   "uuid": "c6aec672-800e-47be-b375-42b74215c38d"
+  },
+  {
+   "name": "ect",
+   "uuid": "8a0e112a-a944-470a-82d8-a454ce677351"
+  },
+  {
+   "name": "effective_type",
+   "uuid": "9ef20fc6-cfaf-429a-a702-b40acd9663ec"
+  },
+  {
+   "name": "encodedbody_size",
+   "uuid": "a7d61343-14c1-4382-aff5-fd8637484987"
+  },
+  {
+   "name": "encodedbody_size1",
+   "uuid": "de495d7d-f03b-4bc6-853d-f68850c30578"
+  },
+  {
+   "name": "encodedbody_size2",
+   "uuid": "6372712b-e50d-4036-a001-fadf55ae8517"
+  },
+  {
+   "name": "encodedbody_size3",
+   "uuid": "fbaf5c5b-b355-4f2e-8c35-59e86c36bb81"
+  },
+  {
+   "name": "event_data",
+   "uuid": "9db1bab1-5c33-4ba3-846d-6f04b11ec32b"
+  },
+  {
+   "name": "event_data1",
+   "uuid": "9d44d910-76d9-407d-8461-87c2886c5da4"
+  },
+  {
+   "name": "event_data2",
+   "uuid": "e2c98aa4-599f-4a00-b5a7-b91e632fe4af"
+  },
+  {
+   "name": "event_data_schema",
+   "uuid": "069dd51c-570c-40ec-ad70-b824ef3af608"
+  },
+  {
+   "name": "event_data_schema1",
+   "uuid": "6b9e4769-6d1d-4798-b6a4-33b3e046aaa2"
+  },
+  {
+   "name": "event_id",
+   "uuid": "cfe19c22-5213-4605-a297-1f91c69acf78"
+  },
+  {
+   "name": "event_name",
+   "uuid": "d23481d2-def4-4e00-9da0-ccd253b3e44d"
+  },
+  {
+   "name": "event_name1",
+   "uuid": "2c3346db-b0b3-4a2c-832c-3a69a7f2eb54"
+  },
+  {
+   "name": "experiment",
+   "uuid": "57d2ead0-fc74-40af-8be5-1e119b9183e3"
+  },
+  {
+   "name": "external_stylesheet_rules",
+   "uuid": "4fbe73b4-ae77-4bca-a070-19cab30a518f"
+  },
+  {
+   "name": "guest_satisfaction_overall",
+   "uuid": "d6695026-ecf5-4ceb-8314-1b74bcb3c31c"
+  },
+  {
+   "name": "had_cached_data",
+   "uuid": "8bbfbbe3-888c-4ccf-80fb-7f957563d1ef"
+  },
+  {
+   "name": "hosting_id",
+   "uuid": "4fc49cbe-fdaa-4150-9635-8c91698cb555"
+  },
+  {
+   "name": "http_method",
+   "uuid": "ce7d57f8-f88b-4e0a-8298-08baad870660"
+  },
+  {
+   "name": "http_status_code",
+   "uuid": "ee9a9a55-2510-4635-ab6c-edd290185352"
+  },
+  {
+   "name": "impression_uuid",
+   "uuid": "ac87ea3a-5e81-40d2-8c5e-20712d836356"
+  },
+  {
+   "name": "impression_uuid1",
+   "uuid": "81d2fe6a-4ce3-4a5b-b1d0-5e993bad4296"
+  },
+  {
+   "name": "inline_stylesheet_rules",
+   "uuid": "217fbf8f-3b76-4b74-852b-de3ddec87235"
+  },
+  {
+   "name": "lcp",
+   "uuid": "67ffec7a-c81b-4db2-830f-a3885a600d14"
+  },
+  {
+   "name": "listing_id",
+   "uuid": "8c416a08-1ff4-4ba9-95e0-5620fb185bef"
+  },
+  {
+   "name": "listing_lat",
+   "uuid": "afbe1023-853e-43ab-a581-aff4ebe2e39d"
+  },
+  {
+   "name": "listing_lng",
+   "uuid": "f1c7ac50-285d-4516-a434-d3d06a81926e"
+  },
+  {
+   "name": "location_rating",
+   "uuid": "3b4badc7-d658-41c3-ba2d-0f47e24ea96e"
+  },
+  {
+   "name": "logging_id",
+   "uuid": "d88945cd-3e41-44ff-bd67-b0db3788ebc8"
+  },
+  {
+   "name": "longest_blocking_time",
+   "uuid": "2e11e0c2-d4a7-4fc4-9eba-9dca7d47651a"
+  },
+  {
+   "name": "network_deserialization_latency_ms",
+   "uuid": "ebcc6b5a-3d11-40e9-ba93-eff0ee896894"
+  },
+  {
+   "name": "operation",
+   "uuid": "d0112942-6a74-4b34-878f-727e3f4caf22"
+  },
+  {
+   "name": "operation_id",
+   "uuid": "0f064e32-6742-45ec-87ec-84b724ba090c"
+  },
+  {
+   "name": "operation_name",
+   "uuid": "a4264923-2be8-4ab7-85cc-31307fdfbb36"
+  },
+  {
+   "name": "page",
+   "uuid": "de77b5cc-3166-4c80-a008-58d9a8fd3682"
+  },
+  {
+   "name": "page_name",
+   "uuid": "0de88ccf-9c72-4497-a1f7-78556cd6f8fa"
+  },
+  {
+   "name": "page_name1",
+   "uuid": "3d3901ad-5ed0-47c8-a7ac-ec49699de646"
+  },
+  {
+   "name": "page_referrer",
+   "uuid": "519b54bc-bdc9-4c37-ad5f-b49fc30db182"
+  },
+  {
+   "name": "page_uri",
+   "uuid": "a16a0911-c58f-4627-b338-b969899c0afd"
+  },
+  {
+   "name": "page_view_duration",
+   "uuid": "23c57dd6-499e-4a21-b5f5-49fbc5f7d64d"
+  },
+  {
+   "name": "picture_count",
+   "uuid": "1ccf50e6-7ec6-43a3-8602-b36400eb3161"
+  },
+  {
+   "name": "recorder_duration",
+   "uuid": "0ff8d278-61f0-46cc-90a0-c33974c16de2"
+  },
+  {
+   "name": "referrer",
+   "uuid": "77d54367-9edd-426a-8082-d47d13d35205"
+  },
+  {
+   "name": "remarketing_id",
+   "uuid": "131eb324-a28d-4259-8230-5bd72bd63f3d"
+  },
+  {
+   "name": "req_uuid",
+   "uuid": "076ec356-8725-468c-ac4c-785ac5418a1e"
+  },
+  {
+   "name": "request_strategy",
+   "uuid": "30a600c7-2305-44a2-a5ba-bf8284da6047"
+  },
+  {
+   "name": "rtt",
+   "uuid": "ed862240-6b94-4ef9-b8f7-2536066c4606"
+  },
+  {
+   "name": "schema",
+   "uuid": "435c5f49-b410-4378-a1ac-cfc53ddfe8f0"
+  },
+  {
+   "name": "schema1",
+   "uuid": "f6ea0fab-f481-472a-86cb-96db8fdd387d"
+  },
+  {
+   "name": "screen_height",
+   "uuid": "dd4fa389-5b88-4c8f-83ab-9ab30a2d195c"
+  },
+  {
+   "name": "screen_width",
+   "uuid": "e373956c-bd50-4d7d-b0df-8672a3998761"
+  },
+  {
+   "name": "subject_id",
+   "uuid": "d5c76652-b75b-427c-869a-0fc93af1866c"
+  },
+  {
+   "name": "subject_type",
+   "uuid": "3bbe66b3-d6ca-4882-99e6-2f81564f3dca"
+  },
+  {
+   "name": "tbt",
+   "uuid": "1e191cd8-b07f-419e-a950-bbc21a903bff"
+  },
+  {
+   "name": "total_view_duration",
+   "uuid": "51d165af-67f1-42cc-b1bd-af6370a3f3a1"
+  },
+  {
+   "name": "trackingjs_logging_version",
+   "uuid": "5cffba7f-e9b8-411f-a980-40e439e9b12e"
+  },
+  {
+   "name": "transfer_size",
+   "uuid": "a7b5abb1-dd7a-4d71-86c4-73daaae4f656"
+  },
+  {
+   "name": "transfer_size1",
+   "uuid": "6d6b79af-b537-44f0-a873-41d79279ec27"
+  },
+  {
+   "name": "transfer_size2",
+   "uuid": "ad5c7b85-d099-4a92-b5e7-1728eb570c3a"
+  },
+  {
+   "name": "transfer_size3",
+   "uuid": "cf8aa969-a64d-4682-8750-2c49a0e8e1f8"
+  },
+  {
+   "name": "treatment",
+   "uuid": "73b3abf3-59f9-4d6a-a982-199475ea0c3d"
+  },
+  {
+   "name": "ttfcp",
+   "uuid": "de0093d2-44ee-4569-b143-c72ec81e0edd"
+  },
+  {
+   "name": "ttfmp",
+   "uuid": "8024084a-768a-45d2-8e05-08d3bfeb2029"
+  },
+  {
+   "name": "url",
+   "uuid": "fee1d52e-959d-4267-879e-8f442e40bdd3"
+  },
+  {
+   "name": "user_agent",
+   "uuid": "bc4e8cf9-0f45-4f94-97ed-d60f01fadf21"
+  },
+  {
+   "name": "user_bucket",
+   "uuid": "863c4819-22ac-4979-afc4-894ea21c8d6a"
+  },
+  {
+   "name": "utc_offset",
+   "uuid": "3b925952-87e2-4449-adc3-cb0354d4fdcc"
+  },
+  {
+   "name": "uuid",
+   "uuid": "3e61cb4b-7402-40e3-80ae-40c4804ed384"
+  },
+  {
+   "name": "value_rating",
+   "uuid": "6d090d5a-daa7-4adf-92a0-5d48d1b1b4aa"
+  },
+  {
+   "name": "version",
+   "uuid": "7e647bdd-19b5-4b8a-8528-fb42d06fc98b"
+  },
+  {
+   "name": "viewport_width",
+   "uuid": "595026e7-4d1f-44c5-86a8-69803fa321af"
+  },
+  {
+   "name": "visitor_id",
+   "uuid": "01c77b70-8661-4c03-8ce9-398db12eff60"
+  },
+  {
+   "name": "visitor_id1",
+   "uuid": "e473db46-56b7-4cfa-b535-456fb74bb2e1"
+  },
+  {
+   "name": "web_tab_uuid",
+   "uuid": "26a72e32-fd13-4e49-8750-251b69f63e67"
+  }
+ ],
+ "rows": [
+  {
+   "accuracy_rating": 5,
+   "action": "/rooms/51152588",
+   "action_type": 5,
+   "bev": "1636402242_ODNlYWRjMjYxNjNh",
+   "cache_hit_ratio": 0.035714285714285705,
+   "canonical_host": "www.airbnb.com.br",
+   "canonical_url": "/rooms/51152588?guests=1&adults=1&s=67&unique_share_id=2a56042d-e3a0-4be4-a9f0-fbc2331227fc",
+   "checkin_rating": 5,
+   "cleanliness_rating": 5,
+   "client_session_id": "cc4d9419-6733-49ae-9c73-8d50c0270242",
+   "client_version": "18.0.0",
+   "communication_rating": 5,
+   "component": 5,
+   "count": 4,
+   "count1": 3,
+   "count2": 5,
+   "count3": 56,
+   "custom_data": "{\"event\":\"P3Impression\",\"dynx_params\":{\"hrental_pagetype\":\"offerdetail\",\"hrental_id\":\"51152588\",\"hrental_startdate\":\"\",\"hrental_enddate\":\"\",\"has_account\":false},\"p3_listing_id\":\"51152588\",\"num_adults\":1,\"num_children\":0,\"num_infants\":0,\"num_of_nights\":0,\"audience_type\":\"visitor\",\"city\":\"Baependi\",\"country\":\"BR\",\"state\":\"Minas Gerais\",\"suggested_hotels\":\"[]\",\"user_bucket\":15,\"user_group\":35,\"event_id\":\"e86a73ac-eaa0-489f-ab10-e46bbf87dd29\"}",
+   "decodedbody_size": 10315,
+   "decodedbody_size1": 72256,
+   "decodedbody_size2": 231540,
+   "decodedbody_size3": 4983008,
+   "device_id": "1636402242_ODNlYWRjMjYxNjNh",
+   "device_memory": "8",
+   "device_year_class": "2017",
+   "document_age": 205,
+   "domain_and_path": "www.airbnb.com.br/rooms/51152588",
+   "downlink": 10,
+   "ect": "4g",
+   "effective_type": "4g",
+   "encodedbody_size": 2016,
+   "encodedbody_size1": 72256,
+   "encodedbody_size2": 231540,
+   "encodedbody_size3": 1008576,
+   "event_data": "p3_1636402243_2WscjGdmugLV6Ick",
+   "event_data1": "{\"product_id\":\"51152588\"}",
+   "event_data2": "{\"pdp_type\":\"MARKETPLACE\"}",
+   "event_data_schema": "Pdp.v1.PdpNavigationSession",
+   "event_data_schema1": "Pdp.v1.PdpSectionsInfoInternalStateSession",
+   "event_id": "0v99fu314qel6d1v201qx17t2v46",
+   "event_name": "experimentation_experiment_assignment",
+   "event_name1": "jitney_experimentation_experiment_assignment",
+   "experiment": "web_niobe_bot_detection_platformization",
+   "external_stylesheet_rules": 34,
+   "guest_satisfaction_overall": 5,
+   "had_cached_data": true,
+   "hosting_id": "51152588",
+   "http_method": 2,
+   "http_status_code": 200,
+   "impression_uuid": "d604519e-f4f3-4b42-841e-c30c04c7f7c6",
+   "impression_uuid1": "d604519e-f4f3-4b42-841e-c30c04c7f7c6",
+   "inline_stylesheet_rules": 173,
+   "lcp": 800.099,
+   "listing_id": "51152588",
+   "listing_lat": -21.9605,
+   "listing_lng": -44.88068,
+   "location_rating": 5,
+   "logging_id": "UniversalShare.button",
+   "longest_blocking_time": 84,
+   "network_deserialization_latency_ms": 0,
+   "operation": 20,
+   "operation_id": "b77500d382ece93907d870e42773e95234c3b410994006834ae7580ed4966da6",
+   "operation_name": "StaysPdpSections",
+   "page": "p3",
+   "page_name": 3000,
+   "page_name1": 3000,
+   "page_referrer": "https://www.pousadaportela.com.br/",
+   "page_uri": "/rooms/51152588",
+   "page_view_duration": 5,
+   "picture_count": 8,
+   "recorder_duration": 1057.199999988079,
+   "referrer": "https://www.pousadaportela.com.br/",
+   "remarketing_id": "51152588",
+   "req_uuid": "c6d65609-36da-4467-80f6-e5b03ef70f66",
+   "request_strategy": "cache-first",
+   "rtt": 150,
+   "schema": "com.airbnb.jitney.event.logging.Experimentation:ExperimentationExperimentAssignmentEvent:1.0.0",
+   "schema1": "com.airbnb.jitney.event.logging.Experimentation:ExperimentationExperimentAssignmentEvent:1.0.0",
+   "screen_height": 708,
+   "screen_width": 1200,
+   "subject_id": "1636402242_ODNlYWRjMjYxNjNh",
+   "subject_type": "visitor",
+   "tbt": 84,
+   "total_view_duration": 5,
+   "trackingjs_logging_version": "0.2",
+   "transfer_size": 3216,
+   "transfer_size1": 73156,
+   "transfer_size2": 233040,
+   "transfer_size3": 1004833,
+   "treatment": "treatment",
+   "ttfcp": 826.1999999880791,
+   "ttfmp": 827.8999999761581,
+   "url": "https://www.airbnb.com.br/rooms/51152588?guests=1&adults=1&s=67&unique_share_id=2a56042d-e3a0-4be4-a9f0-fbc2331227fc",
+   "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.0 Safari/537.36",
+   "user_bucket": 15,
+   "utc_offset": -10800,
+   "uuid": "0ac53514-1927-468e-84e0-736507160150",
+   "value_rating": 5,
+   "version": "sha=d28a190a920",
+   "viewport_width": "1200",
+   "visitor_id": "1636402242_ODNlYWRjMjYxNjNh",
+   "visitor_id1": "1636402242_ODNlYWRjMjYxNjNh",
+   "web_tab_uuid": "631b2c9d-bc9d-441b-b6cc-ea94e289f8dc"
+  }
+ ]
+}

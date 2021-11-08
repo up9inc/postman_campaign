@@ -1,0 +1,9 @@
+{
+ "configs": [
+  "user"
+ ],
+ "trebuchetKeys": [],
+ "userAttributes": [
+  "{{userAttributes}}"
+ ]
+}

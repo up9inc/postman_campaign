@@ -1,0 +1,21 @@
+{
+ "market": "Tel Aviv",
+ "state_code": "",
+ "country_code": "IL",
+ "satori_region_id": -1,
+ "version": "1.2.0",
+ "user_markets": [
+  {
+   "market": "Tel Aviv",
+   "region_id": -1,
+   "country_code": "IL",
+   "state_code": "",
+   "satori_version": "1.2.0",
+   "enable_satori_experiment": true,
+   "config_token": "EhIiQhIiIjISEjISIRISIlJCNYICFRIVBBUCAA",
+   "locale": "pt",
+   "autocomplete_endpoint": "/api/v2/autocompletes",
+   "satori_parameters": "EhIiQhIiIjISEjISIRISIlJCNYICFRIVBBUCAA"
+  }
+ ]
+}

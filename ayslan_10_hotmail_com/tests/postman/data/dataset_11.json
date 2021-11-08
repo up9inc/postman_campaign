@@ -1,0 +1,13 @@
+[
+ {
+  "_cb": "0rjulnu0gtvsm106pfpbw0mkgc5k",
+  "currency": "BRL",
+  "device_memory": "8",
+  "ect": "4g",
+  "extensions": "{\"persistedQuery\":{\"version\":1,\"sha256Hash\":\"b77500d382ece93907d870e42773e95234c3b410994006834ae7580ed4966da6\"}}",
+  "variables": "{\"cdnCacheSafe\":false,\"hasLoggedIn\":false,\"isInitialLoad\":true,\"source\":\"EXPLORE\"}",
+  "viewport_width": "1200",
+  "x_airbnb_api_key": "d306zoyjsyarp7ifhu67rjxn52tv0t20",
+  "x_csrf_token": "V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo="
+ }
+]

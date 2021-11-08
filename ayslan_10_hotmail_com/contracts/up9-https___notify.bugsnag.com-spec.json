@@ -1,0 +1,413 @@
+{
+ "info": {
+  "title": "https://notify.bugsnag.com - up9650 ayslan_10_hotmail_com all",
+  "version": "0.0.15"
+ },
+ "openapi": "3.1.0",
+ "paths": {
+  "/": {
+   "parameters": [],
+   "post": {
+    "operationId": "d7c5d4e5-b9e6-4861-9075-0b8df418d77c",
+    "parameters": [
+     {
+      "examples": [
+       "4"
+      ],
+      "in": "header",
+      "name": "bugsnag-payload-version",
+      "required": false,
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "examples": [
+       "e393bc25e52fe915ffb56c14ddf2ff1b"
+      ],
+      "in": "header",
+      "name": "bugsnag-api-key",
+      "required": false,
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "examples": [
+       "2021-11-08T20:10:44.058Z"
+      ],
+      "in": "header",
+      "name": "bugsnag-sent-at",
+      "required": false,
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "properties": {
+         "apiKey": {
+          "type": "string"
+         },
+         "events": {
+          "items": {
+           "properties": {
+            "app": {
+             "properties": {
+              "duration": {
+               "type": "integer"
+              },
+              "releaseStage": {
+               "type": "string"
+              },
+              "version": {
+               "type": "string"
+              }
+             },
+             "required": [
+              "duration",
+              "releaseStage",
+              "version"
+             ],
+             "type": "object"
+            },
+            "breadcrumbs": {
+             "items": {
+              "properties": {
+               "metaData": {
+                "type": "object"
+               },
+               "name": {
+                "type": "string"
+               },
+               "timestamp": {
+                "type": "string"
+               },
+               "type": {
+                "type": "string"
+               }
+              },
+              "required": [
+               "metaData",
+               "name",
+               "timestamp",
+               "type"
+              ],
+              "type": "object"
+             },
+             "type": "array"
+            },
+            "context": {
+             "type": "string"
+            },
+            "device": {
+             "properties": {
+              "id": {
+               "type": "string"
+              },
+              "locale": {
+               "type": "string"
+              },
+              "orientation": {
+               "type": "string"
+              },
+              "time": {
+               "type": "string"
+              },
+              "userAgent": {
+               "type": "string"
+              }
+             },
+             "required": [
+              "id",
+              "locale",
+              "orientation",
+              "time",
+              "userAgent"
+             ],
+             "type": "object"
+            },
+            "exceptions": {
+             "items": {
+              "additionalProperties": {
+               "items": {
+                "type": "object"
+               },
+               "type": "array"
+              },
+              "properties": {
+               "errorClass": {
+                "type": "string"
+               },
+               "errorMessage": {
+                "type": "string"
+               },
+               "message": {
+                "type": "string"
+               },
+               "type": {
+                "type": "string"
+               }
+              },
+              "required": [
+               "errorClass",
+               "errorMessage",
+               "message",
+               "type"
+              ],
+              "type": "object"
+             },
+             "type": "array"
+            },
+            "metaData": {
+             "additionalProperties": {
+              "properties": {
+               "experiments": {
+                "items": {
+                 "type": "string"
+                },
+                "type": "array"
+               },
+               "treatments": {
+                "items": {
+                 "type": "string"
+                },
+                "type": "array"
+               }
+              },
+              "required": [
+               "experiments",
+               "treatments"
+              ],
+              "type": "object"
+             },
+             "properties": {
+              "app_name": {
+               "type": "string"
+              },
+              "connection_type": {
+               "type": "string"
+              },
+              "is_installed_pwa": {
+               "type": "boolean"
+              },
+              "is_metro": {
+               "type": "boolean"
+              },
+              "is_service_worker": {
+               "type": "boolean"
+              },
+              "locale": {
+               "type": "string"
+              },
+              "loop_name": {
+               "type": "string"
+              },
+              "tags": {
+               "properties": {
+                "team": {
+                 "type": "string"
+                }
+               },
+               "required": [
+                "team"
+               ],
+               "type": "object"
+              },
+              "trebuchets": {
+               "properties": {
+                "trebuchets": {
+                 "items": {
+                  "type": "string"
+                 },
+                 "type": "array"
+                },
+                "values": {
+                 "items": {
+                  "type": "string"
+                 },
+                 "type": "array"
+                }
+               },
+               "required": [
+                "trebuchets",
+                "values"
+               ],
+               "type": "object"
+              },
+              "user": {
+               "additionalProperties": {
+                "type": "boolean"
+               },
+               "properties": {
+                "bev": {
+                 "type": "string"
+                }
+               },
+               "required": [
+                "bev"
+               ],
+               "type": "object"
+              }
+             },
+             "required": [
+              "app_name",
+              "connection_type",
+              "is_installed_pwa",
+              "is_metro",
+              "is_service_worker",
+              "locale",
+              "loop_name",
+              "tags",
+              "trebuchets",
+              "user"
+             ],
+             "type": "object"
+            },
+            "payloadVersion": {
+             "type": "string"
+            },
+            "request": {
+             "properties": {
+              "clientIp": {
+               "type": "string"
+              },
+              "url": {
+               "type": "string"
+              }
+             },
+             "required": [
+              "clientIp",
+              "url"
+             ],
+             "type": "object"
+            },
+            "session": {
+             "properties": {
+              "events": {
+               "properties": {
+                "handled": {
+                 "type": "integer"
+                },
+                "unhandled": {
+                 "type": "integer"
+                }
+               },
+               "required": [
+                "handled",
+                "unhandled"
+               ],
+               "type": "object"
+              },
+              "id": {
+               "type": "string"
+              },
+              "startedAt": {
+               "type": "string"
+              }
+             },
+             "required": [
+              "events",
+              "id",
+              "startedAt"
+             ],
+             "type": "object"
+            },
+            "severity": {
+             "type": "string"
+            },
+            "severityReason": {
+             "properties": {
+              "type": {
+               "type": "string"
+              }
+             },
+             "required": [
+              "type"
+             ],
+             "type": "object"
+            },
+            "unhandled": {
+             "type": "boolean"
+            },
+            "user": {
+             "properties": {
+              "id": {
+               "type": "string"
+              }
+             },
+             "required": [
+              "id"
+             ],
+             "type": "object"
+            }
+           },
+           "required": [
+            "app",
+            "breadcrumbs",
+            "context",
+            "device",
+            "exceptions",
+            "metaData",
+            "payloadVersion",
+            "request",
+            "session",
+            "severity",
+            "severityReason",
+            "unhandled",
+            "user"
+           ],
+           "type": "object"
+          },
+          "type": "array"
+         },
+         "notifier": {
+          "properties": {
+           "name": {
+            "type": "string"
+           },
+           "url": {
+            "type": "string"
+           },
+           "version": {
+            "type": "string"
+           }
+          },
+          "required": [
+           "name",
+           "url",
+           "version"
+          ],
+          "type": "object"
+         }
+        },
+        "required": [
+         "apiKey",
+         "events",
+         "notifier"
+        ],
+        "type": "object"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "text/plain": {
+        "example": "OK"
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests"
+   }
+  }
+ },
+ "tags": []
+}

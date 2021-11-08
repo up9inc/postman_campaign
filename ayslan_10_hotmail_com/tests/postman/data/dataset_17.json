@@ -1,0 +1,9 @@
+[
+ {
+  "device_memory": "8",
+  "ect": "4g",
+  "metric": "form_factor_switch.impression",
+  "tags": "loop:core-guest-loop",
+  "viewport_width": "1200"
+ }
+]

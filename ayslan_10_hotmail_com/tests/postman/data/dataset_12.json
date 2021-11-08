@@ -1,0 +1,13 @@
+[
+ {
+  "_cb": "0yn81ce1snp0pq04z33uj1g81sek",
+  "currency": "BRL",
+  "device_memory": "8",
+  "ect": "4g",
+  "extensions": "{\"persistedQuery\":{\"version\":1,\"sha256Hash\":\"8f08e03c7bd16fcad3c92a3592c19a8b559a0d0855a84028d1163d4733ed9ade\"}}",
+  "variables": "{\"request\":{\"count\":12,\"listingId\":\"51152588\",\"month\":11,\"year\":2021}}",
+  "viewport_width": "1200",
+  "x_airbnb_api_key": "d306zoyjsyarp7ifhu67rjxn52tv0t20",
+  "x_csrf_token": "V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo="
+ }
+]

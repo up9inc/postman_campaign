@@ -1,0 +1,376 @@
+{
+ "data": {
+  "merlin": {
+   "__typename": "MerlinQuery",
+   "pdpPhotoTour": {
+    "__typename": "MerlinPdpPhotoTourResponse",
+    "roomsOverviewTitle": null,
+    "images": [
+     {
+      "__typename": "MerlinImage",
+      "id": "{{random.int 1223035993 1242657960}}",
+      "baseUrl": "https://a0.muscache.com/pictures/miso/Hosting-51152588/original/e35c5918-b8c8-444c-99e6-da7abe3f3cc1.jpeg",
+      "previewEncodedPng": "",
+      "accessibilityLabel": "Imagem 1 do an\u00fancio",
+      "aspectRatio": {{random.float 0.74765625 1.3389121338912133 2}},
+      "displayAspectRatio": null,
+      "orientation": "LANDSCAPE",
+      "imageMetadata": {
+       "__typename": "MerlinImageMetadata",
+       "caption": "",
+       "imageType": "DETAIL",
+       "isProfessional": false
+      }
+     },
+     {
+      "__typename": "MerlinImage",
+      "id": "{{random.int 1223035993 1242657960}}",
+      "baseUrl": "https://a0.muscache.com/pictures/miso/Hosting-51152588/original/b8221953-be1d-40bd-9522-0ede276b634b.jpeg",
+      "previewEncodedPng": "",
+      "accessibilityLabel": "Imagem 2 do an\u00fancio",
+      "aspectRatio": {{random.float 0.74765625 1.3389121338912133 2}},
+      "displayAspectRatio": null,
+      "orientation": "PORTRAIT",
+      "imageMetadata": {
+       "__typename": "MerlinImageMetadata",
+       "caption": "",
+       "imageType": "DETAIL",
+       "isProfessional": false
+      }
+     },
+     {
+      "__typename": "MerlinImage",
+      "id": "{{random.int 1223035993 1242657960}}",
+      "baseUrl": "https://a0.muscache.com/pictures/miso/Hosting-51152588/original/0164cbc2-7beb-497e-a76b-67ff8ab97faf.jpeg",
+      "previewEncodedPng": "",
+      "accessibilityLabel": "Imagem 3 do an\u00fancio",
+      "aspectRatio": {{random.float 0.74765625 1.3389121338912133 2}},
+      "displayAspectRatio": null,
+      "orientation": "LANDSCAPE",
+      "imageMetadata": {
+       "__typename": "MerlinImageMetadata",
+       "caption": "",
+       "imageType": "DETAIL",
+       "isProfessional": false
+      }
+     },
+     {
+      "__typename": "MerlinImage",
+      "id": "{{random.int 1223035993 1242657960}}",
+      "baseUrl": "https://a0.muscache.com/pictures/miso/Hosting-51152588/original/77b906f3-527d-484b-9447-b99dd5336abd.jpeg",
+      "previewEncodedPng": "",
+      "accessibilityLabel": "Imagem 4 do an\u00fancio",
+      "aspectRatio": {{random.float 0.74765625 1.3389121338912133 2}},
+      "displayAspectRatio": null,
+      "orientation": "LANDSCAPE",
+      "imageMetadata": {
+       "__typename": "MerlinImageMetadata",
+       "caption": "",
+       "imageType": "DETAIL",
+       "isProfessional": false
+      }
+     },
+     {
+      "__typename": "MerlinImage",
+      "id": "{{random.int 1223035993 1242657960}}",
+      "baseUrl": "https://a0.muscache.com/pictures/miso/Hosting-51152588/original/3cfb50ef-27c8-403d-a2c3-66adf8c8e8c7.jpeg",
+      "previewEncodedPng": "",
+      "accessibilityLabel": "Imagem 5 do an\u00fancio",
+      "aspectRatio": {{random.float 0.74765625 1.3389121338912133 2}},
+      "displayAspectRatio": null,
+      "orientation": "PORTRAIT",
+      "imageMetadata": {
+       "__typename": "MerlinImageMetadata",
+       "caption": "",
+       "imageType": "DETAIL",
+       "isProfessional": false
+      }
+     },
+     {
+      "__typename": "MerlinImage",
+      "id": "{{random.int 1223035993 1242657960}}",
+      "baseUrl": "https://a0.muscache.com/pictures/miso/Hosting-51152588/original/3983ac76-f7fa-4566-a835-a5e398fa81c4.jpeg",
+      "previewEncodedPng": "",
+      "accessibilityLabel": "Imagem 6 do an\u00fancio",
+      "aspectRatio": {{random.float 0.74765625 1.3389121338912133 2}},
+      "displayAspectRatio": null,
+      "orientation": "PORTRAIT",
+      "imageMetadata": {
+       "__typename": "MerlinImageMetadata",
+       "caption": "",
+       "imageType": "DETAIL",
+       "isProfessional": false
+      }
+     },
+     {
+      "__typename": "MerlinImage",
+      "id": "{{random.int 1223035993 1242657960}}",
+      "baseUrl": "https://a0.muscache.com/pictures/miso/Hosting-51152588/original/c75c3184-2d8b-4497-be92-c2d9992664cf.jpeg",
+      "previewEncodedPng": "",
+      "accessibilityLabel": "Imagem 7 do an\u00fancio",
+      "aspectRatio": {{random.float 0.74765625 1.3389121338912133 2}},
+      "displayAspectRatio": null,
+      "orientation": "LANDSCAPE",
+      "imageMetadata": {
+       "__typename": "MerlinImageMetadata",
+       "caption": "",
+       "imageType": "DETAIL",
+       "isProfessional": false
+      }
+     },
+     {
+      "__typename": "MerlinImage",
+      "id": "{{random.int 1223035993 1242657960}}",
+      "baseUrl": "https://a0.muscache.com/pictures/miso/Hosting-51152588/original/f63b189b-328a-4735-8c32-f251639ca843.jpeg",
+      "previewEncodedPng": "",
+      "accessibilityLabel": "Imagem 8 do an\u00fancio",
+      "aspectRatio": {{random.float 0.74765625 1.3389121338912133 2}},
+      "displayAspectRatio": null,
+      "orientation": "PORTRAIT",
+      "imageMetadata": {
+       "__typename": "MerlinImageMetadata",
+       "caption": "",
+       "imageType": "DETAIL",
+       "isProfessional": false
+      }
+     },
+     {
+      "__typename": "MerlinImage",
+      "id": "{{random.int 1223035993 1242657960}}",
+      "baseUrl": "https://a0.muscache.com/pictures/miso/Hosting-51152588/original/f5c5cfd5-eaef-4bfb-a194-538d9e8352ea.jpeg",
+      "previewEncodedPng": "",
+      "accessibilityLabel": "Imagem 9 do an\u00fancio",
+      "aspectRatio": {{random.float 0.74765625 1.3389121338912133 2}},
+      "displayAspectRatio": null,
+      "orientation": "PORTRAIT",
+      "imageMetadata": {
+       "__typename": "MerlinImageMetadata",
+       "caption": "",
+       "imageType": "DETAIL",
+       "isProfessional": false
+      }
+     },
+     {
+      "__typename": "MerlinImage",
+      "id": "{{random.int 1223035993 1242657960}}",
+      "baseUrl": "https://a0.muscache.com/pictures/miso/Hosting-51152588/original/9b62af15-e423-4a70-89a2-a936536b6e1f.jpeg",
+      "previewEncodedPng": "",
+      "accessibilityLabel": "Imagem 10 do an\u00fancio",
+      "aspectRatio": {{random.float 0.74765625 1.3389121338912133 2}},
+      "displayAspectRatio": null,
+      "orientation": "LANDSCAPE",
+      "imageMetadata": {
+       "__typename": "MerlinImageMetadata",
+       "caption": "",
+       "imageType": "DETAIL",
+       "isProfessional": false
+      }
+     },
+     {
+      "__typename": "MerlinImage",
+      "id": "{{random.int 1223035993 1242657960}}",
+      "baseUrl": "https://a0.muscache.com/pictures/miso/Hosting-51152588/original/e16d75fb-68e2-4264-aeff-0a8ca4918079.jpeg",
+      "previewEncodedPng": "",
+      "accessibilityLabel": "Imagem 11 do an\u00fancio",
+      "aspectRatio": {{random.float 0.74765625 1.3389121338912133 2}},
+      "displayAspectRatio": null,
+      "orientation": "PORTRAIT",
+      "imageMetadata": {
+       "__typename": "MerlinImageMetadata",
+       "caption": "",
+       "imageType": "DETAIL",
+       "isProfessional": false
+      }
+     },
+     {
+      "__typename": "MerlinImage",
+      "id": "{{random.int 1223035993 1242657960}}",
+      "baseUrl": "https://a0.muscache.com/pictures/miso/Hosting-51152588/original/51bbbb55-9a37-42bf-bd87-6ee84feabe36.jpeg",
+      "previewEncodedPng": "",
+      "accessibilityLabel": "Imagem 12 do an\u00fancio",
+      "aspectRatio": {{random.float 0.74765625 1.3389121338912133 2}},
+      "displayAspectRatio": null,
+      "orientation": "PORTRAIT",
+      "imageMetadata": {
+       "__typename": "MerlinImageMetadata",
+       "caption": "",
+       "imageType": "DETAIL",
+       "isProfessional": false
+      }
+     }
+    ],
+    "roomTourLayoutInfos": [
+     {
+      "__typename": "MerlinRoomTourLayoutInfo",
+      "roomTourItems": [
+       {
+        "__typename": "MerlinRoomTourItem",
+        "title": null,
+        "highlights": null,
+        "imageIds": [
+         "1223035993",
+         "1242657960",
+         "1223036089",
+         "1223036092",
+         "1223036090",
+         "1223036093",
+         "1223036097",
+         "1223036094",
+         "1223036096",
+         "1242656845",
+         "1242656841",
+         "1242656844"
+        ],
+        "mediaBlocks": [
+         {
+          "__typename": "MerlinMediaBlockContainer",
+          "flip": "HORIZONTAL_FLIP",
+          "format": "ONE_PORTRAIT_TWO_LANDSCAPES",
+          "mediaBlock": {
+           "__typename": "MerlinOnePortraitTwoLandscapesMediaBlock",
+           "lowerLandscapeId": "1223036089",
+           "portraitId": "1242657960",
+           "upperLandscapeId": "1223035993"
+          }
+         },
+         {
+          "__typename": "MerlinMediaBlockContainer",
+          "flip": "DEFAULT",
+          "format": "ONE_LANDSCAPE",
+          "mediaBlock": {
+           "__typename": "MerlinOneLandscapeMediaBlock",
+           "landscapeId": "1223036092"
+          }
+         },
+         {
+          "__typename": "MerlinMediaBlockContainer",
+          "flip": "DEFAULT",
+          "format": "TWO_PORTRAITS",
+          "mediaBlock": {
+           "__typename": "MerlinTwoPortraitsMediaBlock",
+           "leftPortraitId": "1223036090",
+           "rightPortraitId": "1223036093"
+          }
+         },
+         {
+          "__typename": "MerlinMediaBlockContainer",
+          "flip": "DEFAULT",
+          "format": "ONE_LANDSCAPE",
+          "mediaBlock": {
+           "__typename": "MerlinOneLandscapeMediaBlock",
+           "landscapeId": "1223036097"
+          }
+         },
+         {
+          "__typename": "MerlinMediaBlockContainer",
+          "flip": "DEFAULT",
+          "format": "TWO_PORTRAITS",
+          "mediaBlock": {
+           "__typename": "MerlinTwoPortraitsMediaBlock",
+           "leftPortraitId": "1223036094",
+           "rightPortraitId": "1223036096"
+          }
+         },
+         {
+          "__typename": "MerlinMediaBlockContainer",
+          "flip": "DEFAULT",
+          "format": "ONE_LANDSCAPE",
+          "mediaBlock": {
+           "__typename": "MerlinOneLandscapeMediaBlock",
+           "landscapeId": "1242656845"
+          }
+         },
+         {
+          "__typename": "MerlinMediaBlockContainer",
+          "flip": "DEFAULT",
+          "format": "TWO_PORTRAITS",
+          "mediaBlock": {
+           "__typename": "MerlinTwoPortraitsMediaBlock",
+           "leftPortraitId": "1242656841",
+           "rightPortraitId": "1242656844"
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "gridImageLoggingEventData": {
+     "__typename": "MerlinLoggingEventData",
+     "loggingId": "pdp.photoTour.gridImage",
+     "section": "photoTour",
+     "component": "gridImage",
+     "experiments": null,
+     "eventDataSchemaName": null,
+     "eventData": null
+    },
+    "carouselImageNavigationLoggingEventData": {
+     "__typename": "MerlinLoggingEventData",
+     "loggingId": "pdp.photoTour.carouselImageNavigation",
+     "section": "photoTour",
+     "component": "carouselImageNavigation",
+     "experiments": null,
+     "eventDataSchemaName": null,
+     "eventData": null
+    },
+    "saveButton": {
+     "__typename": "MerlinBasicListItem",
+     "title": "Salvar",
+     "subtitle": null,
+     "loggingEventData": {
+      "__typename": "MerlinLoggingEventData",
+      "loggingId": "pdp.photoTour.save",
+      "section": "photoTour",
+      "component": "save",
+      "experiments": null,
+      "eventDataSchemaName": null,
+      "eventData": null
+     }
+    },
+    "unsaveButton": {
+     "__typename": "MerlinBasicListItem",
+     "title": "Salvos",
+     "subtitle": null,
+     "loggingEventData": {
+      "__typename": "MerlinLoggingEventData",
+      "loggingId": "pdp.photoTour.unsave",
+      "section": "photoTour",
+      "component": "unsave",
+      "experiments": null,
+      "eventDataSchemaName": null,
+      "eventData": null
+     }
+    },
+    "shareButton": {
+     "__typename": "MerlinBasicListItem",
+     "title": "Compartilhar",
+     "subtitle": null,
+     "loggingEventData": {
+      "__typename": "MerlinLoggingEventData",
+      "loggingId": "pdp.photoTour.share",
+      "section": "photoTour",
+      "component": "share",
+      "experiments": null,
+      "eventDataSchemaName": null,
+      "eventData": null
+     }
+    },
+    "closeButton": {
+     "__typename": "MerlinBasicListItem",
+     "title": "Fechar",
+     "anchor": null,
+     "icon": null,
+     "loggingEventData": {
+      "__typename": "MerlinLoggingEventData",
+      "component": "close",
+      "section": "photoTour",
+      "loggingId": "pdp.photoTour.close"
+     }
+    }
+   }
+  }
+ },
+ "extensions": {
+  "traceId": "f3Ogbzylg2_kZ81fbH2Qxg=="
+ }
+}

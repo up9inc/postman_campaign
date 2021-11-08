@@ -1,0 +1,53 @@
+{
+ "parameters": [
+  {
+   "name": "_cb",
+   "uuid": "46d49b46-a72a-4a0a-b39c-e38499f4a478"
+  },
+  {
+   "name": "currency",
+   "uuid": "13e272a3-7088-4f65-a534-bd25746f0f6c"
+  },
+  {
+   "name": "device_memory",
+   "uuid": "f49c2657-0f34-42a2-a782-341fcc307d8d"
+  },
+  {
+   "name": "ect",
+   "uuid": "b4e8315e-2d2b-4486-8273-b52d1f38dee4"
+  },
+  {
+   "name": "extensions",
+   "uuid": "5dcf6857-032c-47b2-a332-5352dc02917f"
+  },
+  {
+   "name": "variables",
+   "uuid": "edf6a97b-fbfa-40fc-849a-c852bd2aac1f"
+  },
+  {
+   "name": "viewport_width",
+   "uuid": "7b55ebce-3042-4a9b-9fd1-2f610d6db50e"
+  },
+  {
+   "name": "x_airbnb_api_key",
+   "uuid": "6449bcae-ae90-4e3c-be87-71c9559e0c71"
+  },
+  {
+   "name": "x_csrf_token",
+   "uuid": "996c0157-7efb-43eb-853c-09498ec97b11"
+  }
+ ],
+ "rows": [
+  {
+   "_cb": "18w2tps02qzxfv0kcnnhf02ns54e",
+   "currency": "BRL",
+   "device_memory": "8",
+   "ect": "4g",
+   "extensions": "{\"persistedQuery\":{\"version\":1,\"sha256Hash\":\"9275d8e26a421ffd2fb34d773c565a9bfd1239586e1491a628aace89f3f5d3f7\"}}",
+   "variables": "{\"request\":{\"refinementPaths\":[\"/homes\"],\"screenSize\":\"large\",\"treatmentFlags\":[\"flex_destinations_june_2021_launch_web_treatment\",\"merch_header_breakpoint_expansion_web\",\"storefronts_november_2021_homepage_desktop_web_treatment\",\"storefronts_november_2021_homepage_moweb_treatment\",\"flexible_dates_options_extend_one_three_seven_days\",\"super_date_flexibility\",\"search_input_placeholder_phrases\"],\"version\":\"1.8.3\",\"channel\":\"SEARCH_HEADER_PDP\"}}",
+   "viewport_width": "1200",
+   "x_airbnb_api_key": "d306zoyjsyarp7ifhu67rjxn52tv0t20",
+   "x_csrf_token": "V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo="
+  }
+ ]
+}

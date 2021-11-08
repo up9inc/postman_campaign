@@ -1,0 +1,47 @@
+services:
+  notify.bugsnag.com:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'https://notify.bugsnag.com'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=443
+    hostname: notify
+    image: up9inc/mockintosh:latest
+    ports:
+    - 443
+    read_only: true
+    volumes:
+    - .:/config
+  www.airbnb.com.br:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'https://www.airbnb.com.br'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=443
+    hostname: www
+    image: up9inc/mockintosh:latest
+    ports:
+    - 443
+    read_only: true
+    volumes:
+    - .:/config
+  www.pousadaportela.com.br:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'https://www.pousadaportela.com.br'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=443
+    hostname: www
+    image: up9inc/mockintosh:latest
+    ports:
+    - 443
+    read_only: true
+    volumes:
+    - .:/config
+version: '3.3'

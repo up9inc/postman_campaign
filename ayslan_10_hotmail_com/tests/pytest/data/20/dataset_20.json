@@ -1,0 +1,143 @@
+{
+ "parameters": [
+  {
+   "name": "apiKey",
+   "uuid": "36544efe-1329-4092-ba61-79bfc8be2f2a"
+  },
+  {
+   "name": "bev",
+   "uuid": "ad27d5ab-5bde-4d47-b320-67e29e279573"
+  },
+  {
+   "name": "bugsnag_api_key",
+   "uuid": "fb7cd5d9-cb89-4d4e-8cce-54ae8a728e8b"
+  },
+  {
+   "name": "bugsnag_payload_version",
+   "uuid": "895a6e9e-9f6d-4f70-bf1b-996005fb2482"
+  },
+  {
+   "name": "bugsnag_sent_at",
+   "uuid": "ba637200-ebb9-4f60-869c-7b3c7f2bd78f"
+  },
+  {
+   "name": "clientIp",
+   "uuid": "a7e12614-51a9-4cfc-9cd0-f6b0c6da329b"
+  },
+  {
+   "name": "connection_type",
+   "uuid": "891f5c56-f0c8-4be1-8fb7-e4c81f5116f6"
+  },
+  {
+   "name": "duration",
+   "uuid": "06751e86-2e2a-4745-bd8f-e129222fc5af"
+  },
+  {
+   "name": "errorMessage",
+   "uuid": "12468f36-dc10-43fb-831c-0ea10257e2cb"
+  },
+  {
+   "name": "experiments",
+   "uuid": "988d3a2d-bf3a-4eca-b4de-11c752581343"
+  },
+  {
+   "name": "id",
+   "uuid": "5f91a2f1-b3ce-4545-8f97-7052e1b63e3b"
+  },
+  {
+   "name": "id1",
+   "uuid": "251ace92-ba70-4101-aee1-91e11f21786a"
+  },
+  {
+   "name": "id2",
+   "uuid": "c04bc709-6d4f-46db-b2c7-60f9a0f20b71"
+  },
+  {
+   "name": "message",
+   "uuid": "a1cf7165-b019-41cc-b852-13d308bac230"
+  },
+  {
+   "name": "name",
+   "uuid": "d93320c6-9e76-4bd4-9f0d-10fe1b0e83d2"
+  },
+  {
+   "name": "payloadVersion",
+   "uuid": "525837b4-d4c0-43c3-9616-716f9a2c823b"
+  },
+  {
+   "name": "startedAt",
+   "uuid": "778b3ed7-b8fb-4fbf-bc98-fad73b8dbcf0"
+  },
+  {
+   "name": "time",
+   "uuid": "4bd1e325-d5da-4258-a9cf-6fb3240957ab"
+  },
+  {
+   "name": "timestamp",
+   "uuid": "4e7ceed0-7a7a-4110-84c6-5575b076e54c"
+  },
+  {
+   "name": "treatments",
+   "uuid": "4d69f320-8c95-4bd9-8a8a-425a6420dbcb"
+  },
+  {
+   "name": "trebuchets",
+   "uuid": "0641bf2d-7875-4fe4-acee-200758c08ac7"
+  },
+  {
+   "name": "url",
+   "uuid": "42fd2149-59eb-44fb-ad1f-34d4e604762f"
+  },
+  {
+   "name": "url1",
+   "uuid": "76fafae5-617e-4c08-8f01-d7d3c992fcec"
+  },
+  {
+   "name": "userAgent",
+   "uuid": "b3e97557-9149-4b02-87f9-e847dbf71e69"
+  },
+  {
+   "name": "values",
+   "uuid": "58a849b5-3c96-4c4b-97f7-e34f56b514e0"
+  },
+  {
+   "name": "version",
+   "uuid": "a5a7fc53-c9e0-48e2-9201-de321cac4880"
+  },
+  {
+   "name": "version1",
+   "uuid": "3942b91a-564c-4108-aa34-1b76d68d01f5"
+  }
+ ],
+ "rows": [
+  {
+   "apiKey": "e393bc25e52fe915ffb56c14ddf2ff1b",
+   "bev": "1636402242_ODNlYWRjMjYxNjNh",
+   "bugsnag_api_key": "e393bc25e52fe915ffb56c14ddf2ff1b",
+   "bugsnag_payload_version": "4",
+   "bugsnag_sent_at": "2021-11-08T20:10:44.058Z",
+   "clientIp": "[REDACTED]",
+   "connection_type": "4g",
+   "duration": 8,
+   "errorMessage": "ViaductContent missing data",
+   "experiments": "web_bot_detection_use_recaptcha_net_globally",
+   "id": "ckvr3n8i400003f75oio0oqd7",
+   "id1": "ckvr3n8i500003f75hqgqd41s",
+   "id2": "1636402242_ODNlYWRjMjYxNjNh",
+   "message": "ViaductContent missing data",
+   "name": "Bugsnag loaded",
+   "payloadVersion": "4",
+   "startedAt": "2021-11-08T20:10:44.045Z",
+   "time": "2021-11-08T20:10:44.049Z",
+   "timestamp": "2021-11-08T20:10:44.045Z",
+   "treatments": "web_bot_detection_use_recaptcha_net_globally:treatment",
+   "trebuchets": "enable_bugsnag_web",
+   "url": "https://www.airbnb.com.br/rooms/51152588?guests=1&adults=1&s=67&unique_share_id=2a56042d-e3a0-4be4-a9f0-fbc2331227fc&source_impression_id=p3_1636402243_2WscjGdmugLV6Ick",
+   "url1": "https://github.com/bugsnag/bugsnag-js",
+   "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.0 Safari/537.36",
+   "values": "enable_bugsnag_web:true",
+   "version": "[core-guest-loop] d28a190a92086648de2f9d0947de8cd67efc4687",
+   "version1": "7.7.0"
+  }
+ ]
+}

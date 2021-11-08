@@ -1,0 +1,31 @@
+[
+ {
+  "apiKey": "e393bc25e52fe915ffb56c14ddf2ff1b",
+  "bev": "1636402242_ODNlYWRjMjYxNjNh",
+  "bugsnag_api_key": "e393bc25e52fe915ffb56c14ddf2ff1b",
+  "bugsnag_payload_version": "4",
+  "bugsnag_sent_at": "2021-11-08T20:10:44.058Z",
+  "clientIp": "[REDACTED]",
+  "connection_type": "4g",
+  "duration": 8,
+  "errorMessage": "ViaductContent missing data",
+  "experiments": "web_bot_detection_use_recaptcha_net_globally",
+  "id": "ckvr3n8i400003f75oio0oqd7",
+  "id1": "ckvr3n8i500003f75hqgqd41s",
+  "id2": "1636402242_ODNlYWRjMjYxNjNh",
+  "message": "ViaductContent missing data",
+  "name": "Bugsnag loaded",
+  "payloadVersion": "4",
+  "startedAt": "2021-11-08T20:10:44.045Z",
+  "time": "2021-11-08T20:10:44.049Z",
+  "timestamp": "2021-11-08T20:10:44.045Z",
+  "treatments": "web_bot_detection_use_recaptcha_net_globally:treatment",
+  "trebuchets": "enable_bugsnag_web",
+  "url": "https://www.airbnb.com.br/rooms/51152588?guests=1&adults=1&s=67&unique_share_id=2a56042d-e3a0-4be4-a9f0-fbc2331227fc&source_impression_id=p3_1636402243_2WscjGdmugLV6Ick",
+  "url1": "https://github.com/bugsnag/bugsnag-js",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.0 Safari/537.36",
+  "values": "enable_bugsnag_web:true",
+  "version": "[core-guest-loop] d28a190a92086648de2f9d0947de8cd67efc4687",
+  "version1": "7.7.0"
+ }
+]

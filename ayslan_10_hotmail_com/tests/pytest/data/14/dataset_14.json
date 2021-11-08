@@ -1,0 +1,58 @@
+{
+ "parameters": [
+  {
+   "name": "_cb",
+   "uuid": "16fae4a1-3548-4f5e-b499-b5eac13f087d"
+  },
+  {
+   "name": "currency",
+   "uuid": "fd1e9d1b-0c87-4d1d-b009-43f786e16c33"
+  },
+  {
+   "name": "device_memory",
+   "uuid": "61e0c8e0-e3f0-4f0e-a519-c420eae29431"
+  },
+  {
+   "name": "ect",
+   "uuid": "6eec847b-bbda-4172-b025-00b41a22bcf6"
+  },
+  {
+   "name": "extensions",
+   "uuid": "5ca79743-425e-43a8-ad45-9ee5ff114e1d"
+  },
+  {
+   "name": "operationName",
+   "uuid": "97d2b8c7-6564-4195-8da5-61f4b4d2a9a3"
+  },
+  {
+   "name": "variables",
+   "uuid": "d85da704-ba1a-44ed-9321-2053238cd9ab"
+  },
+  {
+   "name": "viewport_width",
+   "uuid": "173e0038-da6a-4b70-acfb-32f776f104e1"
+  },
+  {
+   "name": "x_airbnb_api_key",
+   "uuid": "8ac173ae-564a-41f3-ab10-f29200f115bd"
+  },
+  {
+   "name": "x_csrf_token",
+   "uuid": "57879307-279f-4532-bbbb-95d7c261d173"
+  }
+ ],
+ "rows": [
+  {
+   "_cb": "0ali3731oqvtbx1o0ub471esimb0",
+   "currency": "BRL",
+   "device_memory": "8",
+   "ect": "4g",
+   "extensions": "{\"persistedQuery\":{\"version\":1,\"sha256Hash\":\"ecf7222b1ad7e13da1bf39cf3cf05daa6bbc88709f06ea9cf669deca7e2e2de2\"}}",
+   "operationName": "PdpReviews",
+   "variables": "{\"request\":{\"fieldSelector\":\"for_p3\",\"limit\":7,\"listingId\":\"51152588\",\"numberOfAdults\":\"1\",\"numberOfChildren\":\"0\",\"numberOfInfants\":\"0\"}}",
+   "viewport_width": "1200",
+   "x_airbnb_api_key": "d306zoyjsyarp7ifhu67rjxn52tv0t20",
+   "x_csrf_token": "V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo="
+  }
+ ]
+}

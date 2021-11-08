@@ -1,0 +1,13 @@
+[
+ {
+  "_cb": "1idxal10ro8rgx1569ka90z5w1p1",
+  "currency": "BRL",
+  "device_memory": "8",
+  "ect": "4g",
+  "extensions": "{\"persistedQuery\":{\"version\":1,\"sha256Hash\":\"f73a2abcdb3df4886fcc458f029579a3660f0054f098a4c611d0e5312ab0508b\"}}",
+  "variables": "{\"id\":\"U3RheUxpc3Rpbmc6NTExNTI1ODg=\",\"pdpSectionsRequest\":{\"adults\":\"1\",\"bypassTargetings\":false,\"categoryTag\":null,\"causeId\":null,\"children\":null,\"disasterId\":null,\"discountedGuestFeeVersion\":null,\"displayExtensions\":null,\"federatedSearchId\":null,\"forceBoostPriorityMessageType\":null,\"infants\":null,\"interactionType\":null,\"layouts\":[\"SIDEBAR\",\"SINGLE_COLUMN\"],\"pets\":0,\"pdpTypeOverride\":null,\"preview\":false,\"previousStateCheckIn\":null,\"previousStateCheckOut\":null,\"priceDropSource\":null,\"privateBooking\":false,\"promotionUuid\":null,\"relaxedAmenityIds\":null,\"searchId\":null,\"selectedCancellationPolicyId\":null,\"selectedRatePlanId\":null,\"staysBookingMigrationEnabled\":false,\"translateUgc\":null,\"useNewSectionWrapperApi\":false,\"sectionIds\":[\"BOOK_IT_FLOATING_FOOTER\",\"EDUCATION_FOOTER_BANNER_MODAL\",\"BOOK_IT_CALENDAR_SHEET\",\"CANCELLATION_POLICY_PICKER_MODAL\",\"POLICIES_DEFAULT\",\"BOOK_IT_NAV\",\"BOOK_IT_SIDEBAR\",\"URGENCY_COMMITMENT_SIDEBAR\",\"URGENCY_COMMITMENT\",\"EDUCATION_FOOTER_BANNER\"],\"checkIn\":null,\"checkOut\":null,\"p3ImpressionId\":\"p3_1636402243_2WscjGdmugLV6Ick\"}}",
+  "viewport_width": "1200",
+  "x_airbnb_api_key": "d306zoyjsyarp7ifhu67rjxn52tv0t20",
+  "x_csrf_token": "V4$.airbnb.com.br$Y3nlP_-5SK0$HN3lL0CNNwY1rl9WXY82mwD-ue46il4vXj5Pmsy8tFo="
+ }
+]

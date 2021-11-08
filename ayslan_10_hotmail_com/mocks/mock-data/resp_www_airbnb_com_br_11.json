@@ -1,0 +1,120 @@
+{
+ "data": {
+  "presentation": {
+   "__typename": "RootPresentationContainer",
+   "header": {
+    "__typename": "Header",
+    "topLevelItemGroup": {
+     "__typename": "HeaderItemGroup",
+     "id": "SGVhZGVySXRlbUdyb3VwOlRPUF9MRVZFTA==",
+     "groupId": "TOP_LEVEL",
+     "items": [
+      {
+       "__typename": "HeaderItem",
+       "caption": null,
+       "hasBadge": false,
+       "id": "SGVhZGVySXRlbTpCRUNPTUVfQV9IT01FX0hPU1Q=",
+       "itemId": "BECOME_A_HOME_HOST",
+       "loggingId": "simpleHeader.loggedOut.becomeAHost",
+       "primary": true,
+       "text": "Seja um anfitri\u00e3o",
+       "type": "LINK",
+       "url": "/host/homes"
+      },
+      {
+       "__typename": "HeaderItem",
+       "caption": null,
+       "hasBadge": false,
+       "id": "SGVhZGVySXRlbTpMQU5HVUFHRV9BTkRfQ1VSUkVOQ1k=",
+       "itemId": "LANGUAGE_AND_CURRENCY",
+       "loggingId": "simpleHeader.loggedOut.localeSettingsMenu",
+       "primary": true,
+       "text": null,
+       "type": "LOCALE",
+       "url": null
+      }
+     ]
+    },
+    "menuItemGroups": [
+     {
+      "__typename": "HeaderItemGroup",
+      "id": "SGVhZGVySXRlbUdyb3VwOlBSSU1BUllfTUVOVQ==",
+      "groupId": "PRIMARY_MENU",
+      "items": [
+       {
+        "__typename": "HeaderItem",
+        "caption": null,
+        "hasBadge": false,
+        "id": "SGVhZGVySXRlbTpTSUdOX1VQ",
+        "itemId": "SIGN_UP",
+        "loggingId": "simpleHeader.loggedOut.profileMenu.signUp",
+        "primary": true,
+        "text": "Cadastrar-se",
+        "type": "LINK",
+        "url": "/signup_login"
+       },
+       {
+        "__typename": "HeaderItem",
+        "caption": null,
+        "hasBadge": false,
+        "id": "SGVhZGVySXRlbTpMT0dfSU4=",
+        "itemId": "LOG_IN",
+        "loggingId": "simpleHeader.loggedOut.profileMenu.logIn",
+        "primary": false,
+        "text": "Entrar",
+        "type": "LINK",
+        "url": "/login"
+       }
+      ]
+     },
+     {
+      "__typename": "HeaderItemGroup",
+      "id": "SGVhZGVySXRlbUdyb3VwOlNFQ09OREFSWV9NRU5V",
+      "groupId": "SECONDARY_MENU",
+      "items": [
+       {
+        "__typename": "HeaderItem",
+        "caption": null,
+        "hasBadge": false,
+        "id": "SGVhZGVySXRlbTpIT1NUX0FfSE9NRQ==",
+        "itemId": "HOST_A_HOME",
+        "loggingId": "simpleHeader.loggedOut.profileMenu.hostStays",
+        "primary": false,
+        "text": "Hospede em sua acomoda\u00e7\u00e3o",
+        "type": "LINK",
+        "url": "/host/homes"
+       },
+       {
+        "__typename": "HeaderItem",
+        "caption": null,
+        "hasBadge": false,
+        "id": "SGVhZGVySXRlbTpIT1NUX0FOX0VYUEVSSUVOQ0U=",
+        "itemId": "HOST_AN_EXPERIENCE",
+        "loggingId": "simpleHeader.loggedOut.profileMenu.hostExperiences",
+        "primary": false,
+        "text": "Hospede uma experi\u00eancia",
+        "type": "LINK",
+        "url": "/host/experiences?from_nav=1"
+       },
+       {
+        "__typename": "HeaderItem",
+        "caption": null,
+        "hasBadge": false,
+        "id": "SGVhZGVySXRlbTpIRUxQ",
+        "itemId": "HELP",
+        "loggingId": "simpleHeader.loggedOut.profileMenu.help",
+        "primary": false,
+        "text": "Ajuda",
+        "type": "HELP",
+        "url": "/help"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "extensions": {
+  "traceId": "0NCPh4UW1CLA_3Je1419RQ=="
+ }
+}

@@ -1,0 +1,2412 @@
+{
+ "data": {
+  "dora": {
+   "__typename": "DoraQuery",
+   "searchHeaderV3": {
+    "__typename": "DoraSearchHeaderV3Response",
+    "searchHeader": {
+     "__typename": "DoraSearchHeaderV3",
+     "alert": null,
+     "desktopSearchInputMode": "FIXED",
+     "desktopSearchInputPlaceholderText": "Comece sua busca",
+     "heroSections": [],
+     "marqueeMode": "DEFAULT",
+     "mobileSearchInputMode": "FIXED",
+     "searchBlocks": [
+      {
+       "__typename": "DoraSearchBlockV3",
+       "autocompleteVertical": "homes",
+       "badge": null,
+       "directUrl": null,
+       "id": "STAYS",
+       "imageUrl": "https://a0.muscache.com/im/pictures/8b7519ec-2c82-4c09-8233-fd4d2715bbf9.jpg?aki_policy=small",
+       "refinementPath": "/homes",
+       "searchParams": null,
+       "searchInputUnion": {
+        "__typename": "DoraDefaultSearchInput",
+        "placeholderText": "Buscar acomoda\u00e7\u00f5es",
+        "searchInputComponents": [
+         {
+          "__typename": "DoraSearchInputComponent",
+          "airmoji": "nav_search",
+          "desktopInputMode": "QUERY",
+          "desktopPlaceholderText": [
+           "Para onde voc\u00ea vai?"
+          ],
+          "desktopTitle": [
+           "Localiza\u00e7\u00e3o"
+          ],
+          "filterSectionId": "query",
+          "id": "location",
+          "littleSearchPlaceholderText": "Adicione um local",
+          "littleSearchTextValue": "",
+          "placeholderText": "Para onde voc\u00ea vai?",
+          "requiredInput": true,
+          "secondaryTextValue": null,
+          "textValue": "",
+          "title": "Localiza\u00e7\u00e3o"
+         },
+         {
+          "__typename": "DoraSearchInputComponent",
+          "airmoji": "core_calendar",
+          "desktopInputMode": "DATE_RANGE_SPLIT",
+          "desktopPlaceholderText": [
+           "Quando?",
+           "Quando?"
+          ],
+          "desktopTitle": [
+           "Check-in",
+           "Checkout"
+          ],
+          "filterSectionId": "stays_date_picker",
+          "id": "dates",
+          "littleSearchPlaceholderText": "Insira as datas",
+          "littleSearchTextValue": "",
+          "placeholderText": "Quando?",
+          "requiredInput": null,
+          "secondaryTextValue": null,
+          "textValue": "",
+          "title": "Check-in/Checkout"
+         },
+         {
+          "__typename": "DoraSearchInputComponent",
+          "airmoji": "pdp_guests",
+          "desktopInputMode": "GUESTS",
+          "desktopPlaceholderText": [
+           "Quantos?"
+          ],
+          "desktopTitle": [
+           "H\u00f3spedes"
+          ],
+          "filterSectionId": "guest_picker",
+          "id": "guests",
+          "littleSearchPlaceholderText": "Insira o n\u00famero de h\u00f3spedes",
+          "littleSearchTextValue": "",
+          "placeholderText": "Quantos?",
+          "requiredInput": null,
+          "secondaryTextValue": null,
+          "textValue": "",
+          "title": "H\u00f3spedes"
+         }
+        ],
+        "searchInputFlowOrders": {
+         "guests": [
+          "guests",
+          "location"
+         ],
+         "location": [
+          "location",
+          "dates",
+          "guests"
+         ],
+         "dates": [
+          "dates",
+          "location",
+          "guests"
+         ]
+        },
+        "textValue": ""
+       },
+       "selected": true,
+       "subtitle": "Acomoda\u00e7\u00f5es, hot\u00e9is e mais",
+       "tabSelector": {
+        "__typename": "DoraSearchBlockTabSelector",
+        "desktopTabLabel": "Lugares para ficar"
+       },
+       "title": "Lugares para ficar"
+      },
+      {
+       "__typename": "DoraSearchBlockV3",
+       "autocompleteVertical": "experiences",
+       "badge": null,
+       "directUrl": null,
+       "id": "EXPERIENCES",
+       "imageUrl": "https://a0.muscache.com/im/pictures/a77ee672-e790-4362-8cc5-52bec1371ece.jpg?aki_policy=small",
+       "refinementPath": "/experiences",
+       "searchParams": null,
+       "searchInputUnion": {
+        "__typename": "DoraDefaultSearchInput",
+        "placeholderText": "Buscar experi\u00eancias",
+        "searchInputComponents": [
+         {
+          "__typename": "DoraSearchInputComponent",
+          "airmoji": "nav_search",
+          "desktopInputMode": "QUERY",
+          "desktopPlaceholderText": [
+           "Para onde voc\u00ea vai?"
+          ],
+          "desktopTitle": [
+           "Localiza\u00e7\u00e3o"
+          ],
+          "filterSectionId": "query",
+          "id": "location",
+          "littleSearchPlaceholderText": "Adicione um local",
+          "littleSearchTextValue": "",
+          "placeholderText": "Para onde voc\u00ea vai?",
+          "requiredInput": true,
+          "secondaryTextValue": null,
+          "textValue": "",
+          "title": "Localiza\u00e7\u00e3o"
+         },
+         {
+          "__typename": "DoraSearchInputComponent",
+          "airmoji": "core_calendar",
+          "desktopInputMode": "DATE_RANGE_COMBINED",
+          "desktopPlaceholderText": [
+           "Adicionar a data em que deseja ir"
+          ],
+          "desktopTitle": [
+           "Data"
+          ],
+          "filterSectionId": "date_picker",
+          "id": "dates",
+          "littleSearchPlaceholderText": "Insira a data",
+          "littleSearchTextValue": "",
+          "placeholderText": "Adicionar a data em que deseja ir",
+          "requiredInput": null,
+          "secondaryTextValue": null,
+          "textValue": "",
+          "title": "Data"
+         }
+        ],
+        "searchInputFlowOrders": {},
+        "textValue": ""
+       },
+       "selected": false,
+       "subtitle": "Experi\u00eancias oferecidas por moradores locais",
+       "tabSelector": {
+        "__typename": "DoraSearchBlockTabSelector",
+        "desktopTabLabel": "Experi\u00eancias"
+       },
+       "title": "Coisas para fazer"
+      }
+     ],
+     "searchInputFlow": {
+      "__typename": "DoraSearchInputFlow",
+      "background": {
+       "__typename": "DoraBackgroundDisplayOptions",
+       "css": null,
+       "gradientColor": null,
+       "largePicture": null,
+       "mediumPicture": null,
+       "picture": null
+      },
+      "metadata": {
+       "__typename": "DoraSearchInputFlowMetadata",
+       "locationSearch": {
+        "__typename": "DoraSearchInputFlowLocationSearchMetadata",
+        "defaultText": "Para onde voc\u00ea vai?",
+        "stepId": null
+       },
+       "ltsDates": {
+        "__typename": "DoraSearchInputFlowLongTermStayDatesMetadata",
+        "messageText": "Est\u00e1 planejando uma estadia mais curta? Alterar para Acomoda\u00e7\u00f5es",
+        "minimumNights": 28
+       },
+       "verticalPicker": {
+        "__typename": "DoraSearchInputFlowVerticalPickerMetadata",
+        "promptText": null,
+        "verticalCards": [
+         {
+          "__typename": "DoraVerticalCard",
+          "imageUrl": "https://a0.muscache.com/4ea/air/v2/pictures/02a9e2fa-1d42-409a-b040-99e8eeeb0448.jpg",
+          "searchBlockId": "STAYS",
+          "subtitle": "Casas inteiras, quartos e muito mais",
+          "title": "Encontre um lugar para ficar"
+         },
+         {
+          "__typename": "DoraVerticalCard",
+          "imageUrl": "https://a0.muscache.com/4ea/air/v2/pictures/60a784f9-eb56-4b6d-8d71-50629cae0303.jpg",
+          "searchBlockId": "LONG_TERM_STAYS",
+          "subtitle": "Estadias de quatro semanas ou mais",
+          "title": "Encontre uma estadia longa"
+         },
+         {
+          "__typename": "DoraVerticalCard",
+          "imageUrl": "https://a0.muscache.com/4ea/air/v2/pictures/d0652aac-13ac-4378-a97e-b10d2289d97e.jpg",
+          "searchBlockId": "EXPERIENCES",
+          "subtitle": "Atividades oferecidas por moradores locais",
+          "title": "Encontre uma experi\u00eancia"
+         }
+        ]
+       }
+      },
+      "steps": [
+       {
+        "__typename": "DoraSearchInputFlowStep",
+        "canSkip": false,
+        "promptText": null,
+        "stepId": "location"
+       },
+       {
+        "__typename": "DoraSearchInputFlowStep",
+        "canSkip": false,
+        "promptText": "O que voc\u00ea est\u00e1 procurando?",
+        "stepId": "vertical"
+       },
+       {
+        "__typename": "DoraSearchInputFlowStep",
+        "canSkip": true,
+        "promptText": "Quando voc\u00ea estar\u00e1 l\u00e1?",
+        "stepId": "dates"
+       },
+       {
+        "__typename": "DoraSearchInputFlowStep",
+        "canSkip": true,
+        "promptText": "Quando voc\u00ea estar\u00e1 l\u00e1?",
+        "stepId": "lts-dates"
+       },
+       {
+        "__typename": "DoraSearchInputFlowStep",
+        "canSkip": true,
+        "promptText": "Quando voc\u00ea estar\u00e1 l\u00e1?",
+        "stepId": "experience-dates"
+       },
+       {
+        "__typename": "DoraSearchInputFlowStep",
+        "canSkip": true,
+        "promptText": "Quem est\u00e1 vindo?",
+        "stepId": "guests"
+       }
+      ]
+     }
+    },
+    "filters": {
+     "__typename": "DoraExploreFilters",
+     "state": [
+      {
+       "__typename": "DoraFilterState",
+       "key": "query",
+       "value": null,
+       "valueType": "STRING"
+      },
+      {
+       "__typename": "DoraFilterState",
+       "key": "place_id",
+       "value": null,
+       "valueType": "STRING"
+      },
+      {
+       "__typename": "DoraFilterState",
+       "key": "parent_city_place_id",
+       "value": null,
+       "valueType": "STRING"
+      },
+      {
+       "__typename": "DoraFilterState",
+       "key": "refinement_paths",
+       "value": null,
+       "valueType": "STRING_ARRAY"
+      },
+      {
+       "__typename": "DoraFilterState",
+       "key": "checkin",
+       "value": null,
+       "valueType": "DATE"
+      },
+      {
+       "__typename": "DoraFilterState",
+       "key": "checkout",
+       "value": null,
+       "valueType": "DATE"
+      },
+      {
+       "__typename": "DoraFilterState",
+       "key": "flexible_date_search_filter_type",
+       "value": null,
+       "valueType": "INTEGER"
+      },
+      {
+       "__typename": "DoraFilterState",
+       "key": "flexible_trip_dates",
+       "value": {
+        "__typename": "DoraStringValues",
+        "stringValues": [
+         "december",
+         "november"
+        ]
+       },
+       "valueType": "STRING_ARRAY"
+      },
+      {
+       "__typename": "DoraFilterState",
+       "key": "flexible_trip_lengths",
+       "value": {
+        "__typename": "DoraStringValues",
+        "stringValues": [
+         "weekend_trip"
+        ]
+       },
+       "valueType": "STRING_ARRAY"
+      },
+      {
+       "__typename": "DoraFilterState",
+       "key": "date_picker_type",
+       "value": {
+        "__typename": "DoraStringValue",
+        "stringValue": "calendar"
+       },
+       "valueType": "STRING"
+      },
+      {
+       "__typename": "DoraFilterState",
+       "key": "omni_page_id",
+       "value": null,
+       "valueType": "LONG"
+      },
+      {
+       "__typename": "DoraFilterState",
+       "key": "dynamic_product_ids",
+       "value": null,
+       "valueType": "LONG_ARRAY"
+      },
+      {
+       "__typename": "DoraFilterState",
+       "key": "location_search",
+       "value": null,
+       "valueType": "STRING"
+      },
+      {
+       "__typename": "DoraFilterState",
+       "key": "ne_lat",
+       "value": null,
+       "valueType": "DOUBLE"
+      },
+      {
+       "__typename": "DoraFilterState",
+       "key": "sw_lat",
+       "value": null,
+       "valueType": "DOUBLE"
+      },
+      {
+       "__typename": "DoraFilterState",
+       "key": "ne_lng",
+       "value": null,
+       "valueType": "DOUBLE"
+      },
+      {
+       "__typename": "DoraFilterState",
+       "key": "sw_lng",
+       "value": null,
+       "valueType": "DOUBLE"
+      },
+      {
+       "__typename": "DoraFilterState",
+       "key": "adults",
+       "value": null,
+       "valueType": "INTEGER"
+      },
+      {
+       "__typename": "DoraFilterState",
+       "key": "children",
+       "value": null,
+       "valueType": "INTEGER"
+      },
+      {
+       "__typename": "DoraFilterState",
+       "key": "infants",
+       "value": null,
+       "valueType": "INTEGER"
+      },
+      {
+       "__typename": "DoraFilterState",
+       "key": "pets",
+       "value": null,
+       "valueType": "INTEGER"
+      }
+     ],
+     "sections": [
+      {
+       "__typename": "DoraFilterSection",
+       "bottomDescriptionText": null,
+       "airmojiName": null,
+       "collapseSelectedSubtitles": null,
+       "collapseText": null,
+       "collapseThreshold": null,
+       "dateRangeConstraint": null,
+       "descriptionText": null,
+       "expandText": null,
+       "experimentsMetadata": [],
+       "filterBarTitle": "",
+       "filterSectionId": "query",
+       "mutedText": null,
+       "onFilterChange": null,
+       "sectionType": null,
+       "selected": false,
+       "subtitle": null,
+       "title": "Localiza\u00e7\u00e3o",
+       "items": [
+        {
+         "__typename": "DoraFilterItem",
+         "airmojiName": null,
+         "filterItemRule": null,
+         "filterSectionId": null,
+         "imageUrl": null,
+         "selectedImageUrl": null,
+         "key": null,
+         "learnMoreLink": null,
+         "linkChecked": null,
+         "linkUnchecked": null,
+         "metadata": null,
+         "onLinkChecked": null,
+         "params": [
+          {
+           "__typename": "DoraFilterItemParam",
+           "isSerialized": false,
+           "key": "query",
+           "title": null,
+           "value": null,
+           "valueType": "string"
+          }
+         ],
+         "searchParams": {
+          "__typename": "DoraExploreSearchParams",
+          "locationSearch": null,
+          "params": [
+           {
+            "__typename": "DoraSearchParam",
+            "inArray": false,
+            "key": "query",
+            "value": null,
+            "valueType": "string"
+           }
+          ],
+          "placeId": null,
+          "query": null,
+          "refinementPaths": [],
+          "resetFilters": false,
+          "resetKeys": [],
+          "tabId": "all_tab"
+         },
+         "selected": false,
+         "states": null,
+         "subType": null,
+         "subsectionSubtitle": null,
+         "subsectionTitle": null,
+         "subsectionItems": null,
+         "subtitle": null,
+         "subtitleAction": null,
+         "subtitleChecked": null,
+         "subtitleUnchecked": null,
+         "title": "Localiza\u00e7\u00e3o",
+         "type": "text_input",
+         "value": null
+        }
+       ],
+       "subsections": []
+      },
+      {
+       "__typename": "DoraFilterSection",
+       "bottomDescriptionText": null,
+       "airmojiName": null,
+       "collapseSelectedSubtitles": null,
+       "collapseText": null,
+       "collapseThreshold": null,
+       "dateRangeConstraint": null,
+       "descriptionText": null,
+       "expandText": null,
+       "experimentsMetadata": [],
+       "filterBarTitle": "Datas",
+       "filterSectionId": "date_picker",
+       "mutedText": null,
+       "onFilterChange": null,
+       "sectionType": null,
+       "selected": false,
+       "subtitle": null,
+       "title": "Adicionar datas",
+       "items": [
+        {
+         "__typename": "DoraFilterItem",
+         "airmojiName": null,
+         "filterItemRule": null,
+         "filterSectionId": null,
+         "imageUrl": null,
+         "selectedImageUrl": null,
+         "key": null,
+         "learnMoreLink": null,
+         "linkChecked": null,
+         "linkUnchecked": null,
+         "metadata": null,
+         "onLinkChecked": null,
+         "params": [
+          {
+           "__typename": "DoraFilterItemParam",
+           "isSerialized": false,
+           "key": "checkin",
+           "title": null,
+           "value": null,
+           "valueType": "string"
+          },
+          {
+           "__typename": "DoraFilterItemParam",
+           "isSerialized": false,
+           "key": "checkout",
+           "title": null,
+           "value": null,
+           "valueType": "string"
+          }
+         ],
+         "searchParams": {
+          "__typename": "DoraExploreSearchParams",
+          "locationSearch": null,
+          "params": [
+           {
+            "__typename": "DoraSearchParam",
+            "inArray": false,
+            "key": "checkin",
+            "value": null,
+            "valueType": "string"
+           },
+           {
+            "__typename": "DoraSearchParam",
+            "inArray": false,
+            "key": "checkout",
+            "value": null,
+            "valueType": "string"
+           }
+          ],
+          "placeId": null,
+          "query": null,
+          "refinementPaths": [],
+          "resetFilters": false,
+          "resetKeys": [],
+          "tabId": "all_tab"
+         },
+         "selected": false,
+         "states": null,
+         "subType": null,
+         "subsectionSubtitle": null,
+         "subsectionTitle": null,
+         "subsectionItems": null,
+         "subtitle": null,
+         "subtitleAction": null,
+         "subtitleChecked": null,
+         "subtitleUnchecked": null,
+         "title": "Datas",
+         "type": "date_picker",
+         "value": null
+        }
+       ],
+       "subsections": []
+      },
+      {
+       "__typename": "DoraFilterSection",
+       "bottomDescriptionText": null,
+       "airmojiName": null,
+       "collapseSelectedSubtitles": null,
+       "collapseText": null,
+       "collapseThreshold": null,
+       "dateRangeConstraint": null,
+       "descriptionText": null,
+       "expandText": null,
+       "experimentsMetadata": [],
+       "filterBarTitle": "",
+       "filterSectionId": "stays_date_picker",
+       "mutedText": null,
+       "onFilterChange": null,
+       "sectionType": null,
+       "selected": true,
+       "subtitle": null,
+       "title": "Adicionar datas",
+       "items": [],
+       "subsections": [
+        {
+         "__typename": "DoraFilterSubSection",
+         "airmojiName": null,
+         "collapseText": null,
+         "descriptionText": null,
+         "expandText": null,
+         "filterBarTitle": null,
+         "filterSectionId": "super_flexible_dates_toggle",
+         "mutedText": null,
+         "sectionType": null,
+         "selected": true,
+         "title": null,
+         "items": [
+          {
+           "__typename": "DoraFilterItem",
+           "airmojiName": null,
+           "filterItemRule": null,
+           "filterSectionId": null,
+           "imageUrl": null,
+           "selectedImageUrl": null,
+           "key": null,
+           "learnMoreLink": null,
+           "linkChecked": null,
+           "linkUnchecked": null,
+           "metadata": {
+            "__typename": "DoraFilterItemMetadata",
+            "averagePrice": null,
+            "dateSubtitles": null,
+            "description": null,
+            "hideMaxHandle": null,
+            "hideMinHandle": null,
+            "highlightedDescription": null,
+            "intervalLabels": null,
+            "intervalValue": null,
+            "intervalValues": null,
+            "maxValue": null,
+            "minValue": null,
+            "priceHistogram": null,
+            "segmentedControlValues": [
+             "calendar",
+             "flexible_dates"
+            ],
+            "segmentedControlLabels": [
+             "Calend\u00e1rio",
+             "Datas flex\u00edveis"
+            ]
+           },
+           "onLinkChecked": null,
+           "params": [
+            {
+             "__typename": "DoraFilterItemParam",
+             "isSerialized": false,
+             "key": "date_picker_type",
+             "title": "Calend\u00e1rio",
+             "value": {
+              "__typename": "DoraStringWrapper",
+              "stringValue": "calendar"
+             },
+             "valueType": "string"
+            }
+           ],
+           "searchParams": {
+            "__typename": "DoraExploreSearchParams",
+            "locationSearch": null,
+            "params": [
+             {
+              "__typename": "DoraSearchParam",
+              "inArray": false,
+              "key": "date_picker_type",
+              "value": {
+               "__typename": "DoraStringWrapper",
+               "stringValue": "calendar"
+              },
+              "valueType": "string"
+             }
+            ],
+            "placeId": null,
+            "query": null,
+            "refinementPaths": [],
+            "resetFilters": false,
+            "resetKeys": [],
+            "tabId": "all_tab"
+           },
+           "selected": true,
+           "states": null,
+           "subType": null,
+           "subsectionSubtitle": null,
+           "subsectionTitle": null,
+           "subsectionItems": null,
+           "subtitle": null,
+           "subtitleAction": null,
+           "subtitleChecked": null,
+           "subtitleUnchecked": null,
+           "title": "Calend\u00e1rio",
+           "type": "single_segmented_control",
+           "value": null
+          }
+         ]
+        },
+        {
+         "__typename": "DoraFilterSubSection",
+         "airmojiName": null,
+         "collapseText": null,
+         "descriptionText": null,
+         "expandText": null,
+         "filterBarTitle": null,
+         "filterSectionId": "date_picker_and_flexible_days",
+         "mutedText": null,
+         "sectionType": null,
+         "selected": false,
+         "title": null,
+         "items": [
+          {
+           "__typename": "DoraFilterItem",
+           "airmojiName": null,
+           "filterItemRule": null,
+           "filterSectionId": null,
+           "imageUrl": null,
+           "selectedImageUrl": null,
+           "key": null,
+           "learnMoreLink": null,
+           "linkChecked": null,
+           "linkUnchecked": null,
+           "metadata": null,
+           "onLinkChecked": null,
+           "params": [
+            {
+             "__typename": "DoraFilterItemParam",
+             "isSerialized": false,
+             "key": "checkin",
+             "title": null,
+             "value": null,
+             "valueType": "string"
+            },
+            {
+             "__typename": "DoraFilterItemParam",
+             "isSerialized": false,
+             "key": "checkout",
+             "title": null,
+             "value": null,
+             "valueType": "string"
+            }
+           ],
+           "searchParams": {
+            "__typename": "DoraExploreSearchParams",
+            "locationSearch": null,
+            "params": [
+             {
+              "__typename": "DoraSearchParam",
+              "inArray": false,
+              "key": "checkin",
+              "value": null,
+              "valueType": "string"
+             },
+             {
+              "__typename": "DoraSearchParam",
+              "inArray": false,
+              "key": "checkout",
+              "value": null,
+              "valueType": "string"
+             }
+            ],
+            "placeId": null,
+            "query": null,
+            "refinementPaths": [],
+            "resetFilters": false,
+            "resetKeys": [],
+            "tabId": "all_tab"
+           },
+           "selected": false,
+           "states": null,
+           "subType": null,
+           "subsectionSubtitle": null,
+           "subsectionTitle": null,
+           "subsectionItems": null,
+           "subtitle": null,
+           "subtitleAction": null,
+           "subtitleChecked": null,
+           "subtitleUnchecked": null,
+           "title": "Datas",
+           "type": "date_picker",
+           "value": null
+          },
+          {
+           "__typename": "DoraFilterItem",
+           "airmojiName": null,
+           "filterItemRule": {
+            "__typename": "DoraFilterItemRule",
+            "flexibleDateSearchRule": {
+             "__typename": "DoraFlexibleDateSearchRule",
+             "maxLeadTime": 180,
+             "maxStayLength": 60,
+             "experimentalMaxLeadTime": null,
+             "experimentalMaxStayLength": null,
+             "experimentName": null
+            }
+           },
+           "filterSectionId": null,
+           "imageUrl": null,
+           "selectedImageUrl": null,
+           "key": null,
+           "learnMoreLink": null,
+           "linkChecked": null,
+           "linkUnchecked": null,
+           "metadata": null,
+           "onLinkChecked": null,
+           "params": [],
+           "searchParams": null,
+           "selected": false,
+           "states": null,
+           "subType": null,
+           "subsectionSubtitle": null,
+           "subsectionTitle": null,
+           "subsectionItems": [
+            {
+             "__typename": "DoraFilterSection",
+             "airmojiName": null,
+             "collapseSelectedSubtitles": null,
+             "collapseText": null,
+             "collapseThreshold": null,
+             "dateRangeConstraint": null,
+             "descriptionText": null,
+             "expandText": null,
+             "experimentsMetadata": [],
+             "filterBarTitle": null,
+             "filterSectionId": "flexible_date_search_filter_section",
+             "mutedText": null,
+             "onFilterChange": null,
+             "sectionType": null,
+             "selected": false,
+             "subtitle": null,
+             "title": null,
+             "items": [
+              {
+               "__typename": "DoraFilterItem",
+               "airmojiName": null,
+               "filterItemRule": null,
+               "filterSectionId": null,
+               "imageUrl": null,
+               "selectedImageUrl": null,
+               "key": null,
+               "learnMoreLink": null,
+               "linkChecked": null,
+               "linkUnchecked": null,
+               "metadata": {
+                "__typename": "DoraFilterItemMetadata",
+                "averagePrice": null,
+                "dateSubtitles": null,
+                "description": null,
+                "hideMaxHandle": null,
+                "hideMinHandle": null,
+                "highlightedDescription": null,
+                "intervalLabels": null,
+                "intervalValue": null,
+                "intervalValues": null,
+                "maxValue": null,
+                "minValue": null,
+                "priceHistogram": null,
+                "segmentedControlValues": null,
+                "segmentedControlLabels": null
+               },
+               "onLinkChecked": null,
+               "params": [
+                {
+                 "__typename": "DoraFilterItemParam",
+                 "isSerialized": false,
+                 "key": "flexible_date_search_filter_type",
+                 "title": "1 dia",
+                 "value": {
+                  "__typename": "DoraLongWrapper",
+                  "longValue": "0"
+                 },
+                 "valueType": "integer"
+                }
+               ],
+               "searchParams": {
+                "__typename": "DoraExploreSearchParams",
+                "locationSearch": null,
+                "params": [
+                 {
+                  "__typename": "DoraSearchParam",
+                  "inArray": false,
+                  "key": "flexible_date_search_filter_type",
+                  "value": {
+                   "__typename": "DoraLongWrapper",
+                   "longValue": "0"
+                  },
+                  "valueType": "integer"
+                 }
+                ],
+                "placeId": null,
+                "query": null,
+                "refinementPaths": [],
+                "resetFilters": false,
+                "resetKeys": [],
+                "tabId": "all_tab"
+               },
+               "selected": false,
+               "states": [],
+               "subType": null,
+               "subsectionSubtitle": null,
+               "subsectionTitle": null,
+               "subtitle": null,
+               "subtitleChecked": null,
+               "subtitleUnchecked": null,
+               "title": "1 dia",
+               "type": "select",
+               "value": null
+              },
+              {
+               "__typename": "DoraFilterItem",
+               "airmojiName": null,
+               "filterItemRule": null,
+               "filterSectionId": null,
+               "imageUrl": null,
+               "selectedImageUrl": null,
+               "key": null,
+               "learnMoreLink": null,
+               "linkChecked": null,
+               "linkUnchecked": null,
+               "metadata": {
+                "__typename": "DoraFilterItemMetadata",
+                "averagePrice": null,
+                "dateSubtitles": null,
+                "description": null,
+                "hideMaxHandle": null,
+                "hideMinHandle": null,
+                "highlightedDescription": null,
+                "intervalLabels": null,
+                "intervalValue": null,
+                "intervalValues": null,
+                "maxValue": null,
+                "minValue": null,
+                "priceHistogram": null,
+                "segmentedControlValues": null,
+                "segmentedControlLabels": null
+               },
+               "onLinkChecked": null,
+               "params": [
+                {
+                 "__typename": "DoraFilterItemParam",
+                 "isSerialized": false,
+                 "key": "flexible_date_search_filter_type",
+                 "title": "3 dias",
+                 "value": {
+                  "__typename": "DoraLongWrapper",
+                  "longValue": "1"
+                 },
+                 "valueType": "integer"
+                }
+               ],
+               "searchParams": {
+                "__typename": "DoraExploreSearchParams",
+                "locationSearch": null,
+                "params": [
+                 {
+                  "__typename": "DoraSearchParam",
+                  "inArray": false,
+                  "key": "flexible_date_search_filter_type",
+                  "value": {
+                   "__typename": "DoraLongWrapper",
+                   "longValue": "1"
+                  },
+                  "valueType": "integer"
+                 }
+                ],
+                "placeId": null,
+                "query": null,
+                "refinementPaths": [],
+                "resetFilters": false,
+                "resetKeys": [],
+                "tabId": "all_tab"
+               },
+               "selected": false,
+               "states": [],
+               "subType": null,
+               "subsectionSubtitle": null,
+               "subsectionTitle": null,
+               "subtitle": null,
+               "subtitleChecked": null,
+               "subtitleUnchecked": null,
+               "title": "3 dias",
+               "type": "select",
+               "value": null
+              },
+              {
+               "__typename": "DoraFilterItem",
+               "airmojiName": null,
+               "filterItemRule": null,
+               "filterSectionId": null,
+               "imageUrl": null,
+               "selectedImageUrl": null,
+               "key": null,
+               "learnMoreLink": null,
+               "linkChecked": null,
+               "linkUnchecked": null,
+               "metadata": {
+                "__typename": "DoraFilterItemMetadata",
+                "averagePrice": null,
+                "dateSubtitles": null,
+                "description": null,
+                "hideMaxHandle": null,
+                "hideMinHandle": null,
+                "highlightedDescription": null,
+                "intervalLabels": null,
+                "intervalValue": null,
+                "intervalValues": null,
+                "maxValue": null,
+                "minValue": null,
+                "priceHistogram": null,
+                "segmentedControlValues": null,
+                "segmentedControlLabels": null
+               },
+               "onLinkChecked": null,
+               "params": [
+                {
+                 "__typename": "DoraFilterItemParam",
+                 "isSerialized": false,
+                 "key": "flexible_date_search_filter_type",
+                 "title": "7 dias",
+                 "value": {
+                  "__typename": "DoraLongWrapper",
+                  "longValue": "2"
+                 },
+                 "valueType": "integer"
+                }
+               ],
+               "searchParams": {
+                "__typename": "DoraExploreSearchParams",
+                "locationSearch": null,
+                "params": [
+                 {
+                  "__typename": "DoraSearchParam",
+                  "inArray": false,
+                  "key": "flexible_date_search_filter_type",
+                  "value": {
+                   "__typename": "DoraLongWrapper",
+                   "longValue": "2"
+                  },
+                  "valueType": "integer"
+                 }
+                ],
+                "placeId": null,
+                "query": null,
+                "refinementPaths": [],
+                "resetFilters": false,
+                "resetKeys": [],
+                "tabId": "all_tab"
+               },
+               "selected": false,
+               "states": [],
+               "subType": null,
+               "subsectionSubtitle": null,
+               "subsectionTitle": null,
+               "subtitle": null,
+               "subtitleChecked": null,
+               "subtitleUnchecked": null,
+               "title": "7 dias",
+               "type": "select",
+               "value": null
+              }
+             ]
+            }
+           ],
+           "subtitle": null,
+           "subtitleAction": null,
+           "subtitleChecked": null,
+           "subtitleUnchecked": null,
+           "title": null,
+           "type": "flexible_date_picker",
+           "value": null
+          }
+         ]
+        },
+        {
+         "__typename": "DoraFilterSubSection",
+         "airmojiName": null,
+         "collapseText": null,
+         "descriptionText": null,
+         "expandText": null,
+         "filterBarTitle": null,
+         "filterSectionId": "super_flexible_lengths_and_dates",
+         "mutedText": null,
+         "sectionType": null,
+         "selected": true,
+         "title": null,
+         "items": [
+          {
+           "__typename": "DoraFilterItem",
+           "airmojiName": null,
+           "filterItemRule": null,
+           "filterSectionId": null,
+           "imageUrl": null,
+           "selectedImageUrl": null,
+           "key": null,
+           "learnMoreLink": null,
+           "linkChecked": null,
+           "linkUnchecked": null,
+           "metadata": null,
+           "onLinkChecked": null,
+           "params": [],
+           "searchParams": null,
+           "selected": true,
+           "states": null,
+           "subType": null,
+           "subsectionSubtitle": null,
+           "subsectionTitle": null,
+           "subsectionItems": [
+            {
+             "__typename": "DoraFilterSection",
+             "airmojiName": null,
+             "collapseSelectedSubtitles": null,
+             "collapseText": null,
+             "collapseThreshold": null,
+             "dateRangeConstraint": null,
+             "descriptionText": null,
+             "expandText": null,
+             "experimentsMetadata": [],
+             "filterBarTitle": null,
+             "filterSectionId": "super_flexible_lengths",
+             "mutedText": null,
+             "onFilterChange": null,
+             "sectionType": null,
+             "selected": true,
+             "subtitle": null,
+             "title": null,
+             "items": [
+              {
+               "__typename": "DoraFilterItem",
+               "airmojiName": null,
+               "filterItemRule": null,
+               "filterSectionId": null,
+               "imageUrl": null,
+               "selectedImageUrl": null,
+               "key": null,
+               "learnMoreLink": null,
+               "linkChecked": null,
+               "linkUnchecked": null,
+               "metadata": null,
+               "onLinkChecked": null,
+               "params": [
+                {
+                 "__typename": "DoraFilterItemParam",
+                 "isSerialized": false,
+                 "key": "flexible_trip_lengths",
+                 "title": "Um fim de semana",
+                 "value": {
+                  "__typename": "DoraStringWrapper",
+                  "stringValue": "weekend_trip"
+                 },
+                 "valueType": "array"
+                }
+               ],
+               "searchParams": {
+                "__typename": "DoraExploreSearchParams",
+                "locationSearch": null,
+                "params": [
+                 {
+                  "__typename": "DoraSearchParam",
+                  "inArray": true,
+                  "key": "flexible_trip_lengths",
+                  "value": {
+                   "__typename": "DoraStringWrapper",
+                   "stringValue": "weekend_trip"
+                  },
+                  "valueType": "array"
+                 }
+                ],
+                "placeId": null,
+                "query": null,
+                "refinementPaths": [],
+                "resetFilters": false,
+                "resetKeys": [],
+                "tabId": "all_tab"
+               },
+               "selected": true,
+               "states": [],
+               "subType": "SUPER_FLEXIBLE_TRIP_LENGTH",
+               "subsectionSubtitle": null,
+               "subsectionTitle": null,
+               "subtitle": null,
+               "subtitleChecked": null,
+               "subtitleUnchecked": null,
+               "title": "Um fim de semana",
+               "type": "single_select_pill",
+               "value": null
+              },
+              {
+               "__typename": "DoraFilterItem",
+               "airmojiName": null,
+               "filterItemRule": null,
+               "filterSectionId": null,
+               "imageUrl": null,
+               "selectedImageUrl": null,
+               "key": null,
+               "learnMoreLink": null,
+               "linkChecked": null,
+               "linkUnchecked": null,
+               "metadata": null,
+               "onLinkChecked": null,
+               "params": [
+                {
+                 "__typename": "DoraFilterItemParam",
+                 "isSerialized": false,
+                 "key": "flexible_trip_lengths",
+                 "title": "Uma semana",
+                 "value": {
+                  "__typename": "DoraStringWrapper",
+                  "stringValue": "one_week"
+                 },
+                 "valueType": "array"
+                }
+               ],
+               "searchParams": {
+                "__typename": "DoraExploreSearchParams",
+                "locationSearch": null,
+                "params": [
+                 {
+                  "__typename": "DoraSearchParam",
+                  "inArray": true,
+                  "key": "flexible_trip_lengths",
+                  "value": {
+                   "__typename": "DoraStringWrapper",
+                   "stringValue": "one_week"
+                  },
+                  "valueType": "array"
+                 }
+                ],
+                "placeId": null,
+                "query": null,
+                "refinementPaths": [],
+                "resetFilters": false,
+                "resetKeys": [],
+                "tabId": "all_tab"
+               },
+               "selected": false,
+               "states": [],
+               "subType": "SUPER_FLEXIBLE_TRIP_LENGTH",
+               "subsectionSubtitle": null,
+               "subsectionTitle": null,
+               "subtitle": null,
+               "subtitleChecked": null,
+               "subtitleUnchecked": null,
+               "title": "Uma semana",
+               "type": "single_select_pill",
+               "value": null
+              },
+              {
+               "__typename": "DoraFilterItem",
+               "airmojiName": null,
+               "filterItemRule": null,
+               "filterSectionId": null,
+               "imageUrl": null,
+               "selectedImageUrl": null,
+               "key": null,
+               "learnMoreLink": null,
+               "linkChecked": null,
+               "linkUnchecked": null,
+               "metadata": null,
+               "onLinkChecked": null,
+               "params": [
+                {
+                 "__typename": "DoraFilterItemParam",
+                 "isSerialized": false,
+                 "key": "flexible_trip_lengths",
+                 "title": "Um m\u00eas",
+                 "value": {
+                  "__typename": "DoraStringWrapper",
+                  "stringValue": "one_month"
+                 },
+                 "valueType": "array"
+                }
+               ],
+               "searchParams": {
+                "__typename": "DoraExploreSearchParams",
+                "locationSearch": null,
+                "params": [
+                 {
+                  "__typename": "DoraSearchParam",
+                  "inArray": true,
+                  "key": "flexible_trip_lengths",
+                  "value": {
+                   "__typename": "DoraStringWrapper",
+                   "stringValue": "one_month"
+                  },
+                  "valueType": "array"
+                 }
+                ],
+                "placeId": null,
+                "query": null,
+                "refinementPaths": [],
+                "resetFilters": false,
+                "resetKeys": [],
+                "tabId": "all_tab"
+               },
+               "selected": false,
+               "states": [],
+               "subType": "SUPER_FLEXIBLE_TRIP_LENGTH",
+               "subsectionSubtitle": null,
+               "subsectionTitle": null,
+               "subtitle": null,
+               "subtitleChecked": null,
+               "subtitleUnchecked": null,
+               "title": "Um m\u00eas",
+               "type": "single_select_pill",
+               "value": null
+              }
+             ]
+            }
+           ],
+           "subtitle": null,
+           "subtitleAction": null,
+           "subtitleChecked": null,
+           "subtitleUnchecked": null,
+           "title": "Por quanto tempo voc\u00ea gostaria de ficar?",
+           "type": "subcategory",
+           "value": null
+          },
+          {
+           "__typename": "DoraFilterItem",
+           "airmojiName": null,
+           "filterItemRule": null,
+           "filterSectionId": null,
+           "imageUrl": null,
+           "selectedImageUrl": null,
+           "key": null,
+           "learnMoreLink": null,
+           "linkChecked": null,
+           "linkUnchecked": null,
+           "metadata": null,
+           "onLinkChecked": null,
+           "params": [],
+           "searchParams": null,
+           "selected": true,
+           "states": null,
+           "subType": null,
+           "subsectionSubtitle": null,
+           "subsectionTitle": null,
+           "subsectionItems": [
+            {
+             "__typename": "DoraFilterSection",
+             "airmojiName": null,
+             "collapseSelectedSubtitles": null,
+             "collapseText": null,
+             "collapseThreshold": null,
+             "dateRangeConstraint": null,
+             "descriptionText": null,
+             "expandText": null,
+             "experimentsMetadata": [],
+             "filterBarTitle": null,
+             "filterSectionId": "super_flexible_dates",
+             "mutedText": null,
+             "onFilterChange": null,
+             "sectionType": null,
+             "selected": true,
+             "subtitle": null,
+             "title": null,
+             "items": [
+              {
+               "__typename": "DoraFilterItem",
+               "airmojiName": null,
+               "filterItemRule": null,
+               "filterSectionId": null,
+               "imageUrl": "https://a0.muscache.com/pictures/cf82c9bc-520a-4486-9be4-1f0927972381.jpg",
+               "selectedImageUrl": "https://a0.muscache.com/pictures/33e22c88-92bf-47be-847a-98a7e374d78b.jpg",
+               "key": null,
+               "learnMoreLink": null,
+               "linkChecked": null,
+               "linkUnchecked": null,
+               "metadata": null,
+               "onLinkChecked": null,
+               "params": [
+                {
+                 "__typename": "DoraFilterItemParam",
+                 "isSerialized": false,
+                 "key": "flexible_trip_dates",
+                 "title": "Novembro",
+                 "value": {
+                  "__typename": "DoraStringWrapper",
+                  "stringValue": "november"
+                 },
+                 "valueType": "array"
+                }
+               ],
+               "searchParams": {
+                "__typename": "DoraExploreSearchParams",
+                "locationSearch": null,
+                "params": [
+                 {
+                  "__typename": "DoraSearchParam",
+                  "inArray": true,
+                  "key": "flexible_trip_dates",
+                  "value": {
+                   "__typename": "DoraStringWrapper",
+                   "stringValue": "november"
+                  },
+                  "valueType": "array"
+                 }
+                ],
+                "placeId": null,
+                "query": null,
+                "refinementPaths": [],
+                "resetFilters": false,
+                "resetKeys": [],
+                "tabId": "all_tab"
+               },
+               "selected": true,
+               "states": [],
+               "subType": "SUPER_FLEXIBLE_TRIP_DATES",
+               "subsectionSubtitle": null,
+               "subsectionTitle": null,
+               "subtitle": null,
+               "subtitleChecked": null,
+               "subtitleUnchecked": null,
+               "title": "Novembro",
+               "type": "pill_checkbox_with_image",
+               "value": null
+              },
+              {
+               "__typename": "DoraFilterItem",
+               "airmojiName": null,
+               "filterItemRule": null,
+               "filterSectionId": null,
+               "imageUrl": "https://a0.muscache.com/pictures/cf82c9bc-520a-4486-9be4-1f0927972381.jpg",
+               "selectedImageUrl": "https://a0.muscache.com/pictures/33e22c88-92bf-47be-847a-98a7e374d78b.jpg",
+               "key": null,
+               "learnMoreLink": null,
+               "linkChecked": null,
+               "linkUnchecked": null,
+               "metadata": null,
+               "onLinkChecked": null,
+               "params": [
+                {
+                 "__typename": "DoraFilterItemParam",
+                 "isSerialized": false,
+                 "key": "flexible_trip_dates",
+                 "title": "Dezembro",
+                 "value": {
+                  "__typename": "DoraStringWrapper",
+                  "stringValue": "december"
+                 },
+                 "valueType": "array"
+                }
+               ],
+               "searchParams": {
+                "__typename": "DoraExploreSearchParams",
+                "locationSearch": null,
+                "params": [
+                 {
+                  "__typename": "DoraSearchParam",
+                  "inArray": true,
+                  "key": "flexible_trip_dates",
+                  "value": {
+                   "__typename": "DoraStringWrapper",
+                   "stringValue": "december"
+                  },
+                  "valueType": "array"
+                 }
+                ],
+                "placeId": null,
+                "query": null,
+                "refinementPaths": [],
+                "resetFilters": false,
+                "resetKeys": [],
+                "tabId": "all_tab"
+               },
+               "selected": true,
+               "states": [],
+               "subType": "SUPER_FLEXIBLE_TRIP_DATES",
+               "subsectionSubtitle": null,
+               "subsectionTitle": null,
+               "subtitle": null,
+               "subtitleChecked": null,
+               "subtitleUnchecked": null,
+               "title": "Dezembro",
+               "type": "pill_checkbox_with_image",
+               "value": null
+              },
+              {
+               "__typename": "DoraFilterItem",
+               "airmojiName": null,
+               "filterItemRule": null,
+               "filterSectionId": null,
+               "imageUrl": "https://a0.muscache.com/pictures/cf82c9bc-520a-4486-9be4-1f0927972381.jpg",
+               "selectedImageUrl": "https://a0.muscache.com/pictures/33e22c88-92bf-47be-847a-98a7e374d78b.jpg",
+               "key": null,
+               "learnMoreLink": null,
+               "linkChecked": null,
+               "linkUnchecked": null,
+               "metadata": null,
+               "onLinkChecked": null,
+               "params": [
+                {
+                 "__typename": "DoraFilterItemParam",
+                 "isSerialized": false,
+                 "key": "flexible_trip_dates",
+                 "title": "janeiro",
+                 "value": {
+                  "__typename": "DoraStringWrapper",
+                  "stringValue": "january"
+                 },
+                 "valueType": "array"
+                }
+               ],
+               "searchParams": {
+                "__typename": "DoraExploreSearchParams",
+                "locationSearch": null,
+                "params": [
+                 {
+                  "__typename": "DoraSearchParam",
+                  "inArray": true,
+                  "key": "flexible_trip_dates",
+                  "value": {
+                   "__typename": "DoraStringWrapper",
+                   "stringValue": "january"
+                  },
+                  "valueType": "array"
+                 }
+                ],
+                "placeId": null,
+                "query": null,
+                "refinementPaths": [],
+                "resetFilters": false,
+                "resetKeys": [],
+                "tabId": "all_tab"
+               },
+               "selected": false,
+               "states": [],
+               "subType": "SUPER_FLEXIBLE_TRIP_DATES",
+               "subsectionSubtitle": null,
+               "subsectionTitle": null,
+               "subtitle": null,
+               "subtitleChecked": null,
+               "subtitleUnchecked": null,
+               "title": "janeiro",
+               "type": "pill_checkbox_with_image",
+               "value": null
+              },
+              {
+               "__typename": "DoraFilterItem",
+               "airmojiName": null,
+               "filterItemRule": null,
+               "filterSectionId": null,
+               "imageUrl": "https://a0.muscache.com/pictures/cf82c9bc-520a-4486-9be4-1f0927972381.jpg",
+               "selectedImageUrl": "https://a0.muscache.com/pictures/33e22c88-92bf-47be-847a-98a7e374d78b.jpg",
+               "key": null,
+               "learnMoreLink": null,
+               "linkChecked": null,
+               "linkUnchecked": null,
+               "metadata": null,
+               "onLinkChecked": null,
+               "params": [
+                {
+                 "__typename": "DoraFilterItemParam",
+                 "isSerialized": false,
+                 "key": "flexible_trip_dates",
+                 "title": "fevereiro",
+                 "value": {
+                  "__typename": "DoraStringWrapper",
+                  "stringValue": "february"
+                 },
+                 "valueType": "array"
+                }
+               ],
+               "searchParams": {
+                "__typename": "DoraExploreSearchParams",
+                "locationSearch": null,
+                "params": [
+                 {
+                  "__typename": "DoraSearchParam",
+                  "inArray": true,
+                  "key": "flexible_trip_dates",
+                  "value": {
+                   "__typename": "DoraStringWrapper",
+                   "stringValue": "february"
+                  },
+                  "valueType": "array"
+                 }
+                ],
+                "placeId": null,
+                "query": null,
+                "refinementPaths": [],
+                "resetFilters": false,
+                "resetKeys": [],
+                "tabId": "all_tab"
+               },
+               "selected": false,
+               "states": [],
+               "subType": "SUPER_FLEXIBLE_TRIP_DATES",
+               "subsectionSubtitle": null,
+               "subsectionTitle": null,
+               "subtitle": null,
+               "subtitleChecked": null,
+               "subtitleUnchecked": null,
+               "title": "fevereiro",
+               "type": "pill_checkbox_with_image",
+               "value": null
+              },
+              {
+               "__typename": "DoraFilterItem",
+               "airmojiName": null,
+               "filterItemRule": null,
+               "filterSectionId": null,
+               "imageUrl": "https://a0.muscache.com/pictures/cf82c9bc-520a-4486-9be4-1f0927972381.jpg",
+               "selectedImageUrl": "https://a0.muscache.com/pictures/33e22c88-92bf-47be-847a-98a7e374d78b.jpg",
+               "key": null,
+               "learnMoreLink": null,
+               "linkChecked": null,
+               "linkUnchecked": null,
+               "metadata": null,
+               "onLinkChecked": null,
+               "params": [
+                {
+                 "__typename": "DoraFilterItemParam",
+                 "isSerialized": false,
+                 "key": "flexible_trip_dates",
+                 "title": "mar\u00e7o",
+                 "value": {
+                  "__typename": "DoraStringWrapper",
+                  "stringValue": "march"
+                 },
+                 "valueType": "array"
+                }
+               ],
+               "searchParams": {
+                "__typename": "DoraExploreSearchParams",
+                "locationSearch": null,
+                "params": [
+                 {
+                  "__typename": "DoraSearchParam",
+                  "inArray": true,
+                  "key": "flexible_trip_dates",
+                  "value": {
+                   "__typename": "DoraStringWrapper",
+                   "stringValue": "march"
+                  },
+                  "valueType": "array"
+                 }
+                ],
+                "placeId": null,
+                "query": null,
+                "refinementPaths": [],
+                "resetFilters": false,
+                "resetKeys": [],
+                "tabId": "all_tab"
+               },
+               "selected": false,
+               "states": [],
+               "subType": "SUPER_FLEXIBLE_TRIP_DATES",
+               "subsectionSubtitle": null,
+               "subsectionTitle": null,
+               "subtitle": null,
+               "subtitleChecked": null,
+               "subtitleUnchecked": null,
+               "title": "mar\u00e7o",
+               "type": "pill_checkbox_with_image",
+               "value": null
+              },
+              {
+               "__typename": "DoraFilterItem",
+               "airmojiName": null,
+               "filterItemRule": null,
+               "filterSectionId": null,
+               "imageUrl": "https://a0.muscache.com/pictures/cf82c9bc-520a-4486-9be4-1f0927972381.jpg",
+               "selectedImageUrl": "https://a0.muscache.com/pictures/33e22c88-92bf-47be-847a-98a7e374d78b.jpg",
+               "key": null,
+               "learnMoreLink": null,
+               "linkChecked": null,
+               "linkUnchecked": null,
+               "metadata": null,
+               "onLinkChecked": null,
+               "params": [
+                {
+                 "__typename": "DoraFilterItemParam",
+                 "isSerialized": false,
+                 "key": "flexible_trip_dates",
+                 "title": "abril",
+                 "value": {
+                  "__typename": "DoraStringWrapper",
+                  "stringValue": "april"
+                 },
+                 "valueType": "array"
+                }
+               ],
+               "searchParams": {
+                "__typename": "DoraExploreSearchParams",
+                "locationSearch": null,
+                "params": [
+                 {
+                  "__typename": "DoraSearchParam",
+                  "inArray": true,
+                  "key": "flexible_trip_dates",
+                  "value": {
+                   "__typename": "DoraStringWrapper",
+                   "stringValue": "april"
+                  },
+                  "valueType": "array"
+                 }
+                ],
+                "placeId": null,
+                "query": null,
+                "refinementPaths": [],
+                "resetFilters": false,
+                "resetKeys": [],
+                "tabId": "all_tab"
+               },
+               "selected": false,
+               "states": [],
+               "subType": "SUPER_FLEXIBLE_TRIP_DATES",
+               "subsectionSubtitle": null,
+               "subsectionTitle": null,
+               "subtitle": null,
+               "subtitleChecked": null,
+               "subtitleUnchecked": null,
+               "title": "abril",
+               "type": "pill_checkbox_with_image",
+               "value": null
+              }
+             ]
+            }
+           ],
+           "subtitle": null,
+           "subtitleAction": null,
+           "subtitleChecked": null,
+           "subtitleUnchecked": null,
+           "title": "Quando voc\u00ea quer ir?",
+           "type": "subcategory",
+           "value": null
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "__typename": "DoraFilterSection",
+       "bottomDescriptionText": null,
+       "airmojiName": null,
+       "collapseSelectedSubtitles": null,
+       "collapseText": null,
+       "collapseThreshold": null,
+       "dateRangeConstraint": null,
+       "descriptionText": null,
+       "expandText": null,
+       "experimentsMetadata": [],
+       "filterBarTitle": "Datas",
+       "filterSectionId": "monthly_stays_date_picker",
+       "mutedText": null,
+       "onFilterChange": null,
+       "sectionType": null,
+       "selected": false,
+       "subtitle": null,
+       "title": "Adicionar datas",
+       "items": [
+        {
+         "__typename": "DoraFilterItem",
+         "airmojiName": null,
+         "filterItemRule": null,
+         "filterSectionId": null,
+         "imageUrl": null,
+         "selectedImageUrl": null,
+         "key": null,
+         "learnMoreLink": null,
+         "linkChecked": null,
+         "linkUnchecked": null,
+         "metadata": null,
+         "onLinkChecked": null,
+         "params": [
+          {
+           "__typename": "DoraFilterItemParam",
+           "isSerialized": false,
+           "key": "checkin",
+           "title": null,
+           "value": null,
+           "valueType": "string"
+          },
+          {
+           "__typename": "DoraFilterItemParam",
+           "isSerialized": false,
+           "key": "checkout",
+           "title": null,
+           "value": null,
+           "valueType": "string"
+          }
+         ],
+         "searchParams": {
+          "__typename": "DoraExploreSearchParams",
+          "locationSearch": null,
+          "params": [
+           {
+            "__typename": "DoraSearchParam",
+            "inArray": false,
+            "key": "checkin",
+            "value": null,
+            "valueType": "string"
+           },
+           {
+            "__typename": "DoraSearchParam",
+            "inArray": false,
+            "key": "checkout",
+            "value": null,
+            "valueType": "string"
+           }
+          ],
+          "placeId": null,
+          "query": null,
+          "refinementPaths": [],
+          "resetFilters": false,
+          "resetKeys": [],
+          "tabId": "all_tab"
+         },
+         "selected": false,
+         "states": null,
+         "subType": null,
+         "subsectionSubtitle": null,
+         "subsectionTitle": null,
+         "subsectionItems": null,
+         "subtitle": null,
+         "subtitleAction": null,
+         "subtitleChecked": null,
+         "subtitleUnchecked": null,
+         "title": "Datas",
+         "type": "date_picker",
+         "value": null
+        },
+        {
+         "__typename": "DoraFilterItem",
+         "airmojiName": null,
+         "filterItemRule": {
+          "__typename": "DoraFilterItemRule",
+          "flexibleDateSearchRule": {
+           "__typename": "DoraFlexibleDateSearchRule",
+           "maxLeadTime": 180,
+           "maxStayLength": 60,
+           "experimentalMaxLeadTime": null,
+           "experimentalMaxStayLength": null,
+           "experimentName": null
+          }
+         },
+         "filterSectionId": null,
+         "imageUrl": null,
+         "selectedImageUrl": null,
+         "key": null,
+         "learnMoreLink": null,
+         "linkChecked": null,
+         "linkUnchecked": null,
+         "metadata": null,
+         "onLinkChecked": null,
+         "params": [],
+         "searchParams": null,
+         "selected": false,
+         "states": null,
+         "subType": null,
+         "subsectionSubtitle": null,
+         "subsectionTitle": null,
+         "subsectionItems": [
+          {
+           "__typename": "DoraFilterSection",
+           "airmojiName": null,
+           "collapseSelectedSubtitles": null,
+           "collapseText": null,
+           "collapseThreshold": null,
+           "dateRangeConstraint": null,
+           "descriptionText": null,
+           "expandText": null,
+           "experimentsMetadata": [],
+           "filterBarTitle": null,
+           "filterSectionId": "flexible_date_search_filter_section",
+           "mutedText": null,
+           "onFilterChange": null,
+           "sectionType": null,
+           "selected": false,
+           "subtitle": null,
+           "title": null,
+           "items": [
+            {
+             "__typename": "DoraFilterItem",
+             "airmojiName": null,
+             "filterItemRule": null,
+             "filterSectionId": null,
+             "imageUrl": null,
+             "selectedImageUrl": null,
+             "key": null,
+             "learnMoreLink": null,
+             "linkChecked": null,
+             "linkUnchecked": null,
+             "metadata": {
+              "__typename": "DoraFilterItemMetadata",
+              "averagePrice": null,
+              "dateSubtitles": null,
+              "description": null,
+              "hideMaxHandle": null,
+              "hideMinHandle": null,
+              "highlightedDescription": null,
+              "intervalLabels": null,
+              "intervalValue": null,
+              "intervalValues": null,
+              "maxValue": null,
+              "minValue": null,
+              "priceHistogram": null,
+              "segmentedControlValues": null,
+              "segmentedControlLabels": null
+             },
+             "onLinkChecked": null,
+             "params": [
+              {
+               "__typename": "DoraFilterItemParam",
+               "isSerialized": false,
+               "key": "flexible_date_search_filter_type",
+               "title": "1 dia",
+               "value": {
+                "__typename": "DoraLongWrapper",
+                "longValue": "0"
+               },
+               "valueType": "integer"
+              }
+             ],
+             "searchParams": {
+              "__typename": "DoraExploreSearchParams",
+              "locationSearch": null,
+              "params": [
+               {
+                "__typename": "DoraSearchParam",
+                "inArray": false,
+                "key": "flexible_date_search_filter_type",
+                "value": {
+                 "__typename": "DoraLongWrapper",
+                 "longValue": "0"
+                },
+                "valueType": "integer"
+               }
+              ],
+              "placeId": null,
+              "query": null,
+              "refinementPaths": [],
+              "resetFilters": false,
+              "resetKeys": [],
+              "tabId": "all_tab"
+             },
+             "selected": false,
+             "states": [],
+             "subType": null,
+             "subsectionSubtitle": null,
+             "subsectionTitle": null,
+             "subtitle": null,
+             "subtitleChecked": null,
+             "subtitleUnchecked": null,
+             "title": "1 dia",
+             "type": "select",
+             "value": null,
+             "subsectionItems": null,
+             "subtitleAction": null
+            },
+            {
+             "__typename": "DoraFilterItem",
+             "airmojiName": null,
+             "filterItemRule": null,
+             "filterSectionId": null,
+             "imageUrl": null,
+             "selectedImageUrl": null,
+             "key": null,
+             "learnMoreLink": null,
+             "linkChecked": null,
+             "linkUnchecked": null,
+             "metadata": {
+              "__typename": "DoraFilterItemMetadata",
+              "averagePrice": null,
+              "dateSubtitles": null,
+              "description": null,
+              "hideMaxHandle": null,
+              "hideMinHandle": null,
+              "highlightedDescription": null,
+              "intervalLabels": null,
+              "intervalValue": null,
+              "intervalValues": null,
+              "maxValue": null,
+              "minValue": null,
+              "priceHistogram": null,
+              "segmentedControlValues": null,
+              "segmentedControlLabels": null
+             },
+             "onLinkChecked": null,
+             "params": [
+              {
+               "__typename": "DoraFilterItemParam",
+               "isSerialized": false,
+               "key": "flexible_date_search_filter_type",
+               "title": "3 dias",
+               "value": {
+                "__typename": "DoraLongWrapper",
+                "longValue": "1"
+               },
+               "valueType": "integer"
+              }
+             ],
+             "searchParams": {
+              "__typename": "DoraExploreSearchParams",
+              "locationSearch": null,
+              "params": [
+               {
+                "__typename": "DoraSearchParam",
+                "inArray": false,
+                "key": "flexible_date_search_filter_type",
+                "value": {
+                 "__typename": "DoraLongWrapper",
+                 "longValue": "1"
+                },
+                "valueType": "integer"
+               }
+              ],
+              "placeId": null,
+              "query": null,
+              "refinementPaths": [],
+              "resetFilters": false,
+              "resetKeys": [],
+              "tabId": "all_tab"
+             },
+             "selected": false,
+             "states": [],
+             "subType": null,
+             "subsectionSubtitle": null,
+             "subsectionTitle": null,
+             "subtitle": null,
+             "subtitleChecked": null,
+             "subtitleUnchecked": null,
+             "title": "3 dias",
+             "type": "select",
+             "value": null,
+             "subsectionItems": null,
+             "subtitleAction": null
+            },
+            {
+             "__typename": "DoraFilterItem",
+             "airmojiName": null,
+             "filterItemRule": null,
+             "filterSectionId": null,
+             "imageUrl": null,
+             "selectedImageUrl": null,
+             "key": null,
+             "learnMoreLink": null,
+             "linkChecked": null,
+             "linkUnchecked": null,
+             "metadata": {
+              "__typename": "DoraFilterItemMetadata",
+              "averagePrice": null,
+              "dateSubtitles": null,
+              "description": null,
+              "hideMaxHandle": null,
+              "hideMinHandle": null,
+              "highlightedDescription": null,
+              "intervalLabels": null,
+              "intervalValue": null,
+              "intervalValues": null,
+              "maxValue": null,
+              "minValue": null,
+              "priceHistogram": null,
+              "segmentedControlValues": null,
+              "segmentedControlLabels": null
+             },
+             "onLinkChecked": null,
+             "params": [
+              {
+               "__typename": "DoraFilterItemParam",
+               "isSerialized": false,
+               "key": "flexible_date_search_filter_type",
+               "title": "7 dias",
+               "value": {
+                "__typename": "DoraLongWrapper",
+                "longValue": "2"
+               },
+               "valueType": "integer"
+              }
+             ],
+             "searchParams": {
+              "__typename": "DoraExploreSearchParams",
+              "locationSearch": null,
+              "params": [
+               {
+                "__typename": "DoraSearchParam",
+                "inArray": false,
+                "key": "flexible_date_search_filter_type",
+                "value": {
+                 "__typename": "DoraLongWrapper",
+                 "longValue": "2"
+                },
+                "valueType": "integer"
+               }
+              ],
+              "placeId": null,
+              "query": null,
+              "refinementPaths": [],
+              "resetFilters": false,
+              "resetKeys": [],
+              "tabId": "all_tab"
+             },
+             "selected": false,
+             "states": [],
+             "subType": null,
+             "subsectionSubtitle": null,
+             "subsectionTitle": null,
+             "subtitle": null,
+             "subtitleChecked": null,
+             "subtitleUnchecked": null,
+             "title": "7 dias",
+             "type": "select",
+             "value": null,
+             "subsectionItems": null,
+             "subtitleAction": null
+            }
+           ]
+          }
+         ],
+         "subtitle": null,
+         "subtitleAction": null,
+         "subtitleChecked": null,
+         "subtitleUnchecked": null,
+         "title": null,
+         "type": "flexible_date_picker",
+         "value": null
+        }
+       ],
+       "subsections": []
+      },
+      {
+       "__typename": "DoraFilterSection",
+       "bottomDescriptionText": null,
+       "airmojiName": null,
+       "collapseSelectedSubtitles": null,
+       "collapseText": null,
+       "collapseThreshold": null,
+       "dateRangeConstraint": null,
+       "descriptionText": null,
+       "expandText": null,
+       "experimentsMetadata": [],
+       "filterBarTitle": "H\u00f3spedes",
+       "filterSectionId": "guest_picker",
+       "mutedText": null,
+       "onFilterChange": null,
+       "sectionType": null,
+       "selected": false,
+       "subtitle": null,
+       "title": "Adicionar h\u00f3spedes",
+       "items": [
+        {
+         "__typename": "DoraFilterItem",
+         "airmojiName": null,
+         "filterItemRule": null,
+         "filterSectionId": null,
+         "imageUrl": null,
+         "selectedImageUrl": null,
+         "key": "adults",
+         "learnMoreLink": null,
+         "linkChecked": null,
+         "linkUnchecked": null,
+         "metadata": {
+          "__typename": "DoraFilterItemMetadata",
+          "averagePrice": null,
+          "dateSubtitles": null,
+          "description": null,
+          "hideMaxHandle": null,
+          "hideMinHandle": null,
+          "highlightedDescription": null,
+          "intervalLabels": null,
+          "intervalValue": null,
+          "intervalValues": null,
+          "maxValue": 16,
+          "minValue": 0,
+          "priceHistogram": null,
+          "segmentedControlValues": null,
+          "segmentedControlLabels": null
+         },
+         "onLinkChecked": null,
+         "params": [
+          {
+           "__typename": "DoraFilterItemParam",
+           "isSerialized": false,
+           "key": "adults",
+           "title": null,
+           "value": {
+            "__typename": "DoraStringWrapper",
+            "stringValue": "0"
+           },
+           "valueType": "integer"
+          }
+         ],
+         "searchParams": {
+          "__typename": "DoraExploreSearchParams",
+          "locationSearch": null,
+          "params": [
+           {
+            "__typename": "DoraSearchParam",
+            "inArray": false,
+            "key": "adults",
+            "value": {
+             "__typename": "DoraStringWrapper",
+             "stringValue": "0"
+            },
+            "valueType": "integer"
+           }
+          ],
+          "placeId": null,
+          "query": null,
+          "refinementPaths": [],
+          "resetFilters": false,
+          "resetKeys": [],
+          "tabId": "all_tab"
+         },
+         "selected": false,
+         "states": null,
+         "subType": null,
+         "subsectionSubtitle": null,
+         "subsectionTitle": null,
+         "subsectionItems": null,
+         "subtitle": "13 anos ou mais",
+         "subtitleAction": null,
+         "subtitleChecked": null,
+         "subtitleUnchecked": null,
+         "title": "Adultos",
+         "type": "stepper",
+         "value": 0
+        },
+        {
+         "__typename": "DoraFilterItem",
+         "airmojiName": null,
+         "filterItemRule": null,
+         "filterSectionId": null,
+         "imageUrl": null,
+         "selectedImageUrl": null,
+         "key": "children",
+         "learnMoreLink": null,
+         "linkChecked": null,
+         "linkUnchecked": null,
+         "metadata": {
+          "__typename": "DoraFilterItemMetadata",
+          "averagePrice": null,
+          "dateSubtitles": null,
+          "description": null,
+          "hideMaxHandle": null,
+          "hideMinHandle": null,
+          "highlightedDescription": null,
+          "intervalLabels": null,
+          "intervalValue": null,
+          "intervalValues": null,
+          "maxValue": 5,
+          "minValue": 0,
+          "priceHistogram": null,
+          "segmentedControlValues": null,
+          "segmentedControlLabels": null
+         },
+         "onLinkChecked": null,
+         "params": [
+          {
+           "__typename": "DoraFilterItemParam",
+           "isSerialized": false,
+           "key": "children",
+           "title": null,
+           "value": {
+            "__typename": "DoraStringWrapper",
+            "stringValue": "0"
+           },
+           "valueType": "integer"
+          }
+         ],
+         "searchParams": {
+          "__typename": "DoraExploreSearchParams",
+          "locationSearch": null,
+          "params": [
+           {
+            "__typename": "DoraSearchParam",
+            "inArray": false,
+            "key": "children",
+            "value": {
+             "__typename": "DoraStringWrapper",
+             "stringValue": "0"
+            },
+            "valueType": "integer"
+           }
+          ],
+          "placeId": null,
+          "query": null,
+          "refinementPaths": [],
+          "resetFilters": false,
+          "resetKeys": [],
+          "tabId": "all_tab"
+         },
+         "selected": false,
+         "states": null,
+         "subType": null,
+         "subsectionSubtitle": null,
+         "subsectionTitle": null,
+         "subsectionItems": null,
+         "subtitle": "Idade 2 \u2013 12",
+         "subtitleAction": null,
+         "subtitleChecked": null,
+         "subtitleUnchecked": null,
+         "title": "Crian\u00e7as",
+         "type": "stepper",
+         "value": 0
+        },
+        {
+         "__typename": "DoraFilterItem",
+         "airmojiName": null,
+         "filterItemRule": null,
+         "filterSectionId": null,
+         "imageUrl": null,
+         "selectedImageUrl": null,
+         "key": "infants",
+         "learnMoreLink": null,
+         "linkChecked": null,
+         "linkUnchecked": null,
+         "metadata": {
+          "__typename": "DoraFilterItemMetadata",
+          "averagePrice": null,
+          "dateSubtitles": null,
+          "description": null,
+          "hideMaxHandle": null,
+          "hideMinHandle": null,
+          "highlightedDescription": null,
+          "intervalLabels": null,
+          "intervalValue": null,
+          "intervalValues": null,
+          "maxValue": 5,
+          "minValue": 0,
+          "priceHistogram": null,
+          "segmentedControlValues": null,
+          "segmentedControlLabels": null
+         },
+         "onLinkChecked": null,
+         "params": [
+          {
+           "__typename": "DoraFilterItemParam",
+           "isSerialized": false,
+           "key": "infants",
+           "title": null,
+           "value": {
+            "__typename": "DoraStringWrapper",
+            "stringValue": "0"
+           },
+           "valueType": "integer"
+          }
+         ],
+         "searchParams": {
+          "__typename": "DoraExploreSearchParams",
+          "locationSearch": null,
+          "params": [
+           {
+            "__typename": "DoraSearchParam",
+            "inArray": false,
+            "key": "infants",
+            "value": {
+             "__typename": "DoraStringWrapper",
+             "stringValue": "0"
+            },
+            "valueType": "integer"
+           }
+          ],
+          "placeId": null,
+          "query": null,
+          "refinementPaths": [],
+          "resetFilters": false,
+          "resetKeys": [],
+          "tabId": "all_tab"
+         },
+         "selected": false,
+         "states": null,
+         "subType": null,
+         "subsectionSubtitle": null,
+         "subsectionTitle": null,
+         "subsectionItems": null,
+         "subtitle": "Menor de 2",
+         "subtitleAction": null,
+         "subtitleChecked": null,
+         "subtitleUnchecked": null,
+         "title": "Beb\u00eas",
+         "type": "stepper",
+         "value": 0
+        }
+       ],
+       "subsections": []
+      }
+     ],
+     "filterStateSerializationContexts": [],
+     "moreFiltersButton": null,
+     "filterBarOrdering": null,
+     "secondaryFilterBarOrdering": null,
+     "moreFiltersOrdering": null,
+     "allFiltersOrdering": null,
+     "allFiltersCount": null,
+     "moreFiltersCounts": null,
+     "filterBarCounts": null,
+     "secondaryFilterBarCounts": null,
+     "filterBar": null,
+     "filterBarMoreFiltersButton": null
+    }
+   }
+  }
+ },
+ "extensions": {
+  "traceId": "iMzqRQdwmd9ayCjumfw5Cg=="
+ }
+}

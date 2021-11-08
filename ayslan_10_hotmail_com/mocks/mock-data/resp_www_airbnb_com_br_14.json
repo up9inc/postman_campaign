@@ -1,0 +1,90 @@
+{
+ "data": {
+  "merlin": {
+   "__typename": "MerlinQuery",
+   "pdpReviews": {
+    "__typename": "MerlinHomesPdpReviewsResponse",
+    "reviews": [
+     {
+      "__typename": "MerlinPdpReviewForP3",
+      "collectionTag": null,
+      "comments": "Pousada excelente localiza\u00e7\u00e3o, voltarei em breve.",
+      "id": "470138269886823493",
+      "language": "pt",
+      "createdAt": "2021-10-10T16:00:49Z",
+      "reviewee": {
+       "__typename": "MerlinPdpUserForP3Reviews",
+       "deleted": false,
+       "firstName": "Nancy",
+       "hostName": "Nancy",
+       "id": "413976214",
+       "pictureUrl": "https://a0.muscache.com/im/pictures/user/3d5f6db7-4768-4cfb-923f-45a43ae6607e.jpg?aki_policy=profile_x_medium",
+       "profilePath": "/users/show/413976214",
+       "isSuperhost": false,
+       "userProfilePicture": {
+        "__typename": "MerlinImage",
+        "baseUrl": "https://a0.muscache.com/im/pictures/user/3d5f6db7-4768-4cfb-923f-45a43ae6607e.jpg?aki_policy=profile_x_medium",
+        "onPressAction": {
+         "__typename": "MerlinNavigateToUserProfile",
+         "url": "/users/show/413976214"
+        }
+       }
+      },
+      "reviewer": {
+       "__typename": "MerlinPdpUserForP3Reviews",
+       "deleted": false,
+       "firstName": "Leonardo",
+       "hostName": "Leonardo",
+       "id": "33823904",
+       "pictureUrl": "https://a0.muscache.com/im/pictures/user/d4dc3255-28de-4d16-a6ba-b4d77fdde065.jpg?aki_policy=profile_x_medium",
+       "profilePath": "/users/show/33823904",
+       "isSuperhost": false,
+       "userProfilePicture": {
+        "__typename": "MerlinImage",
+        "baseUrl": "https://a0.muscache.com/im/pictures/user/d4dc3255-28de-4d16-a6ba-b4d77fdde065.jpg?aki_policy=profile_x_medium",
+        "onPressAction": {
+         "__typename": "MerlinNavigateToUserProfile",
+         "url": "/users/show/33823904"
+        }
+       }
+      },
+      "localizedDate": "outubro de 2021",
+      "localizedReview": null,
+      "rating": 5,
+      "recommendedNumberOfLines": null,
+      "response": "Foi um prazer receber voc\u00ea e Sabrina!! H\u00f3spedes nota 10 . Voltem sim,  nossa Pousada os aguarda de bra\u00e7os abertos .",
+      "roomTypeListingTitle": null,
+      "highlightedReviewSentence": null,
+      "highlightReviewMentioned": null,
+      "showMoreButton": {
+       "__typename": "MerlinBasicListItem",
+       "title": "Mostrar mais",
+       "loggingEventData": {
+        "__typename": "MerlinLoggingEventData",
+        "loggingId": "pdp.reviews.readMore",
+        "section": null,
+        "component": null,
+        "experiments": null,
+        "eventDataSchemaName": null,
+        "eventData": null
+       }
+      },
+      "subtitleItems": null,
+      "channel": null
+     }
+    ],
+    "metadata": {
+     "__typename": "MerlinPdpReviewsMetadata",
+     "reviewsCount": 1,
+     "modalSubtitle": null,
+     "isReviewsSearchResults": null,
+     "isReviewsHighlightTagResults": null,
+     "experiments": []
+    }
+   }
+  }
+ },
+ "extensions": {
+  "traceId": "wZmxIZQw-B2hD-JX9qW6NA=="
+ }
+}

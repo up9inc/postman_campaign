@@ -1,0 +1,219 @@
+[
+ {
+  "event_data": {
+   "__typename": "PdpEventData",
+   "accuracy_rating": "{{accuracy_rating}}",
+   "action": 2,
+   "amenities": [
+    1
+   ],
+   "ancestor_logging_ids": [],
+   "ancestor_uuids": [],
+   "app_logging_context": {
+    "active_sessions": [
+     {
+      "event_data": "{{event_data1}}",
+      "event_data_schema": "{{event_data_schema}}",
+      "uuid": "{{uuid}}"
+     }
+    ],
+    "web_ancestor_tabs": [],
+    "web_tab_uuid": "{{web_tab_uuid}}"
+   },
+   "assets": {
+    "css": {
+     "cache_hit_ratio": 0,
+     "count": "{{count}}",
+     "decodedbody_size": "{{decodedbody_size}}",
+     "encodedbody_size": "{{encodedbody_size}}",
+     "transfer_size": "{{transfer_size}}"
+    },
+    "font": {
+     "cache_hit_ratio": 0,
+     "count": "{{count1}}",
+     "decodedbody_size": "{{decodedbody_size1}}",
+     "encodedbody_size": "{{encodedbody_size1}}",
+     "transfer_size": "{{transfer_size1}}"
+    },
+    "img": {
+     "cache_hit_ratio": 0,
+     "count": "{{count2}}",
+     "decodedbody_size": "{{decodedbody_size2}}",
+     "encodedbody_size": "{{encodedbody_size2}}",
+     "transfer_size": "{{transfer_size2}}"
+    },
+    "js": {
+     "airbnb": {
+      "cache_hit_ratio": "{{cache_hit_ratio}}",
+      "count": "{{count3}}",
+      "decodedbody_size": "{{decodedbody_size3}}",
+      "encodedbody_size": "{{encodedbody_size3}}",
+      "transfer_size": "{{transfer_size3}}"
+     },
+     "third_party": {
+      "cache_hit_ratio": 1,
+      "count": 0,
+      "decodedbody_size": 0,
+      "encodedbody_size": 0,
+      "transfer_size": 0
+     }
+    }
+   },
+   "audience_type": "visitor",
+   "bed_type": null,
+   "cache_response_byte_size": 1465,
+   "cache_type": 2,
+   "cached_data_is_exact_match": true,
+   "checkin_date": null,
+   "checkin_rating": "{{checkin_rating}}",
+   "checkout_date": null,
+   "cleanliness_rating": "{{cleanliness_rating}}",
+   "client": "javascript_browser",
+   "client_version": "{{client_version}}",
+   "communication_rating": "{{communication_rating}}",
+   "component": "{{component}}",
+   "consent_metadata": {},
+   "context": {
+    "bev": "{{bev}}",
+    "client_session_id": "{{client_session_id}}",
+    "device": {
+     "device_year_class": "{{device_year_class}}"
+    },
+    "environment": "production",
+    "impression_uuid": "{{impression_uuid}}",
+    "language": "pt",
+    "locale": "pt",
+    "page_name": "{{page_name}}",
+    "platform": "wide-web",
+    "screen_height": "{{screen_height}}",
+    "screen_width": "{{screen_width}}",
+    "source": "hyperloop",
+    "timestamp": 1636402243563,
+    "user_agent": "{{user_agent}}",
+    "user_id": null,
+    "version": "{{version}}",
+    "visitor_id": "{{visitor_id}}",
+    "web": {
+     "action": "{{action}}",
+     "app": "pdp-platform",
+     "canonical_host": "{{canonical_host}}",
+     "canonical_url": "{{canonical_url}}",
+     "controller": "core-guest-loop",
+     "page_referrer": "{{page_referrer}}",
+     "page_uri": "{{page_uri}}",
+     "queued": true,
+     "rendered_on": "hyperloop_metro",
+     "req_uuid": "{{req_uuid}}",
+     "shardset": "a0",
+     "viewport": "lg"
+    }
+   },
+   "cumulative_layout_shift": 0,
+   "custom_data": "{{custom_data}}",
+   "description_language": "pt",
+   "device_id": "{{device_id}}",
+   "document_age": "{{document_age}}",
+   "domain_and_path": "{{domain_and_path}}",
+   "event_data": "{{event_data2}}",
+   "event_data_schema": "{{event_data_schema1}}",
+   "event_id": "{{event_id}}",
+   "event_name": "{{event_name}}",
+   "experiment": "{{experiment}}",
+   "external_stylesheet_rules": "{{external_stylesheet_rules}}",
+   "extra_data": {},
+   "fbc": null,
+   "fbp": null,
+   "first_response_latency_ms": 0,
+   "guest_satisfaction_overall": "{{guest_satisfaction_overall}}",
+   "guests": 1,
+   "had_cached_data": "{{had_cached_data}}",
+   "has_error": false,
+   "home_tier": 1,
+   "hosting_id": "{{hosting_id}}",
+   "http_method": "{{http_method}}",
+   "http_status_code": "{{http_status_code}}",
+   "impression_uuid": "{{impression_uuid1}}",
+   "inline_stylesheet_rules": "{{inline_stylesheet_rules}}",
+   "interactivity_span_aggregations": {},
+   "interactivity_spans": [],
+   "is_superhost": false,
+   "lcp": "{{lcp}}",
+   "listing_id": "{{listing_id}}",
+   "listing_lat": "{{listing_lat}}",
+   "listing_lng": "{{listing_lng}}",
+   "location_rating": "{{location_rating}}",
+   "logging_id": "{{logging_id}}",
+   "long_input_delay_counts": [],
+   "long_input_delays": [],
+   "longest_blocking_task_index": 0,
+   "longest_blocking_time": "{{longest_blocking_time}}",
+   "navigation_type": 2,
+   "network_deserialization_latency_ms": "{{network_deserialization_latency_ms}}",
+   "network_information": {
+    "downlink": "{{downlink}}",
+    "effective_type": "{{effective_type}}",
+    "rtt": "{{rtt}}"
+   },
+   "network_load_latency_ms": 288,
+   "network_request_latency_ms": 288,
+   "network_response_byte_size": 1465,
+   "niobe_client_overhead_ms": 0,
+   "number_of_blocking_tasks": 2,
+   "number_of_long_input_delays": 0,
+   "number_of_server_errors": 0,
+   "operation": "{{operation}}",
+   "operation_id": "{{operation_id}}",
+   "operation_name": "{{operation_name}}",
+   "operation_type": 1,
+   "page": "{{page}}",
+   "page_name": "{{page_name1}}",
+   "page_navigation_action": {
+    "action_type": "{{action_type}}",
+    "duration_checkpoint_data": {
+     "page_view_duration": "{{page_view_duration}}",
+     "total_view_duration": "{{total_view_duration}}"
+    }
+   },
+   "page_request_method": 1,
+   "pdp_page_type": 1,
+   "person_capacity": 2,
+   "photo_ids": [],
+   "picture_count": "{{picture_count}}",
+   "recorder_duration": "{{recorder_duration}}",
+   "referrer": "{{referrer}}",
+   "remarketing_id": "{{remarketing_id}}",
+   "request_event_ids": [],
+   "request_strategy": "{{request_strategy}}",
+   "room_type": 2,
+   "schema": "{{schema}}",
+   "subject_id": "{{subject_id}}",
+   "subject_type": "{{subject_type}}",
+   "tbt": "{{tbt}}",
+   "timed_interactions": [],
+   "total_duration_of_long_input_delays": 0,
+   "total_latency_ms": 0,
+   "total_response_latency_ms": 0,
+   "treatment": "{{treatment}}",
+   "ttfcp": "{{ttfcp}}",
+   "ttfmp": "{{ttfmp}}",
+   "url": "{{url}}",
+   "user_bucket": "{{user_bucket}}",
+   "utc_offset": "{{utc_offset}}",
+   "uuid": "0ac53514-1927-468e-84e0-736507160150",
+   "value_rating": "{{value_rating}}",
+   "visible_review_count": 1,
+   "visitor_id": "{{visitor_id1}}",
+   "web_ancestor_tabs": [],
+   "web_performance_timing": {
+    "navigation_start_timestamp_in_ms": 1636402241891,
+    "www_cdn_provider": "Akamai",
+    "time_to_connect_end_in_ms": 0
+   },
+   "p3_impression_id": "{{event_data}}"
+  },
+  "event_name": "{{event_name1}}",
+  "schema": "{{schema1}}",
+  "trackingjs_logging_version": "{{trackingjs_logging_version}}",
+  "uuid": "018794de-1425-4819-a0f8-e78bf2f7ada1"
+ }
+]

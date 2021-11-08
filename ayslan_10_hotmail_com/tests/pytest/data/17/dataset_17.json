@@ -1,0 +1,33 @@
+{
+ "parameters": [
+  {
+   "name": "device_memory",
+   "uuid": "7b12579e-5fdb-4256-986a-55ded9ba3bc5"
+  },
+  {
+   "name": "ect",
+   "uuid": "5e6e025a-900f-48a4-afa5-88af142cd228"
+  },
+  {
+   "name": "metric",
+   "uuid": "e536ffe0-41da-4c74-9b3b-5f6d639a9ff7"
+  },
+  {
+   "name": "tags",
+   "uuid": "2f915b0d-6196-47db-929a-b4989de33db7"
+  },
+  {
+   "name": "viewport_width",
+   "uuid": "e0f69810-f5e1-40a5-a3f3-b412cdab48dc"
+  }
+ ],
+ "rows": [
+  {
+   "device_memory": "8",
+   "ect": "4g",
+   "metric": "form_factor_switch.impression",
+   "tags": "loop:core-guest-loop",
+   "viewport_width": "1200"
+  }
+ ]
+}

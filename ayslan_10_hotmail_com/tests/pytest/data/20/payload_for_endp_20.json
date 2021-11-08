@@ -1,0 +1,94 @@
+{
+ "apiKey": "{{apiKey}}",
+ "events": [
+  {
+   "app": {
+    "duration": "{{duration}}",
+    "releaseStage": "production",
+    "version": "{{version}}"
+   },
+   "breadcrumbs": [
+    {
+     "metaData": {},
+     "name": "{{name}}",
+     "timestamp": "{{timestamp}}",
+     "type": "navigation"
+    }
+   ],
+   "context": "PdpHomeMarketplace",
+   "device": {
+    "id": "{{id}}",
+    "locale": "en-US",
+    "orientation": "landscape-primary",
+    "time": "{{time}}",
+    "userAgent": "{{userAgent}}"
+   },
+   "exceptions": [
+    {
+     "errorClass": "Error",
+     "errorMessage": "{{errorMessage}}",
+     "message": "{{message}}",
+     "type": "browserjs"
+    }
+   ],
+   "metaData": {
+    "app_name": "pdp-platform",
+    "connection_type": "{{connection_type}}",
+    "is_installed_pwa": false,
+    "is_metro": true,
+    "is_service_worker": false,
+    "locale": "pt",
+    "loop_name": "core-guest-loop",
+    "tags": {
+     "team": "search-input"
+    },
+    "trebuchets": {
+     "trebuchets": [
+      "{{trebuchets}}"
+     ],
+     "values": [
+      "{{values}}"
+     ]
+    },
+    "user": {
+     "bev": "{{bev}}",
+     "is_logged_in": false
+    },
+    "delivered experiments": {
+     "experiments": [
+      "{{experiments}}"
+     ],
+     "treatments": [
+      "{{treatments}}"
+     ]
+    }
+   },
+   "payloadVersion": "{{payloadVersion}}",
+   "request": {
+    "clientIp": "{{clientIp}}",
+    "url": "{{url}}"
+   },
+   "session": {
+    "events": {
+     "handled": 1,
+     "unhandled": 0
+    },
+    "id": "{{id1}}",
+    "startedAt": "{{startedAt}}"
+   },
+   "severity": "error",
+   "severityReason": {
+    "type": "userCallbackSetSeverity"
+   },
+   "unhandled": false,
+   "user": {
+    "id": "{{id2}}"
+   }
+  }
+ ],
+ "notifier": {
+  "name": "Bugsnag JavaScript",
+  "url": "{{url1}}",
+  "version": "{{version1}}"
+ }
+}
